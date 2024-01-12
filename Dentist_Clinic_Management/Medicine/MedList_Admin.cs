@@ -68,7 +68,7 @@ namespace Dentist_Clinic_Management.Medicine
         {
             label1.Visible = false;
             label1.Visible = false;
-            Update_Mdc update_Mdc = new Update_Mdc();
+            UpdateMedicine update_Mdc = new UpdateMedicine();
             this.Hide();
             update_Mdc.ShowDialog();
             this.Show();
@@ -106,22 +106,8 @@ namespace Dentist_Clinic_Management.Medicine
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //DateTime end = DateTime.Today;
-            //List<MedicineDTO> expiredMe = MedicineDAO.Instance.EndMedicine(end);
-            //if (expiredMe.Count > 0)
-            //{
-            //    LoadListMedicine();
-            //}
-        }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void but_find_Click_1(object sender, EventArgs e)
         {
 
         }

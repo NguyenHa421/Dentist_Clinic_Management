@@ -110,7 +110,6 @@
             lab_main.Size = new Size(441, 38);
             lab_main.TabIndex = 6;
             lab_main.Text = "Quản lý danh sách thuốc - Thêm";
-
             // 
             // panel1
             // 
@@ -199,6 +198,7 @@
             but_Add.TabStop = false;
             but_Add.Text = "Thêm";
             but_Add.UseVisualStyleBackColor = false;
+            but_Add.Click += but_Add_Click;
             // 
             // textBox3
             // 
@@ -288,7 +288,6 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "AddMedicine";
             StartPosition = FormStartPosition.CenterScreen;
-
             main_panel.ResumeLayout(false);
             main_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_Back).EndInit();

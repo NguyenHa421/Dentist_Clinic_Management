@@ -139,7 +139,6 @@
             pic_account.SizeMode = PictureBoxSizeMode.Zoom;
             pic_account.TabIndex = 4;
             pic_account.TabStop = false;
-            pic_account.Click += pic_account_Click;
             // 
             // pan_header
             // 
@@ -224,6 +223,7 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Homepage_Admin";
+            StartPosition = FormStartPosition.CenterScreen;
             panel1.ResumeLayout(false);
             main_panel.ResumeLayout(false);
             pan_menu.ResumeLayout(false);

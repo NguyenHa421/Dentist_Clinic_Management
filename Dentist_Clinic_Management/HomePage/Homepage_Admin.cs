@@ -19,20 +19,15 @@ namespace Dentist_Clinic_Management.HomePage
 
         private void bt_accountmanager_Click(object sender, EventArgs e)
         {
-            General_Function.Patient_Records patient_Records = new General_Function.Patient_Records();
-            this.Hide();
-            patient_Records.ShowDialog();
-            this.Show();
-        }
-
-        private void pic_account_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void but_medicine_Click(object sender, EventArgs e)
         {
-
+            Medicine.MedList_Admin patient_Records = new Medicine.MedList_Admin();
+            this.Hide();
+            patient_Records.ShowDialog();
+            this.Show();
         }
     }
 }
