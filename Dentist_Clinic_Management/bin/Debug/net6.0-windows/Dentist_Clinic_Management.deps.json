@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Dentist_Clinic_Management/1.0.0": {
+        "runtime": {
+          "Dentist_Clinic_Management.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Dentist_Clinic_Management/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
