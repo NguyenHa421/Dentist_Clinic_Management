@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement;
+using Dentist_Clinic_Management_UI.DTO_Dentist_Clinic_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +14,66 @@ namespace Dentist_Clinic_Management.Users
 {
     public partial class UserList_Admin : Form
     {
+        BindingSource customerList = new BindingSource();
+        BindingSource dentistList = new BindingSource();
+        BindingSource staffList = new BindingSource();
         public UserList_Admin()
         {
             InitializeComponent();
+            Load();
+        }
+        void Load()
+        {
+            data_list_customer.DataSource = customerList;
+            data_list_dentist.DataSource = dentistList;
+            data_list_staff.DataSource = staffList;
+            LoadLists();
+            AddBindings();
+        }
+        void LoadLists()
+        {
+            customerList.DataSource = PatientDAO.Instance.GetListPatient();
+            dentistList.DataSource = DentistDAO.Instance.GetListDentist();
+            staffList.DataSource = StaffDAO.Instance.GetListStaff();
+        }
+        void AddBindings()
+        {
+            AddCustomerBinding();
+            AddDentistBinding();
+            AddStaffBinding();
+        }
+        void AddCustomerBinding()
+        {
+            tb_id_cus.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "Ma_KH"));
+            tb_name_cus.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "Ho_Ten"));
+            tb_account_cus.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "Sdt"));
+            tb_pass_cus.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "Mat_Khau"));
+            tb_role_cus.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "Vai_Tro"));
+            tb_dob.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "dateoB"));
+            tb_diachi.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "Dia_Chi"));
+            tb_sdt.DataBindings.Add(new Binding("Text", data_list_customer.DataSource, "Sdt"));
+        }
+        void AddDentistBinding()
+        {
+            tb_id_den.DataBindings.Add(new Binding("Text", data_list_dentist.DataSource, "Ma_NS"));
+            tb_name_den.DataBindings.Add(new Binding("Text", data_list_dentist.DataSource, "Ho_Ten"));
+            tb_account_den.DataBindings.Add(new Binding("Text", data_list_dentist.DataSource, "Ma_NS"));
+            tb_pass_den.DataBindings.Add(new Binding("Text", data_list_dentist.DataSource, "Mat_Khau"));
+            tb_role_den.DataBindings.Add(new Binding("Text", data_list_dentist.DataSource, "Vai_Tro"));
+            tb_specilize.DataBindings.Add(new Binding("Text", data_list_dentist.DataSource, "Chuyen_Mon"));
+        }
+        void AddStaffBinding()
+        {
+            tb_id_sta.DataBindings.Add(new Binding("Text", data_list_staff.DataSource, "Ma_NguoiDung"));
+            tb_name_sta.DataBindings.Add(new Binding("Text", data_list_staff.DataSource, "Ho_Ten"));
+            tb_account_sta.DataBindings.Add(new Binding("Text", data_list_staff.DataSource, "Ma_NguoiDung"));
+            tb_pass_sta.DataBindings.Add(new Binding("Text", data_list_staff.DataSource, "Mat_Khau"));
+            tb_role_sta.DataBindings.Add(new Binding("Text", data_list_staff.DataSource, "Vai_Tro"));
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void pic_Back_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

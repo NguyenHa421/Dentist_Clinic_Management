@@ -19,7 +19,10 @@ namespace Dentist_Clinic_Management.HomePage
 
         private void bt_accountmanager_Click(object sender, EventArgs e)
         {
-            
+            Users.UserList_Admin user_Records = new Users.UserList_Admin();
+            this.Hide();
+            user_Records.ShowDialog();
+            this.Show();
         }
 
         private void but_medicine_Click(object sender, EventArgs e)

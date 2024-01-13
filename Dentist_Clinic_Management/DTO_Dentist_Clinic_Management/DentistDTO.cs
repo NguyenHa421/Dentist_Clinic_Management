@@ -9,35 +9,34 @@ namespace Dentist_Clinic_Management_UI.DTO_Dentist_Clinic_Management
 {
     public class DentistDTO
     {
-        public DentistDTO(string MaNhaSi, string GioiTinh, string ChuyenMon, string PhongKham)
+        public DentistDTO(string MaNS, string HoTen, int VaiTro, string MatKhau, string ChuyenMon)
         {
-            this.Ma_NhaSi = MaNhaSi;
-            
-            this.GioiTinh1 = GioiTinh;
+            this.Ma_NS = MaNS;
+            this.Ho_Ten = HoTen;
+            this.Vai_Tro = VaiTro;
+            this.Mat_Khau = MatKhau;
             this.Chuyen_Mon = ChuyenMon;
-            this.Phong_Kham = PhongKham;
         }
-
         public DentistDTO(DataRow row)
         {
-            this.Ma_NhaSi = row["MaNhaSi"].ToString();
-            this.GioiTinh1 = row["GioiTinh"].ToString();
+            this.Ma_NS = row["MaNS"].ToString();
+            this.Ho_Ten = row["HoTen"].ToString();
+            this.Vai_Tro = Convert.ToInt32(row["VaiTro"]);
+            this.Mat_Khau = row["MatKhau"].ToString();
             this.Chuyen_Mon = row["ChuyenMon"].ToString();
-            this.Phong_Kham = row["PhongKham"].ToString();
         }
-        private string MaNhaSi;
+        private string MaNS;
 
-        public string Ma_NhaSi { get => MaNhaSi; set => MaNhaSi = value; }
-
-        private string GioiTinh;
-        public string GioiTinh1 { get => GioiTinh; set => GioiTinh = value; }
+        public string Ma_NS { get => MaNS; set => MaNS = value; }
+        private string HoTen;
+        public string Ho_Ten { get => HoTen; set => HoTen = value; }
+        private int VaiTro;
+        public int Vai_Tro { get => VaiTro; set => VaiTro = value; }
+        private string MatKhau;
+        public string Mat_Khau { get => MatKhau; set => MatKhau = value; }
 
         private string ChuyenMon;
 
         public string Chuyen_Mon { get => ChuyenMon; set => ChuyenMon = value; }
-
-        private string PhongKham;
-        public string Phong_Kham { get => PhongKham; set => PhongKham = value; }
-
     }
 }

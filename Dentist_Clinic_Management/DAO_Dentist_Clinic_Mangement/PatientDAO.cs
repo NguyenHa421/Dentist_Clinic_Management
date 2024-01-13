@@ -23,7 +23,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         public List<PatientDTO> GetPatientList(int id)
         {
             List<PatientDTO> list = new List<PatientDTO>();
-            string query = "select * from BenhNhan where MaBenhNhan = " + id;
+            string query = "select * from NguoiDung, KhachHang where KhachHang.MaKH = NguoiDung.MaNguoiDung and KhachHang.MaKH = " + id;
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach(DataRow dr in data.Rows)
             {
@@ -36,7 +36,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         public List<PatientDTO> GetListPatient()
         {
             List <PatientDTO> list = new List<PatientDTO>();
-            string query = "select * from BenhNhan";
+            string query = "select * from NguoiDung, KhachHang where KhachHang.MaKH = NguoiDung.MaNguoiDung";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach(DataRow dr in data.Rows)
             {
@@ -49,7 +49,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         public List<PatientDTO> SearchPatient(string name)
         {
             List<PatientDTO> list = new List<PatientDTO>();
-            string query = string.Format("select * from dbo.BenhNhan where TenBenhNhan like N'%{0}%'", name);
+            string query = string.Format("select * from NguoiDung, KhachHang where KhachHang.MaKH = NguoiDung.MaNguoiDung and NguoiDung.HoTen like N'%{0}%'", name);
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
             foreach (DataRow dr in data.Rows)
             {
@@ -68,18 +68,20 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         {
             return DataProvider.Instance.ExecuteQuery("exec USP_Find2 @Word", new object[] { a });
         }
-        public bool InsertPatient(string id, string name, int age, string gender, string phone, string email, string addr, string teeth, string alg, float sum, float pay)
+        public bool InsertPatient(string id, string name, int role, string pass, DateTime dob, string addr, string phone)
         {
-            string query = string.Format("INSERT dbo.BenhNhan (MaBenhNhan, TenBenhNhan, Tuoi, GioiTinh, SDT, Email, DiaChi, MoTaDiUng, TinhTrangSK, TongTien, TongTienDaTT) VALUES ('{0}', N'{1}', {2}, N'{3}', '{4}', '{5}', N'{6}', N'{7}', N'{8}', {9}, {10}", id, name, age, gender, phone, email, addr, teeth, alg, sum, pay);
-
+            string query = string.Format("INSERT dbo.NguoiDung (MaNguoiDung, HoTen, VaiTro, MatKhau) VALUES ('{0}', N'{1}', {2}, '{3}'", id, name, role, pass);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
+            query = string.Format("INSERT dbo.KhachHang (MaKH,NgaySinh,DiaChi,SDT) VALUES ('{0}', '{1}', N'{2}', '{3}'", id,dob,addr,phone);
+            result += DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool UpdatePatient(string id, string name, int age, string gender, string phone, string email, string addr, string teeth, string alg, decimal sum, decimal pay)
+        public bool UpdatePatient(string id, string name, int role, string pass, DateTime dob, string addr, string phone)
         {
-            string query = string.Format("UPDATE dbo.BenhNhan SET TenBenhNhan = N'{0}', Tuoi = {1}, GioiTinh = N'{2}', SDT = '{3}', Email = '{4}', DiaChi = N'{5}', MoTaDiUng = N'{6}', TinhTrangSK = N'{7}', TongTien = {8}, TongTienDaTT = {9} WHERE MaBenhNhan = '{10}'", name, age, gender, phone, email, addr, teeth, alg, sum, pay, id);
-
+            string query = string.Format("UPDATE dbo.NguoiDung SET Hoten = N'{0}', VaiTro = {1}, MatKhau = '{2}' WHERE MaNguoiDung = '{3}'", name, role, pass, id);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
+            query = string.Format("UPDATE dbo.KhachHang SET NgaySinh = '{0}', DiaChi = N'{1}', SDT = '{2}' WHERE MaKH = '{3}'", name, role, pass, id);
+            result += DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 

@@ -9,32 +9,28 @@ namespace Dentist_Clinic_Management_UI.DTO_Dentist_Clinic_Management
 {
     public class StaffDTO
     {
-        public StaffDTO(string MaNhanVien, string SDT, string GioiTinh, string PhongKham)
+        public StaffDTO(string MaNguoiDung, string HoTen, int VaiTro, string MatKhau)
         {
-            this.Ma_NhanVien = MaNhanVien;
-            this.So_DienThoai = SDT;
-            this.Gioi_Tinh = GioiTinh;
-            this.Phong_Kham = PhongKham;
+            this.Ma_NguoiDung = MaNguoiDung;
+            this.Ho_Ten = HoTen;
+            this.Vai_Tro = VaiTro;
+            this.Mat_Khau = MatKhau;
         }
         public StaffDTO(DataRow row)
         {
-            this.Ma_NhanVien = row["MaNhanVien"].ToString();
-            this.So_DienThoai = row["SDT"].ToString();
-            this.Gioi_Tinh = row["GioiTinh"].ToString();
-            this.Phong_Kham = row["PhongKham"].ToString();
+            this.Ma_NguoiDung = row["MaNguoiDung"].ToString();
+            this.Ho_Ten = row["HoTen"].ToString();
+            this.Vai_Tro = Convert.ToInt32(row["VaiTro"]);
+            this.Mat_Khau = row["MatKhau"].ToString();
         }
-        private string MaNhanVien;
+        private string MaNguoiDung;
 
-        public string Ma_NhanVien { get => MaNhanVien; set => MaNhanVien = value; }
-
-        private string SDT;
-        public string So_DienThoai { get => SDT; set => SDT = value; }
-
-        private string GioiTinh;
-        public string Gioi_Tinh { get => GioiTinh; set => GioiTinh = value; }
-
-        private string PhongKham;
-        public string Phong_Kham { get => PhongKham; set => PhongKham = value; }
-
+        public string Ma_NguoiDung { get => MaNguoiDung; set => MaNguoiDung = value; }
+        private string HoTen;
+        public string Ho_Ten { get => HoTen; set => HoTen = value; }
+        private int VaiTro;
+        public int Vai_Tro { get => VaiTro; set => VaiTro = value; }
+        private string MatKhau;
+        public string Mat_Khau { get => MatKhau; set => MatKhau = value; }
     }
 }

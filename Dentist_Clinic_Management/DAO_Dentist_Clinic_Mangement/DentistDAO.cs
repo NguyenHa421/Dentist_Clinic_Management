@@ -19,7 +19,18 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         }
 
         private DentistDAO() { }
-
+        public List<DentistDTO> GetListDentist()
+        {
+            List<DentistDTO> list = new List<DentistDTO>();
+            string query = "select * from NguoiDung, NhaSi where NhaSi.MaNS = NguoiDung.MaNguoiDung";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow dr in data.Rows)
+            {
+                DentistDTO dentist = new DentistDTO(dr);
+                list.Add(dentist);
+            }
+            return list;
+        }
         public DataTable GetListDate()
         {
             return DataProvider.Instance.ExecuteQuery("exec USP_Dentist");
