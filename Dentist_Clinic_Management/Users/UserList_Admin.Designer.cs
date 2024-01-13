@@ -254,6 +254,7 @@
             but_del_cus.TabStop = false;
             but_del_cus.Text = "Xóa";
             but_del_cus.UseVisualStyleBackColor = false;
+            but_del_cus.Click += but_del_cus_Click;
             // 
             // but_Update_cus
             // 
@@ -267,6 +268,7 @@
             but_Update_cus.TabStop = false;
             but_Update_cus.Text = "Cập nhật";
             but_Update_cus.UseVisualStyleBackColor = false;
+            but_Update_cus.Click += but_Update_cus_Click;
             // 
             // tb_role_cus
             // 
@@ -567,6 +569,7 @@
             but_del_den.TabStop = false;
             but_del_den.Text = "Xóa";
             but_del_den.UseVisualStyleBackColor = false;
+            but_del_den.Click += but_del_den_Click;
             // 
             // but_Update_den
             // 
@@ -580,6 +583,7 @@
             but_Update_den.TabStop = false;
             but_Update_den.Text = "Cập nhật";
             but_Update_den.UseVisualStyleBackColor = false;
+            but_Update_den.Click += but_Update_den_Click;
             // 
             // tb_role_den
             // 
@@ -810,6 +814,7 @@
             but_del_sta.TabStop = false;
             but_del_sta.Text = "Xóa";
             but_del_sta.UseVisualStyleBackColor = false;
+            but_del_sta.Click += but_del_sta_Click;
             // 
             // but_Update_sta
             // 
@@ -823,6 +828,7 @@
             but_Update_sta.TabStop = false;
             but_Update_sta.Text = "Cập nhật";
             but_Update_sta.UseVisualStyleBackColor = false;
+            but_Update_sta.Click += but_Update_sta_Click;
             // 
             // tb_role_sta
             // 

@@ -128,6 +128,46 @@ namespace Dentist_Clinic_Management.Users
             this.Show();
         }
 
-        
+        private void but_Update_cus_Click(object sender, EventArgs e)
+        {
+            UpdateCustomer updateCustomer = new UpdateCustomer();
+            this.Hide();
+            updateCustomer.ShowDialog();
+            this.Show();
+        }
+
+        private void but_Update_den_Click(object sender, EventArgs e)
+        {
+            UpdateDentist updateDentist = new UpdateDentist();
+            this.Hide();
+            updateDentist.ShowDialog();
+            this.Show();
+        }
+
+        private void but_Update_sta_Click(object sender, EventArgs e)
+        {
+            UpdateStaff updateStaff = new UpdateStaff();
+            this.Hide();
+            updateStaff.ShowDialog();
+            this.Show();
+        }
+        private void but_del_cus_Click(object sender, EventArgs e)
+        {
+            string id = tb_id_cus.Text;
+            if (PatientDAO.Instance.DeletePatient(id))
+                customerList.DataSource = PatientDAO.Instance.GetPatientList();
+        }
+        private void but_del_den_Click(object sender, EventArgs e)
+        {
+            string id = tb_id_den.Text;
+            if (DentistDAO.Instance.DeleteDentist(id))
+                dentistList.DataSource = DentistDAO.Instance.GetDentistList();
+        }
+        private void but_del_sta_Click(object sender, EventArgs e)
+        {
+            string id = tb_id_sta.Text;
+            if (StaffDAO.Instance.DeleteStaff(id))
+                staffList.DataSource = StaffDAO.Instance.GetStaffList();
+        }    
     }
 }

@@ -81,3 +81,6 @@ D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\n
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.AddCustomer.resources
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.AddDentist.resources
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.AddStaff.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.UpdateCustomer.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.UpdateDentist.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.UpdateStaff.resources

@@ -67,11 +67,19 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
             result += DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool UpdatePatient(string id, string name, int role, string pass, DateTime dob, string addr, string phone)
+        public bool UpdatePatient(string id, string name, string pass, DateTime dob, string addr, string phone)
         {
-            string query = string.Format("UPDATE dbo.NguoiDung SET Hoten = N'{0}', VaiTro = {1}, MatKhau = '{2}' WHERE MaNguoiDung = '{3}'", name, role, pass, id);
+            string query = string.Format("UPDATE dbo.NguoiDung SET Hoten = N'{0}', MatKhau = '{1}' WHERE MaNguoiDung = '{2}'", name, pass, id);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             query = string.Format("UPDATE dbo.KhachHang SET NgaySinh = '{0}', DiaChi = N'{1}', SDT = '{2}' WHERE MaKH = '{3}'", dob, addr, phone, id);
+            result += DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool DeletePatient(string id)
+        {
+            string query = string.Format("Delete KhachHang where MaKH = '{0}'", id);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            query = string.Format("Delete NguoiDung where MaNguoiDung = '{0}'", id);
             result += DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

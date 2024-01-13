@@ -47,5 +47,17 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
+        public bool UpdateStaff(string id, string name, string pass)
+        {
+            string query = string.Format("UPDATE dbo.NguoiDung SET Hoten = N'{0}', MatKhau = '{1}' WHERE MaNguoiDung = '{2}'", name, pass, id);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
+        public bool DeleteStaff(string id)
+        {
+            string query = string.Format("Delete NguoiDung where MaNguoiDung = '{0}'", id);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
+        }
     }
 }

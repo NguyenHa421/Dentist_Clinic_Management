@@ -1,6 +1,6 @@
 ﻿namespace Dentist_Clinic_Management.Users
 {
-    partial class AddCustomer
+    partial class UpdateCustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             tb_sdt = new TextBox();
             tb_diachi = new TextBox();
             panel3 = new Panel();
-            but_Update = new Button();
+            but_Add_cus = new Button();
             tb_pass = new TextBox();
             lab_sdt = new Label();
             lab_diachi = new Label();
@@ -66,7 +66,7 @@
             main_panel.Location = new Point(12, 12);
             main_panel.Name = "main_panel";
             main_panel.Size = new Size(1124, 643);
-            main_panel.TabIndex = 12;
+            main_panel.TabIndex = 13;
             // 
             // panel1
             // 
@@ -122,25 +122,25 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(but_Update);
+            panel3.Controls.Add(but_Add_cus);
             panel3.Location = new Point(0, 493);
             panel3.Name = "panel3";
             panel3.Size = new Size(590, 56);
             panel3.TabIndex = 7;
             // 
-            // but_Update
+            // but_Add_cus
             // 
-            but_Update.BackColor = Color.FromArgb(7, 47, 128);
-            but_Update.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_Update.ForeColor = Color.White;
-            but_Update.Location = new Point(446, 0);
-            but_Update.Name = "but_Update";
-            but_Update.Size = new Size(125, 53);
-            but_Update.TabIndex = 5;
-            but_Update.TabStop = false;
-            but_Update.Text = "Thêm";
-            but_Update.UseVisualStyleBackColor = false;
-            but_Update.Click += but_Add_cus_Click;
+            but_Add_cus.BackColor = Color.FromArgb(7, 47, 128);
+            but_Add_cus.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            but_Add_cus.ForeColor = Color.White;
+            but_Add_cus.Location = new Point(446, 0);
+            but_Add_cus.Name = "but_Add_cus";
+            but_Add_cus.Size = new Size(125, 53);
+            but_Add_cus.TabIndex = 5;
+            but_Add_cus.TabStop = false;
+            but_Add_cus.Text = "Cập nhật";
+            but_Add_cus.UseVisualStyleBackColor = false;
+            but_Add_cus.Click += but_Add_cus_Click;
             // 
             // tb_pass
             // 
@@ -270,13 +270,13 @@
             lab_main.AutoSize = true;
             lab_main.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             lab_main.ForeColor = Color.FromArgb(7, 47, 128);
-            lab_main.Location = new Point(334, 3);
+            lab_main.Location = new Point(296, 3);
             lab_main.Name = "lab_main";
-            lab_main.Size = new Size(511, 38);
+            lab_main.Size = new Size(567, 38);
             lab_main.TabIndex = 6;
-            lab_main.Text = "Quản lý tài khoản - Thêm khách hàng";
+            lab_main.Text = "Quản lý tài khoản - Chỉnh sửa khách hàng";
             // 
-            // AddCustomer
+            // UpdateCustomer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -285,7 +285,7 @@
             ControlBox = false;
             Controls.Add(main_panel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "AddCustomer";
+            Name = "UpdateCustomer";
             StartPosition = FormStartPosition.CenterScreen;
             main_panel.ResumeLayout(false);
             main_panel.PerformLayout();
@@ -300,15 +300,12 @@
         #endregion
 
         private Panel main_panel;
-        private Button but_Seen;
-        private PictureBox pic_Back;
-        private DataGridView data_list_customer;
-        private Label lab_main;
         private Panel panel1;
+        private DateTimePicker tb_dob;
         private TextBox tb_sdt;
         private TextBox tb_diachi;
         private Panel panel3;
-        private Button but_Update;
+        private Button but_Add_cus;
         private TextBox tb_pass;
         private Label lab_sdt;
         private Label lab_diachi;
@@ -318,6 +315,9 @@
         private Label lab_pass;
         private Label lab_name;
         private Label lab_id;
-        private DateTimePicker tb_dob;
+        private Button but_Seen;
+        private PictureBox pic_Back;
+        private DataGridView data_list_customer;
+        private Label lab_main;
     }
 }
