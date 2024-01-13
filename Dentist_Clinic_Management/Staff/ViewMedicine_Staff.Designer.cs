@@ -42,17 +42,18 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.None;
             panel1.Controls.Add(label1);
             panel1.Location = new Point(28, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(773, 63);
+            panel1.Size = new Size(799, 63);
             panel1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.7454548F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(294, 15);
+            label1.Location = new Point(311, 15);
             label1.Name = "label1";
             label1.Size = new Size(208, 30);
             label1.TabIndex = 0;
@@ -60,20 +61,21 @@
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.None;
             panel2.Controls.Add(label2);
             panel2.Controls.Add(button1);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(dataGridView1);
-            panel2.Location = new Point(28, 85);
+            panel2.Location = new Point(28, 75);
             panel2.Name = "panel2";
-            panel2.Size = new Size(773, 409);
+            panel2.Size = new Size(799, 439);
             panel2.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.818182F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(59, 23);
+            label2.Location = new Point(64, 17);
             label2.Name = "label2";
             label2.Size = new Size(73, 20);
             label2.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(614, 20);
+            button1.Location = new Point(619, 14);
             button1.Name = "button1";
             button1.Size = new Size(126, 26);
             button1.TabIndex = 2;
@@ -90,7 +92,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(152, 20);
+            textBox1.Location = new Point(157, 14);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(409, 26);
             textBox1.TabIndex = 1;
@@ -98,11 +100,11 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(30, 60);
+            dataGridView1.Location = new Point(30, 61);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 47;
             dataGridView1.RowTemplate.Height = 28;
-            dataGridView1.Size = new Size(742, 346);
+            dataGridView1.Size = new Size(742, 375);
             dataGridView1.TabIndex = 0;
             // 
             // ViewMedicine_Staff
@@ -110,7 +112,7 @@
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(832, 506);
+            ClientSize = new Size(856, 526);
             ControlBox = false;
             Controls.Add(panel2);
             Controls.Add(panel1);

@@ -51,6 +51,8 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.None;
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(lb_Header);
             panel1.Controls.Add(btnSearch);
             panel1.Controls.Add(txbPhoneNum);
@@ -101,6 +103,8 @@
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.None;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
             panel2.Controls.Add(btnBill);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(textBox4);

@@ -70,3 +70,4 @@ D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\ne
 D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.Info_Staff.resources
 D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.PatientRecord_Staff.resources
 D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.ViewMedicine_Staff.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.AppointmentInfo_Staff.resources

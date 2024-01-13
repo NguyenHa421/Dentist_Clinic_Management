@@ -49,6 +49,9 @@
     <Compile Update="Login-Logout\Register.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Staff\AppointmentInfo_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Staff\Appointment_Staff.cs">
       <SubType>Form</SubType>
     </Compile>
