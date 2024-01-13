@@ -29,20 +29,21 @@ namespace Dentist_Clinic_Management.Medicine
         }
         private void but_Add_Click(object sender, EventArgs e)
         {
-            string id = tb_name.Text;
-            string name = tb_age.Text;
-            string type = textBox3.Text;
-            string dentail = textBox4.Text;
-            string unit = textBox5.Text;
-            DateTime enddate = textBox1.Value;
-            if (MedicineDAO.Instance.InsertMedicine(id, name, type, dentail, unit, enddate))
+            string id = tb_id.Text;
+            string name = tb_name.Text;
+            string detail = tb_detail.Text;
+            string unit = tb_unit.Text;
+            double cost = double.Parse(tb_cost.Text);
+            int available = int.Parse(tb_avail.Text);
+            DateTime enddate = tb_expired.Value;
+            if (MedicineDAO.Instance.InsertMedicine(id, name, detail, unit, cost, available, enddate))
             {
                 LoadListMedicine();
-                label1.Visible = false;
+                //label1.Visible = false;
             }
             else
             {
-                label1.Visible = true;
+                //label1.Visible = true;
             }
 
         }

@@ -68,16 +68,16 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         //    }
         //    return list;
         //}
-        public bool InsertMedicine(string id, string name, string type, string detail, string unit, DateTime enddate)
+        public bool InsertMedicine(string id, string name, string detail, string unit, double cost, int available, DateTime enddate)
         {
-            string query = string.Format("INSERT dbo.Thuoc (MaThuoc, TenThuoc, LoaiThuoc, MoTa, DVT, NgayHetHan) VALUES ('{0}', N'{1}', N'{2}', N'{3}', N'{4}', '{5}')", id, name, type, detail, unit, enddate);
+            string query = string.Format("INSERT dbo.Thuoc (MaThuoc, TenThuoc, ChiDinh, DonViTinh, DonGia, LuongTonKho, NgayHetHan) VALUES ('{0}', N'{1}', N'{2}', N'{3}', N'{4}', '{5}','{6}')",id,name,detail,unit,cost,available,enddate);
 
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool UpdateMedicine(string id, string name, string type, string detail, string unit, DateTime enddate)
+        public bool UpdateMedicine(string id, string name, string detail, string unit, double cost, int available, DateTime enddate)
         {
-            string query = string.Format("UPDATE dbo.Thuoc SET TenThuoc = N'{0}', LoaiThuoc = N'{1}', MoTa = N'{2}', DVT = N'{3}', NgayHetHan = '{4}' WHERE MaThuoc = '{5}'", name, type, detail, unit, enddate, id);
+            string query = string.Format("UPDATE dbo.Thuoc SET TenThuoc = N'{0}', ChiDinh = N'{1}', DonViTinh = N'{2}', DonGia = N'{3}',LuongTonKho = '{4}', NgayHetHan = '{5}' WHERE MaThuoc = '{6}'", name, detail, unit, cost, available, enddate,id);
 
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;

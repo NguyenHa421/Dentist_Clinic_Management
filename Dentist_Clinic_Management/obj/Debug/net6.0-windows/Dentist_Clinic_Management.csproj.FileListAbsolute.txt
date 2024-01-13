@@ -77,3 +77,4 @@ D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\bin\Debug\n
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.csproj.AssemblyReference.cache
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.csproj.CopyComplete
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.UserList_Admin.resources

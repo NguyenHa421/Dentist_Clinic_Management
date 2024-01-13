@@ -34,18 +34,19 @@
             data_list_patient = new DataGridView();
             lab_main = new Label();
             panel1 = new Panel();
-            label1 = new Label();
-            textBox1 = new DateTimePicker();
-            lab_dateend = new Label();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
+            tb_expired = new DateTimePicker();
+            lab_expired = new Label();
+            tb_avail = new TextBox();
+            tb_unit = new TextBox();
+            tb_cost = new TextBox();
+            tb_detail = new TextBox();
             but_Add = new Button();
-            textBox3 = new TextBox();
-            tb_age = new TextBox();
             tb_name = new TextBox();
+            tb_id = new TextBox();
+            lab_avail = new Label();
             lab_unit = new Label();
-            label_desc = new Label();
-            lab_type = new Label();
+            lab_detail = new Label();
+            lab_cost = new Label();
             lab_name = new Label();
             lab_id = new Label();
             main_panel.SuspendLayout();
@@ -89,6 +90,7 @@
             pic_Back.SizeMode = PictureBoxSizeMode.Zoom;
             pic_Back.TabIndex = 10;
             pic_Back.TabStop = false;
+            pic_Back.Click += pic_Back_Click;
             // 
             // data_list_patient
             // 
@@ -114,18 +116,19 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(lab_dateend);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(tb_expired);
+            panel1.Controls.Add(lab_expired);
+            panel1.Controls.Add(tb_avail);
+            panel1.Controls.Add(tb_unit);
+            panel1.Controls.Add(tb_cost);
+            panel1.Controls.Add(tb_detail);
             panel1.Controls.Add(but_Add);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(tb_age);
             panel1.Controls.Add(tb_name);
+            panel1.Controls.Add(tb_id);
+            panel1.Controls.Add(lab_avail);
             panel1.Controls.Add(lab_unit);
-            panel1.Controls.Add(label_desc);
-            panel1.Controls.Add(lab_type);
+            panel1.Controls.Add(lab_detail);
+            panel1.Controls.Add(lab_cost);
             panel1.Controls.Add(lab_name);
             panel1.Controls.Add(lab_id);
             panel1.Location = new Point(530, 115);
@@ -133,65 +136,71 @@
             panel1.Size = new Size(591, 522);
             panel1.TabIndex = 23;
             // 
-            // label1
+            // tb_expired
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Red;
-            label1.Location = new Point(115, 484);
-            label1.Name = "label1";
-            label1.Size = new Size(394, 31);
-            label1.TabIndex = 20;
-            label1.Text = "Lỗi thêm thuốc. Vui lòng kiểm tra lại.";
-            label1.Visible = false;
+            tb_expired.CustomFormat = "HH:mm MM/dd/yyyy";
+            tb_expired.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_expired.Format = DateTimePickerFormat.Custom;
+            tb_expired.Location = new Point(176, 422);
+            tb_expired.MinDate = new DateTime(2024, 1, 11, 0, 0, 0, 0);
+            tb_expired.Name = "tb_expired";
+            tb_expired.Size = new Size(387, 38);
+            tb_expired.TabIndex = 19;
+            tb_expired.TabStop = false;
             // 
-            // textBox1
+            // lab_expired
             // 
-            textBox1.CustomFormat = "HH:mm dd/MM/yyyy";
-            textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Format = DateTimePickerFormat.Custom;
-            textBox1.Location = new Point(176, 358);
-            textBox1.MinDate = new DateTime(2024, 1, 11, 0, 0, 0, 0);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(387, 38);
-            textBox1.TabIndex = 19;
-            textBox1.TabStop = false;
+            lab_expired.AutoSize = true;
+            lab_expired.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_expired.Location = new Point(13, 428);
+            lab_expired.Name = "lab_expired";
+            lab_expired.Size = new Size(151, 31);
+            lab_expired.TabIndex = 16;
+            lab_expired.Text = "Ngày hết hạn";
             // 
-            // lab_dateend
+            // tb_avail
             // 
-            lab_dateend.AutoSize = true;
-            lab_dateend.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_dateend.Location = new Point(13, 364);
-            lab_dateend.Name = "lab_dateend";
-            lab_dateend.Size = new Size(151, 31);
-            lab_dateend.TabIndex = 16;
-            lab_dateend.Text = "Ngày hết hạn";
+            tb_avail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_avail.Location = new Point(176, 360);
+            tb_avail.Name = "tb_avail";
+            tb_avail.Size = new Size(387, 38);
+            tb_avail.TabIndex = 15;
+            tb_avail.TabStop = false;
             // 
-            // textBox5
+            // tb_unit
             // 
-            textBox5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(176, 303);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(387, 38);
-            textBox5.TabIndex = 15;
-            textBox5.TabStop = false;
+            tb_unit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_unit.Location = new Point(176, 301);
+            tb_unit.Name = "tb_unit";
+            tb_unit.Size = new Size(387, 38);
+            tb_unit.TabIndex = 15;
+            tb_unit.TabStop = false;
             // 
-            // textBox4
+            // tb_cost
             // 
-            textBox4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(176, 188);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(387, 96);
-            textBox4.TabIndex = 14;
-            textBox4.TabStop = false;
+            tb_cost.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_cost.Location = new Point(176, 248);
+            tb_cost.Name = "tb_cost";
+            tb_cost.Size = new Size(387, 38);
+            tb_cost.TabIndex = 15;
+            tb_cost.TabStop = false;
+            // 
+            // tb_detail
+            // 
+            tb_detail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_detail.Location = new Point(176, 135);
+            tb_detail.Multiline = true;
+            tb_detail.Name = "tb_detail";
+            tb_detail.Size = new Size(387, 96);
+            tb_detail.TabIndex = 14;
+            tb_detail.TabStop = false;
             // 
             // but_Add
             // 
             but_Add.BackColor = Color.FromArgb(7, 47, 128);
             but_Add.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             but_Add.ForeColor = Color.White;
-            but_Add.Location = new Point(438, 428);
+            but_Add.Location = new Point(438, 466);
             but_Add.Name = "but_Add";
             but_Add.Size = new Size(125, 53);
             but_Add.TabIndex = 5;
@@ -200,62 +209,63 @@
             but_Add.UseVisualStyleBackColor = false;
             but_Add.Click += but_Add_Click;
             // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(176, 131);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(387, 38);
-            textBox3.TabIndex = 13;
-            textBox3.TabStop = false;
-            // 
-            // tb_age
-            // 
-            tb_age.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_age.Location = new Point(176, 75);
-            tb_age.Name = "tb_age";
-            tb_age.Size = new Size(387, 38);
-            tb_age.TabIndex = 10;
-            tb_age.TabStop = false;
-            // 
             // tb_name
             // 
             tb_name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_name.Location = new Point(176, 20);
+            tb_name.Location = new Point(176, 75);
             tb_name.Name = "tb_name";
             tb_name.Size = new Size(387, 38);
-            tb_name.TabIndex = 8;
+            tb_name.TabIndex = 10;
             tb_name.TabStop = false;
+            // 
+            // tb_id
+            // 
+            tb_id.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_id.Location = new Point(176, 20);
+            tb_id.Name = "tb_id";
+            tb_id.Size = new Size(387, 38);
+            tb_id.TabIndex = 8;
+            tb_id.TabStop = false;
+            // 
+            // lab_avail
+            // 
+            lab_avail.AutoSize = true;
+            lab_avail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_avail.Location = new Point(13, 367);
+            lab_avail.Name = "lab_avail";
+            lab_avail.Size = new Size(163, 31);
+            lab_avail.TabIndex = 7;
+            lab_avail.Text = "Lượng tồn kho";
             // 
             // lab_unit
             // 
             lab_unit.AutoSize = true;
             lab_unit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_unit.Location = new Point(13, 304);
+            lab_unit.Location = new Point(13, 308);
             lab_unit.Name = "lab_unit";
             lab_unit.Size = new Size(126, 31);
             lab_unit.TabIndex = 7;
             lab_unit.Text = "Đơn vị tính";
             // 
-            // label_desc
+            // lab_detail
             // 
-            label_desc.AutoSize = true;
-            label_desc.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label_desc.Location = new Point(11, 191);
-            label_desc.Name = "label_desc";
-            label_desc.Size = new Size(74, 31);
-            label_desc.TabIndex = 6;
-            label_desc.Text = "Mô tả";
+            lab_detail.AutoSize = true;
+            lab_detail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_detail.Location = new Point(13, 138);
+            lab_detail.Name = "lab_detail";
+            lab_detail.Size = new Size(99, 31);
+            lab_detail.TabIndex = 6;
+            lab_detail.Text = "Chỉ định";
             // 
-            // lab_type
+            // lab_cost
             // 
-            lab_type.AutoSize = true;
-            lab_type.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_type.Location = new Point(13, 134);
-            lab_type.Name = "lab_type";
-            lab_type.Size = new Size(120, 31);
-            lab_type.TabIndex = 5;
-            lab_type.Text = "Loại thuốc";
+            lab_cost.AutoSize = true;
+            lab_cost.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_cost.Location = new Point(13, 255);
+            lab_cost.Name = "lab_cost";
+            lab_cost.Size = new Size(95, 31);
+            lab_cost.TabIndex = 5;
+            lab_cost.Text = "Đơn giá";
             // 
             // lab_name
             // 
@@ -306,18 +316,20 @@
         private Label lab_main;
         private Panel panel1;
         private Label label1;
-        private DateTimePicker textBox1;
-        private Label lab_dateend;
-        private TextBox textBox5;
-        private TextBox textBox4;
+        private DateTimePicker tb_expired;
+        private Label lab_expired;
+        private TextBox tb_detail;
+        private TextBox tb_cost;
         private Button but_Add;
-        private TextBox textBox3;
-        private TextBox tb_age;
+        private TextBox tb_id;
         private TextBox tb_name;
         private Label lab_unit;
-        private Label label_desc;
-        private Label lab_type;
+        private Label lab_detail;
+        private Label lab_cost;
         private Label lab_name;
         private Label lab_id;
+        private TextBox tb_avail;
+        private TextBox tb_unit;
+        private Label lab_avail;
     }
 }

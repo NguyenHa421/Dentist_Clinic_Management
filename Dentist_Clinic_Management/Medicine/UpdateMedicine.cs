@@ -30,29 +30,29 @@ namespace Dentist_Clinic_Management.Medicine
         }
         void AddMedicineBiding()
         {
-            tb_name.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "IDThuoc"));
-            tb_age.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ten_Thuoc"));
-            textBox3.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Loai_Thuoc"));
-            textBox4.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Mo_ta"));
-            textBox5.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "DonVi_Tinh"));
-            textBox1.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ngay_HetHan".ToString()));
+            tb_id.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "IDThuoc"));
+            tb_name.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ten_Thuoc"));
+            tb_detail.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Chi_Dinh"));
+            tb_cost.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Don_Gia"));
+            tb_unit.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "DonVi_Tinh"));
+            tb_avail.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Luong_Ton_Kho"));
+            tb_expired.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ngay_HetHan"));
         }
         private void but_Update_Click(object sender, EventArgs e)
         {
-            string id = tb_name.Text;
-            string name = tb_age.Text;
-            string type = textBox3.Text;
-            string dentail = textBox4.Text;
-            string unit = textBox5.Text;
-            DateTime enddate = textBox1.Value;
-            if (MedicineDAO.Instance.UpdateMedicine(id, name, type, dentail, unit, enddate))
+            string id = tb_id.Text;
+            string name = tb_name.Text;
+            string detail = tb_detail.Text;
+            string unit = tb_unit.Text;
+            double cost = double.Parse(tb_cost.Text);
+            int available = int.Parse(tb_avail.Text);
+            DateTime enddate = tb_expired.Value;
+            if (MedicineDAO.Instance.UpdateMedicine(id, name, detail, unit, cost, available, enddate))
             {
                 LoadListMedicine();
-                label1.Visible = false;
             }
             else
             {
-                label1.Visible = true;
             }
 
         }

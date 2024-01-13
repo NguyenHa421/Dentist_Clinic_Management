@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,12 +33,13 @@ namespace Dentist_Clinic_Management.Medicine
         }
         void AddMedicineBiding()
         {
-            tb_name.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "IDThuoc"));
-            tb_age.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ten_Thuoc"));
-            textBox3.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Loai_Thuoc"));
-            textBox4.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Mo_ta"));
-            textBox5.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "DonVi_Tinh"));
-            textBox1.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ngay_HetHan"));
+            tb_id.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "IDThuoc"));
+            tb_name.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ten_Thuoc"));
+            tb_detail.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Chi_Dinh"));
+            tb_cost.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Don_Gia"));
+            tb_unit.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "DonVi_Tinh"));
+            tb_avail.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Luong_Ton_Kho"));
+            tb_expired.DataBindings.Add(new Binding("Text", data_list_medi.DataSource, "Ngay_HetHan"));
         }
 
         List<MedicineDTO> SearchMedicine(string name)
@@ -66,8 +68,6 @@ namespace Dentist_Clinic_Management.Medicine
 
         private void but_Update_Click(object sender, EventArgs e)
         {
-            label1.Visible = false;
-            label1.Visible = false;
             UpdateMedicine update_Mdc = new UpdateMedicine();
             this.Hide();
             update_Mdc.ShowDialog();
@@ -77,37 +77,27 @@ namespace Dentist_Clinic_Management.Medicine
         private void but_Seen_Click(object sender, EventArgs e)
         {
             LoadListMedicine();
-            label1.Visible = false;
         }
 
         private void but_find_Click(object sender, EventArgs e)
         {
-            label1.Visible = false;
             medicineListt.DataSource = SearchMedicine(text_name_cli.Text);
         }
 
         private void but_del_Click(object sender, EventArgs e)
         {
-            string id = tb_name.Text;
+            string id = tb_id.Text;
 
             if (MedicineDAO.Instance.DeleteMedicine(id))
             {
                 LoadListMedicine();
-                label1.Visible = false;
             }
             else
             {
-                label1.Visible = true;
             }
         }
 
         private void tb_name_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void label1_Click(object sender, EventArgs e)
         {
 
         }

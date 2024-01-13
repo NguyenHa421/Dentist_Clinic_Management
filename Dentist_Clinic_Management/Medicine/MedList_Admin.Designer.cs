@@ -29,40 +29,41 @@
         private void InitializeComponent()
         {
             main_panel = new Panel();
-            pic_Back = new PictureBox();
-            panel1 = new Panel();
-            label1 = new Label();
+            panel2 = new Panel();
             but_del = new Button();
-            textBox1 = new TextBox();
-            lab_dateend = new Label();
+            lab_expired = new Label();
+            tb_expired = new TextBox();
+            tb_avail = new TextBox();
             but_Update = new Button();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
+            tb_unit = new TextBox();
+            tb_cost = new TextBox();
+            tb_detail = new TextBox();
             but_Add = new Button();
-            textBox3 = new TextBox();
-            tb_age = new TextBox();
             tb_name = new TextBox();
+            tb_id = new TextBox();
+            lab_avail = new Label();
             lab_unit = new Label();
-            label_desc = new Label();
-            lab_type = new Label();
+            lab_detail = new Label();
+            lab_cost = new Label();
             lab_name = new Label();
             lab_id = new Label();
+            pic_Back = new PictureBox();
             lab_main = new Label();
             but_Seen = new Button();
             data_list_medi = new DataGridView();
             but_find = new Button();
             text_name_cli = new TextBox();
             main_panel.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pic_Back).BeginInit();
-            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)data_list_medi).BeginInit();
             SuspendLayout();
             // 
             // main_panel
             // 
             main_panel.BackColor = Color.White;
+            main_panel.Controls.Add(panel2);
             main_panel.Controls.Add(pic_Back);
-            main_panel.Controls.Add(panel1);
             main_panel.Controls.Add(lab_main);
             main_panel.Controls.Add(but_Seen);
             main_panel.Controls.Add(data_list_medi);
@@ -72,6 +73,214 @@
             main_panel.Name = "main_panel";
             main_panel.Size = new Size(1124, 643);
             main_panel.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.White;
+            panel2.Controls.Add(but_del);
+            panel2.Controls.Add(lab_expired);
+            panel2.Controls.Add(tb_expired);
+            panel2.Controls.Add(tb_avail);
+            panel2.Controls.Add(but_Update);
+            panel2.Controls.Add(tb_unit);
+            panel2.Controls.Add(tb_cost);
+            panel2.Controls.Add(tb_detail);
+            panel2.Controls.Add(but_Add);
+            panel2.Controls.Add(tb_name);
+            panel2.Controls.Add(tb_id);
+            panel2.Controls.Add(lab_avail);
+            panel2.Controls.Add(lab_unit);
+            panel2.Controls.Add(lab_detail);
+            panel2.Controls.Add(lab_cost);
+            panel2.Controls.Add(lab_name);
+            panel2.Controls.Add(lab_id);
+            panel2.Location = new Point(515, 118);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(591, 522);
+            panel2.TabIndex = 24;
+            // 
+            // but_del
+            // 
+            but_del.BackColor = Color.FromArgb(7, 47, 128);
+            but_del.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            but_del.ForeColor = Color.White;
+            but_del.Location = new Point(438, 466);
+            but_del.Name = "but_del";
+            but_del.Size = new Size(125, 53);
+            but_del.TabIndex = 19;
+            but_del.TabStop = false;
+            but_del.Text = "Xóa";
+            but_del.UseVisualStyleBackColor = false;
+            but_del.Click += but_del_Click;
+            // 
+            // lab_expired
+            // 
+            lab_expired.AutoSize = true;
+            lab_expired.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_expired.Location = new Point(13, 428);
+            lab_expired.Name = "lab_expired";
+            lab_expired.Size = new Size(151, 31);
+            lab_expired.TabIndex = 16;
+            lab_expired.Text = "Ngày hết hạn";
+            // 
+            // tb_expired
+            // 
+            tb_expired.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_expired.Location = new Point(176, 422);
+            tb_expired.Name = "tb_expired";
+            tb_expired.ReadOnly = true;
+            tb_expired.Size = new Size(387, 38);
+            tb_expired.TabIndex = 15;
+            tb_expired.TabStop = false;
+            // 
+            // tb_avail
+            // 
+            tb_avail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_avail.Location = new Point(176, 360);
+            tb_avail.Name = "tb_avail";
+            tb_avail.ReadOnly = true;
+            tb_avail.Size = new Size(387, 38);
+            tb_avail.TabIndex = 15;
+            tb_avail.TabStop = false;
+            // 
+            // but_Update
+            // 
+            but_Update.BackColor = Color.FromArgb(7, 47, 128);
+            but_Update.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            but_Update.ForeColor = Color.White;
+            but_Update.Location = new Point(307, 466);
+            but_Update.Name = "but_Update";
+            but_Update.Size = new Size(125, 53);
+            but_Update.TabIndex = 6;
+            but_Update.TabStop = false;
+            but_Update.Text = "Cập nhật";
+            but_Update.UseVisualStyleBackColor = false;
+            but_Update.Click += but_Update_Click;
+            // 
+            // tb_unit
+            // 
+            tb_unit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_unit.Location = new Point(176, 301);
+            tb_unit.Name = "tb_unit";
+            tb_unit.ReadOnly = true;
+            tb_unit.Size = new Size(387, 38);
+            tb_unit.TabIndex = 15;
+            tb_unit.TabStop = false;
+            // 
+            // tb_cost
+            // 
+            tb_cost.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_cost.Location = new Point(176, 248);
+            tb_cost.Name = "tb_cost";
+            tb_cost.ReadOnly = true;
+            tb_cost.Size = new Size(387, 38);
+            tb_cost.TabIndex = 15;
+            tb_cost.TabStop = false;
+            // 
+            // tb_detail
+            // 
+            tb_detail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_detail.Location = new Point(176, 135);
+            tb_detail.Multiline = true;
+            tb_detail.Name = "tb_detail";
+            tb_detail.ReadOnly = true;
+            tb_detail.Size = new Size(387, 96);
+            tb_detail.TabIndex = 14;
+            tb_detail.TabStop = false;
+            // 
+            // but_Add
+            // 
+            but_Add.BackColor = Color.FromArgb(7, 47, 128);
+            but_Add.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            but_Add.ForeColor = Color.White;
+            but_Add.Location = new Point(176, 466);
+            but_Add.Name = "but_Add";
+            but_Add.Size = new Size(125, 53);
+            but_Add.TabIndex = 5;
+            but_Add.TabStop = false;
+            but_Add.Text = "Thêm";
+            but_Add.UseVisualStyleBackColor = false;
+            but_Add.Click += but_Add_Click;
+            // 
+            // tb_name
+            // 
+            tb_name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_name.Location = new Point(176, 75);
+            tb_name.Name = "tb_name";
+            tb_name.ReadOnly = true;
+            tb_name.Size = new Size(387, 38);
+            tb_name.TabIndex = 10;
+            tb_name.TabStop = false;
+            // 
+            // tb_id
+            // 
+            tb_id.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_id.Location = new Point(176, 20);
+            tb_id.Name = "tb_id";
+            tb_id.ReadOnly = true;
+            tb_id.Size = new Size(387, 38);
+            tb_id.TabIndex = 8;
+            tb_id.TabStop = false;
+            // 
+            // lab_avail
+            // 
+            lab_avail.AutoSize = true;
+            lab_avail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_avail.Location = new Point(13, 367);
+            lab_avail.Name = "lab_avail";
+            lab_avail.Size = new Size(163, 31);
+            lab_avail.TabIndex = 7;
+            lab_avail.Text = "Lượng tồn kho";
+            // 
+            // lab_unit
+            // 
+            lab_unit.AutoSize = true;
+            lab_unit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_unit.Location = new Point(13, 308);
+            lab_unit.Name = "lab_unit";
+            lab_unit.Size = new Size(126, 31);
+            lab_unit.TabIndex = 7;
+            lab_unit.Text = "Đơn vị tính";
+            // 
+            // lab_detail
+            // 
+            lab_detail.AutoSize = true;
+            lab_detail.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_detail.Location = new Point(13, 138);
+            lab_detail.Name = "lab_detail";
+            lab_detail.Size = new Size(99, 31);
+            lab_detail.TabIndex = 6;
+            lab_detail.Text = "Chỉ định";
+            // 
+            // lab_cost
+            // 
+            lab_cost.AutoSize = true;
+            lab_cost.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_cost.Location = new Point(13, 255);
+            lab_cost.Name = "lab_cost";
+            lab_cost.Size = new Size(95, 31);
+            lab_cost.TabIndex = 5;
+            lab_cost.Text = "Đơn giá";
+            // 
+            // lab_name
+            // 
+            lab_name.AutoSize = true;
+            lab_name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_name.Location = new Point(13, 78);
+            lab_name.Name = "lab_name";
+            lab_name.Size = new Size(113, 31);
+            lab_name.TabIndex = 1;
+            lab_name.Text = "Tên thuốc";
+            // 
+            // lab_id
+            // 
+            lab_id.AutoSize = true;
+            lab_id.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lab_id.Location = new Point(13, 23);
+            lab_id.Name = "lab_id";
+            lab_id.Size = new Size(111, 31);
+            lab_id.TabIndex = 0;
+            lab_id.Text = "Mã thuốc";
             // 
             // pic_Back
             // 
@@ -83,202 +292,6 @@
             pic_Back.TabIndex = 10;
             pic_Back.TabStop = false;
             pic_Back.Click += pic_Back_Click;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(but_del);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(lab_dateend);
-            panel1.Controls.Add(but_Update);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(but_Add);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(tb_age);
-            panel1.Controls.Add(tb_name);
-            panel1.Controls.Add(lab_unit);
-            panel1.Controls.Add(label_desc);
-            panel1.Controls.Add(lab_type);
-            panel1.Controls.Add(lab_name);
-            panel1.Controls.Add(lab_id);
-            panel1.Location = new Point(528, 118);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(590, 522);
-            panel1.TabIndex = 7;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Red;
-            label1.Location = new Point(96, 480);
-            label1.Name = "label1";
-            label1.Size = new Size(379, 31);
-            label1.TabIndex = 21;
-            label1.Text = "Lỗi xóa thuốc. Vui lòng kiểm tra lại.";
-            label1.Visible = false;
-            // 
-            // but_del
-            // 
-            but_del.BackColor = Color.FromArgb(7, 47, 128);
-            but_del.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_del.ForeColor = Color.White;
-            but_del.Location = new Point(413, 410);
-            but_del.Name = "but_del";
-            but_del.Size = new Size(125, 53);
-            but_del.TabIndex = 19;
-            but_del.TabStop = false;
-            but_del.Text = "Xóa";
-            but_del.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(161, 355);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(410, 38);
-            textBox1.TabIndex = 18;
-            textBox1.TabStop = false;
-            // 
-            // lab_dateend
-            // 
-            lab_dateend.AutoSize = true;
-            lab_dateend.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_dateend.Location = new Point(7, 358);
-            lab_dateend.Name = "lab_dateend";
-            lab_dateend.Size = new Size(151, 31);
-            lab_dateend.TabIndex = 16;
-            lab_dateend.Text = "Ngày hết hạn";
-            // 
-            // but_Update
-            // 
-            but_Update.BackColor = Color.FromArgb(7, 47, 128);
-            but_Update.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_Update.ForeColor = Color.White;
-            but_Update.Location = new Point(236, 410);
-            but_Update.Name = "but_Update";
-            but_Update.Size = new Size(125, 53);
-            but_Update.TabIndex = 6;
-            but_Update.TabStop = false;
-            but_Update.Text = "Cập nhật";
-            but_Update.UseVisualStyleBackColor = false;
-            // 
-            // textBox5
-            // 
-            textBox5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(161, 297);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(410, 38);
-            textBox5.TabIndex = 15;
-            textBox5.TabStop = false;
-            // 
-            // textBox4
-            // 
-            textBox4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox4.Location = new Point(161, 175);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.ReadOnly = true;
-            textBox4.Size = new Size(410, 107);
-            textBox4.TabIndex = 14;
-            textBox4.TabStop = false;
-            // 
-            // but_Add
-            // 
-            but_Add.BackColor = Color.FromArgb(7, 47, 128);
-            but_Add.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_Add.ForeColor = Color.White;
-            but_Add.Location = new Point(61, 410);
-            but_Add.Name = "but_Add";
-            but_Add.Size = new Size(125, 53);
-            but_Add.TabIndex = 5;
-            but_Add.TabStop = false;
-            but_Add.Text = "Thêm";
-            but_Add.UseVisualStyleBackColor = false;
-            but_Add.Click += but_Add_Click;
-            // 
-            // textBox3
-            // 
-            textBox3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.Location = new Point(161, 124);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(410, 38);
-            textBox3.TabIndex = 13;
-            textBox3.TabStop = false;
-            // 
-            // tb_age
-            // 
-            tb_age.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_age.Location = new Point(161, 70);
-            tb_age.Name = "tb_age";
-            tb_age.ReadOnly = true;
-            tb_age.Size = new Size(410, 38);
-            tb_age.TabIndex = 10;
-            tb_age.TabStop = false;
-            // 
-            // tb_name
-            // 
-            tb_name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_name.Location = new Point(161, 20);
-            tb_name.Name = "tb_name";
-            tb_name.ReadOnly = true;
-            tb_name.Size = new Size(410, 38);
-            tb_name.TabIndex = 8;
-            tb_name.TabStop = false;
-            // 
-            // lab_unit
-            // 
-            lab_unit.AutoSize = true;
-            lab_unit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_unit.Location = new Point(7, 298);
-            lab_unit.Name = "lab_unit";
-            lab_unit.Size = new Size(126, 31);
-            lab_unit.TabIndex = 7;
-            lab_unit.Text = "Đơn vị tính";
-            // 
-            // label_desc
-            // 
-            label_desc.AutoSize = true;
-            label_desc.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label_desc.Location = new Point(5, 177);
-            label_desc.Name = "label_desc";
-            label_desc.Size = new Size(74, 31);
-            label_desc.TabIndex = 6;
-            label_desc.Text = "Mô tả";
-            // 
-            // lab_type
-            // 
-            lab_type.AutoSize = true;
-            lab_type.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_type.Location = new Point(7, 127);
-            lab_type.Name = "lab_type";
-            lab_type.Size = new Size(120, 31);
-            lab_type.TabIndex = 5;
-            lab_type.Text = "Loại thuốc";
-            // 
-            // lab_name
-            // 
-            lab_name.AutoSize = true;
-            lab_name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_name.Location = new Point(7, 73);
-            lab_name.Name = "lab_name";
-            lab_name.Size = new Size(113, 31);
-            lab_name.TabIndex = 1;
-            lab_name.Text = "Tên thuốc";
-            // 
-            // lab_id
-            // 
-            lab_id.AutoSize = true;
-            lab_id.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_id.Location = new Point(7, 23);
-            lab_id.Name = "lab_id";
-            lab_id.Size = new Size(111, 31);
-            lab_id.TabIndex = 0;
-            lab_id.Text = "Mã thuốc";
             // 
             // lab_main
             // 
@@ -303,6 +316,7 @@
             but_Seen.TabStop = false;
             but_Seen.Text = "Xem tất cả";
             but_Seen.UseVisualStyleBackColor = false;
+            but_Seen.Click += but_Seen_Click;
             // 
             // data_list_medi
             // 
@@ -351,9 +365,9 @@
             StartPosition = FormStartPosition.CenterScreen;
             main_panel.ResumeLayout(false);
             main_panel.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_Back).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)data_list_medi).EndInit();
             ResumeLayout(false);
         }
@@ -362,27 +376,28 @@
 
         private Panel main_panel;
         private PictureBox pic_Back;
-        private Panel panel1;
-        private Label label1;
         private Button but_del;
-        private TextBox textBox1;
-        private Label lab_dateend;
         private Button but_Update;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private Button but_Add;
-        private TextBox textBox3;
-        private TextBox tb_age;
-        private TextBox tb_name;
-        private Label lab_unit;
-        private Label label_desc;
-        private Label lab_type;
-        private Label lab_name;
-        private Label lab_id;
         private Label lab_main;
         private Button but_Seen;
         private DataGridView data_list_medi;
         private Button but_find;
         private TextBox text_name_cli;
+        private Panel panel2;
+        private Label lab_expired;
+        private TextBox tb_avail;
+        private TextBox tb_unit;
+        private TextBox tb_cost;
+        private TextBox tb_detail;
+        private Button but_Add;
+        private TextBox tb_name;
+        private TextBox tb_id;
+        private Label lab_avail;
+        private Label lab_unit;
+        private Label lab_detail;
+        private Label lab_cost;
+        private Label lab_name;
+        private Label lab_id;
+        private TextBox tb_expired;
     }
 }
