@@ -16,5 +16,45 @@ namespace Dentist_Clinic_Management.HomePage
         {
             InitializeComponent();
         }
+
+        private Form currentFormChild;
+        private void OpenChildForm(Form childForm)
+        {
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnShowForm.Controls.Add(childForm);
+            pnShowForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        private void C_bt_ViewProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Staff.Info_Staff());
+        }
+
+        private void C_bt_AddAppointment_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Staff.Appointment_Staff());
+        }
+
+        private void C_bt_ViewMedicine_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Staff.ViewMedicine_Staff());
+        }
+
+        private void C_bt_PatientRecord_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Staff.PatientRecord_Staff());
+        }
+        private void C_bt_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

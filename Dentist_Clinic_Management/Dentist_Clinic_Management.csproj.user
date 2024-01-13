@@ -49,6 +49,18 @@
     <Compile Update="Login-Logout\Register.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Staff\Appointment_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Staff\Info_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Staff\ViewMedicine_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Staff\PatientRecord_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Warming_Client\No_Appointment.cs">
       <SubType>Form</SubType>
     </Compile>

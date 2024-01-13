@@ -32,3 +32,41 @@ D:\Tài liệu\Năm 3 - 1\Dentist_Clinic_Management\Dentist_Clinic_Management\ob
 D:\Tài liệu\Năm 3 - 1\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Update_Schedule.resources
 D:\Tài liệu\Năm 3 - 1\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Add_Client.resources
 D:\Tài liệu\Năm 3 - 1\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Update_Client.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\bin\Debug\net6.0-windows\Dentist_Clinic_Management.exe
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\bin\Debug\net6.0-windows\Dentist_Clinic_Management.deps.json
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\bin\Debug\net6.0-windows\Dentist_Clinic_Management.runtimeconfig.json
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\bin\Debug\net6.0-windows\Dentist_Clinic_Management.dll
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\bin\Debug\net6.0-windows\Dentist_Clinic_Management.pdb
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Client.Confirm_Appointment.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Client.Info_Appointment.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Client.Info_Client.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Client.Info_Client_Update.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Add_Client.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Info_Dentist.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Update_Client.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Update_Info_Client.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Update_Schedule.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.HomePage.Homepage_Admin.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.HomePage.Homepage_Client.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.HomePage.Homepage_Dentist.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.HomePage.Homepage_Staff.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Login_Logout.Appointment_NoAccount.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Login_Logout.Login.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Login_Logout.Register.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Properties.Resources.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.Appointment_Staff.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Warming_Client.No_Appointment.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.csproj.GenerateResource.cache
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.AssemblyInfoInputs.cache
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.AssemblyInfo.cs
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.csproj.CoreCompileInputs.cache
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.sourcelink.json
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.dll
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\refint\Dentist_Clinic_Management.dll
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.pdb
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.genruntimeconfig.cache
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\ref\Dentist_Clinic_Management.dll
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.Info_Staff.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.PatientRecord_Staff.resources
+D:\Code\HQTCSDL\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.ViewMedicine_Staff.resources

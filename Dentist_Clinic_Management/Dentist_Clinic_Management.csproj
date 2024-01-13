@@ -28,7 +28,6 @@
     <Folder Include="Warming_Staff\" />
     <Folder Include="Warming_Dentist\" />
     <Folder Include="Warming_Admin\" />
-    <Folder Include="Staff\" />
   </ItemGroup>
 
 </Project>
