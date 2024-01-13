@@ -19,7 +19,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         }
 
         private DentistDAO() { }
-        public List<DentistDTO> GetListDentist()
+        public List<DentistDTO> GetDentistList()
         {
             List<DentistDTO> list = new List<DentistDTO>();
             string query = "select * from NguoiDung, NhaSi where NhaSi.MaNS = NguoiDung.MaNguoiDung";
@@ -42,6 +42,14 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
                 list.Add(dentist);
             }
             return list;
+        }
+        public bool InsertDentist(string id, string name, string pass, string specialize)
+        {
+            string query = string.Format("INSERT dbo.NguoiDung (MaNguoiDung, HoTen, VaiTro, MatKhau) VALUES ('{0}', N'{1}',1 , '{2}')", id, name, pass);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            query = string.Format("INSERT dbo.NhaSi (MaNS,ChuyenMon) VALUES ('{0}', N'{1}')", id, specialize);
+            result += DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
         }
     }
 

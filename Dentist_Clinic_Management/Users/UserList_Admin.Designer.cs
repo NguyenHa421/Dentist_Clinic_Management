@@ -475,6 +475,7 @@
             but_Seen_den.TabStop = false;
             but_Seen_den.Text = "Xem tất cả";
             but_Seen_den.UseVisualStyleBackColor = false;
+            but_Seen_den.Click += but_Seen_den_Click;
             // 
             // but_find_den
             // 
@@ -552,6 +553,7 @@
             but_Add_den.TabStop = false;
             but_Add_den.Text = "Thêm";
             but_Add_den.UseVisualStyleBackColor = false;
+            but_Add_den.Click += but_Add_den_Click;
             // 
             // but_del_den
             // 
@@ -728,6 +730,7 @@
             but_Seen_sta.TabStop = false;
             but_Seen_sta.Text = "Xem tất cả";
             but_Seen_sta.UseVisualStyleBackColor = false;
+            but_Seen_sta.Click += but_Seen_sta_Click;
             // 
             // but_find_sta
             // 
@@ -793,6 +796,7 @@
             but_Add_sta.TabStop = false;
             but_Add_sta.Text = "Thêm";
             but_Add_sta.UseVisualStyleBackColor = false;
+            but_Add_sta.Click += but_Add_sta_Click;
             // 
             // but_del_sta
             // 

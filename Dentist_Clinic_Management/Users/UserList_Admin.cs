@@ -34,8 +34,8 @@ namespace Dentist_Clinic_Management.Users
         void LoadLists()
         {
             customerList.DataSource = PatientDAO.Instance.GetPatientList();
-            dentistList.DataSource = DentistDAO.Instance.GetListDentist();
-            staffList.DataSource = StaffDAO.Instance.GetListStaff();
+            dentistList.DataSource = DentistDAO.Instance.GetDentistList();
+            staffList.DataSource = StaffDAO.Instance.GetStaffList();
         }
         void AddBindings()
         {
@@ -86,7 +86,14 @@ namespace Dentist_Clinic_Management.Users
         {
             customerList.DataSource = PatientDAO.Instance.GetPatientList();
         }
-
+        private void but_Seen_den_Click(object sender, EventArgs e)
+        {
+            dentistList.DataSource = DentistDAO.Instance.GetDentistList();
+        }
+        private void but_Seen_sta_Click(object sender, EventArgs e)
+        {
+            staffList.DataSource = StaffDAO.Instance.GetStaffList();
+        }
         private void but_find_den_Click(object sender, EventArgs e)
         {
             dentistList.DataSource = DentistDAO.Instance.SearchDentist(text_name_cli_den.Text);
@@ -104,5 +111,23 @@ namespace Dentist_Clinic_Management.Users
             addCustomer.ShowDialog();
             this.Show();
         }
+
+        private void but_Add_den_Click(object sender, EventArgs e)
+        {
+            AddDentist addDentist = new AddDentist();
+            this.Hide();
+            addDentist.ShowDialog();
+            this.Show();
+        }
+
+        private void but_Add_sta_Click(object sender, EventArgs e)
+        {
+            AddStaff addStaff = new AddStaff();
+            this.Hide();
+            addStaff.ShowDialog();
+            this.Show();
+        }
+
+        
     }
 }

@@ -61,6 +61,12 @@
     <Compile Update="Users\AddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Users\AddDentist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Users\AddStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Users\UserList_Admin.cs">
       <SubType>Form</SubType>
     </Compile>

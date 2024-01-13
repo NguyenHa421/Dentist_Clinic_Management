@@ -17,7 +17,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
             private set { instance = value; }
         }
         private StaffDAO() { }
-        public List<StaffDTO> GetListStaff()
+        public List<StaffDTO> GetStaffList()
         {
             List<StaffDTO> list = new List<StaffDTO>();
             string query = "select * from NguoiDung where VaiTro = 2";
@@ -40,6 +40,12 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
                 list.Add(staff);
             }
             return list;
+        }
+        public bool InsertStaff(string id, string name, string pass)
+        {
+            string query = string.Format("INSERT dbo.NguoiDung (MaNguoiDung, HoTen, VaiTro, MatKhau) VALUES ('{0}', N'{1}',2 , '{2}')", id, name, pass);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+            return result > 0;
         }
     }
 }
