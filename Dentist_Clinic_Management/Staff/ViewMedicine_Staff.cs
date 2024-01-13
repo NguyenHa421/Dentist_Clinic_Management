@@ -16,5 +16,10 @@ namespace Dentist_Clinic_Management.Staff
         {
             InitializeComponent();
         }
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

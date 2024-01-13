@@ -38,15 +38,18 @@
             C_bt_PatientRecord = new Button();
             C_bt_ViewMedicine = new Button();
             C_bt_AddAppointment = new Button();
-            textBox1 = new TextBox();
             C_bt_ViewProfile = new Button();
             C_pt_account = new PictureBox();
             pnShowForm = new Panel();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             C_pn_header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)C_pt_logo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)C_pc_Exit).BeginInit();
             C_pn_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)C_pt_account).BeginInit();
+            pnShowForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // C_pn_header
@@ -127,10 +130,10 @@
             // C_pn_Menu
             // 
             C_pn_Menu.BackColor = Color.FromArgb(8, 48, 107);
+            C_pn_Menu.Controls.Add(label1);
             C_pn_Menu.Controls.Add(C_bt_PatientRecord);
             C_pn_Menu.Controls.Add(C_bt_ViewMedicine);
             C_pn_Menu.Controls.Add(C_bt_AddAppointment);
-            C_pn_Menu.Controls.Add(textBox1);
             C_pn_Menu.Controls.Add(C_bt_ViewProfile);
             C_pn_Menu.Controls.Add(C_pt_account);
             C_pn_Menu.Location = new Point(12, 112);
@@ -144,7 +147,7 @@
             C_bt_PatientRecord.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             C_bt_PatientRecord.FlatStyle = FlatStyle.Flat;
             C_bt_PatientRecord.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_bt_PatientRecord.Location = new Point(19, 178);
+            C_bt_PatientRecord.Location = new Point(20, 274);
             C_bt_PatientRecord.Name = "C_bt_PatientRecord";
             C_bt_PatientRecord.Size = new Size(217, 47);
             C_bt_PatientRecord.TabIndex = 8;
@@ -158,7 +161,7 @@
             C_bt_ViewMedicine.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             C_bt_ViewMedicine.FlatStyle = FlatStyle.Flat;
             C_bt_ViewMedicine.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_bt_ViewMedicine.Location = new Point(19, 245);
+            C_bt_ViewMedicine.Location = new Point(20, 341);
             C_bt_ViewMedicine.Name = "C_bt_ViewMedicine";
             C_bt_ViewMedicine.Size = new Size(217, 47);
             C_bt_ViewMedicine.TabIndex = 7;
@@ -172,7 +175,7 @@
             C_bt_AddAppointment.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             C_bt_AddAppointment.FlatStyle = FlatStyle.Flat;
             C_bt_AddAppointment.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_bt_AddAppointment.Location = new Point(19, 111);
+            C_bt_AddAppointment.Location = new Point(20, 207);
             C_bt_AddAppointment.Name = "C_bt_AddAppointment";
             C_bt_AddAppointment.Size = new Size(217, 47);
             C_bt_AddAppointment.TabIndex = 6;
@@ -180,29 +183,13 @@
             C_bt_AddAppointment.UseVisualStyleBackColor = false;
             C_bt_AddAppointment.Click += C_bt_AddAppointment_Click;
             // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(8, 48, 107);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(94, 31);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Username";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(156, 25);
-            textBox1.TabIndex = 0;
-            textBox1.TabStop = false;
-            textBox1.Text = "Username";
-            textBox1.TextAlign = HorizontalAlignment.Center;
-            // 
             // C_bt_ViewProfile
             // 
             C_bt_ViewProfile.BackColor = Color.FromArgb(191, 215, 251);
             C_bt_ViewProfile.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             C_bt_ViewProfile.FlatStyle = FlatStyle.Flat;
             C_bt_ViewProfile.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_bt_ViewProfile.Location = new Point(19, 312);
+            C_bt_ViewProfile.Location = new Point(20, 408);
             C_bt_ViewProfile.Name = "C_bt_ViewProfile";
             C_bt_ViewProfile.Size = new Size(217, 47);
             C_bt_ViewProfile.TabIndex = 0;
@@ -214,19 +201,44 @@
             // 
             C_pt_account.BackColor = Color.FromArgb(8, 48, 107);
             C_pt_account.Image = Properties.Resources.doctor__1_;
-            C_pt_account.Location = new Point(19, 8);
+            C_pt_account.Location = new Point(57, 8);
             C_pt_account.Name = "C_pt_account";
-            C_pt_account.Size = new Size(72, 67);
+            C_pt_account.Size = new Size(140, 141);
             C_pt_account.SizeMode = PictureBoxSizeMode.Zoom;
             C_pt_account.TabIndex = 4;
             C_pt_account.TabStop = false;
             // 
             // pnShowForm
             // 
+            pnShowForm.BackColor = Color.White;
+            pnShowForm.Controls.Add(pictureBox1);
             pnShowForm.Location = new Point(265, 112);
             pnShowForm.Name = "pnShowForm";
             pnShowForm.Size = new Size(858, 528);
             pnShowForm.TabIndex = 12;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 11.1272726F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(83, 152);
+            label1.Name = "label1";
+            label1.Size = new Size(87, 23);
+            label1.TabIndex = 9;
+            label1.Text = "Username";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.ErrorImage = null;
+            pictureBox1.Image = Properties.Resources.Dental_Logo;
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new Point(238, 94);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(410, 359);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // Homepage_Staff
             // 
@@ -248,6 +260,8 @@
             C_pn_Menu.ResumeLayout(false);
             C_pn_Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)C_pt_account).EndInit();
+            pnShowForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -262,10 +276,11 @@
         private Panel C_pn_Menu;
         private Button C_bt_ViewMedicine;
         private Button C_bt_AddAppointment;
-        private TextBox textBox1;
         private Button C_bt_ViewProfile;
         private PictureBox C_pt_account;
         private Button C_bt_PatientRecord;
         private Panel pnShowForm;
+        private PictureBox pictureBox1;
+        private Label label1;
     }
 }

@@ -31,8 +31,8 @@
             panel1 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
+            btnSearch = new Button();
             label2 = new Label();
-            button1 = new Button();
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
             panel1.SuspendLayout();
@@ -52,18 +52,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.7454548F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(311, 15);
+            label1.Font = new Font("Segoe UI", 15.7090912F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(280, 15);
             label1.Name = "label1";
-            label1.Size = new Size(208, 30);
+            label1.Size = new Size(237, 32);
             label1.TabIndex = 0;
             label1.Text = "DANH MỤC THUỐC";
             // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.None;
+            panel2.Controls.Add(btnSearch);
             panel2.Controls.Add(label2);
-            panel2.Controls.Add(button1);
             panel2.Controls.Add(textBox1);
             panel2.Controls.Add(dataGridView1);
             panel2.Location = new Point(28, 75);
@@ -71,28 +71,33 @@
             panel2.Size = new Size(799, 439);
             panel2.TabIndex = 1;
             // 
+            // btnSearch
+            // 
+            btnSearch.BackColor = Color.Navy;
+            btnSearch.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSearch.ForeColor = Color.White;
+            btnSearch.Location = new Point(602, 10);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(151, 37);
+            btnSearch.TabIndex = 15;
+            btnSearch.TabStop = false;
+            btnSearch.Text = "Tìm kiếm";
+            btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnDone_Click;
+            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9.818182F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(64, 17);
+            label2.Font = new Font("Segoe UI", 13.7454548F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(47, 12);
             label2.Name = "label2";
-            label2.Size = new Size(73, 20);
+            label2.Size = new Size(104, 30);
             label2.TabIndex = 3;
             label2.Text = "Tên thuốc";
             // 
-            // button1
-            // 
-            button1.Location = new Point(619, 14);
-            button1.Name = "button1";
-            button1.Size = new Size(126, 26);
-            button1.TabIndex = 2;
-            button1.Text = "Tìm kiếm";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // textBox1
             // 
-            textBox1.Location = new Point(157, 14);
+            textBox1.Location = new Point(166, 16);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(409, 26);
             textBox1.TabIndex = 1;
@@ -132,8 +137,8 @@
         private Label label1;
         private Panel panel2;
         private Label label2;
-        private Button button1;
         private TextBox textBox1;
         private DataGridView dataGridView1;
+        private Button btnSearch;
     }
 }

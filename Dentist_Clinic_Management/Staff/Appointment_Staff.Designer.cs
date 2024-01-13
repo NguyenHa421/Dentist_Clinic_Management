@@ -350,12 +350,12 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(307, 9);
+            label8.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(305, 24);
             label8.Name = "label8";
-            label8.Size = new Size(211, 42);
+            label8.Size = new Size(230, 38);
             label8.TabIndex = 1;
-            label8.Text = "Đặt lịch khám";
+            label8.Text = "ĐẶT LỊCH KHÁM";
             // 
             // Appointment_Staff
             // 
