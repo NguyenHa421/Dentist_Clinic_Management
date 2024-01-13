@@ -29,9 +29,17 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
             }
             return list;
         }
-        public DataTable GetTableStaff()
+        public List<StaffDTO> SearchStaff(string name)
         {
-            return DataProvider.Instance.ExecuteQuery("exec USP_Staff");
+            List<StaffDTO> list = new List<StaffDTO>();
+            string query = string.Format("select * from NguoiDung where VaiTro = 2 and HoTen like N'%{0}%'", name);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow dr in data.Rows)
+            {
+                StaffDTO staff = new StaffDTO(dr);
+                list.Add(staff);
+            }
+            return list;
         }
     }
 }

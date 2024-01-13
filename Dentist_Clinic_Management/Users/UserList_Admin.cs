@@ -1,4 +1,5 @@
-﻿using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement;
+﻿using Dentist_Clinic_Management.Medicine;
+using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement;
 using Dentist_Clinic_Management_UI.DTO_Dentist_Clinic_Management;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace Dentist_Clinic_Management.Users
         }
         void LoadLists()
         {
-            customerList.DataSource = PatientDAO.Instance.GetListPatient();
+            customerList.DataSource = PatientDAO.Instance.GetPatientList();
             dentistList.DataSource = DentistDAO.Instance.GetListDentist();
             staffList.DataSource = StaffDAO.Instance.GetListStaff();
         }
@@ -74,6 +75,34 @@ namespace Dentist_Clinic_Management.Users
         private void pic_Back_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void but_find_cus_Click(object sender, EventArgs e)
+        {
+            customerList.DataSource = PatientDAO.Instance.SearchPatient(text_name_cli_cus.Text);
+        }
+
+        private void but_Seen_cus_Click(object sender, EventArgs e)
+        {
+            customerList.DataSource = PatientDAO.Instance.GetPatientList();
+        }
+
+        private void but_find_den_Click(object sender, EventArgs e)
+        {
+            dentistList.DataSource = DentistDAO.Instance.SearchDentist(text_name_cli_den.Text);
+        }
+
+        private void but_find_sta_Click(object sender, EventArgs e)
+        {
+            staffList.DataSource = StaffDAO.Instance.SearchStaff(text_name_cli_sta.Text);
+        }
+
+        private void but_Add_cus_Click(object sender, EventArgs e)
+        {
+            AddCustomer addCustomer = new AddCustomer();
+            this.Hide();
+            addCustomer.ShowDialog();
+            this.Show();
         }
     }
 }

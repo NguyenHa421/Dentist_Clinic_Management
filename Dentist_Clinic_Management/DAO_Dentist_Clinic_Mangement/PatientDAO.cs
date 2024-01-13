@@ -33,7 +33,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
             return list;
         } 
 
-        public List<PatientDTO> GetListPatient()
+        public List<PatientDTO> GetPatientList()
         {
             List <PatientDTO> list = new List<PatientDTO>();
             string query = "select * from NguoiDung, KhachHang where KhachHang.MaKH = NguoiDung.MaNguoiDung";
@@ -59,20 +59,11 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
             return list;
         }
 
-        public DataTable GetListBN()
+        public bool InsertPatient(string id, string name, string pass, DateTime dob, string addr, string phone)
         {
-            return DataProvider.Instance.ExecuteQuery("exec USP_BenhNhan");
-        }
-
-        public DataTable FindPt(string a)
-        {
-            return DataProvider.Instance.ExecuteQuery("exec USP_Find2 @Word", new object[] { a });
-        }
-        public bool InsertPatient(string id, string name, int role, string pass, DateTime dob, string addr, string phone)
-        {
-            string query = string.Format("INSERT dbo.NguoiDung (MaNguoiDung, HoTen, VaiTro, MatKhau) VALUES ('{0}', N'{1}', {2}, '{3}'", id, name, role, pass);
+            string query = string.Format("INSERT dbo.NguoiDung (MaNguoiDung, HoTen, VaiTro, MatKhau) VALUES ('{0}', N'{1}',3 , '{2}')", id, name, pass);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
-            query = string.Format("INSERT dbo.KhachHang (MaKH,NgaySinh,DiaChi,SDT) VALUES ('{0}', '{1}', N'{2}', '{3}'", id,dob,addr,phone);
+            query = string.Format("INSERT dbo.KhachHang (MaKH,NgaySinh,DiaChi,SDT) VALUES ('{0}', '{1}', N'{2}', '{3}')", id,dob,addr,phone);
             result += DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -80,7 +71,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         {
             string query = string.Format("UPDATE dbo.NguoiDung SET Hoten = N'{0}', VaiTro = {1}, MatKhau = '{2}' WHERE MaNguoiDung = '{3}'", name, role, pass, id);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
-            query = string.Format("UPDATE dbo.KhachHang SET NgaySinh = '{0}', DiaChi = N'{1}', SDT = '{2}' WHERE MaKH = '{3}'", name, role, pass, id);
+            query = string.Format("UPDATE dbo.KhachHang SET NgaySinh = '{0}', DiaChi = N'{1}', SDT = '{2}' WHERE MaKH = '{3}'", dob, addr, phone, id);
             result += DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

@@ -240,6 +240,7 @@
             but_Add_cus.TabStop = false;
             but_Add_cus.Text = "Thêm";
             but_Add_cus.UseVisualStyleBackColor = false;
+            but_Add_cus.Click += but_Add_cus_Click;
             // 
             // but_del_cus
             // 
@@ -411,6 +412,7 @@
             but_Seen_cus.TabStop = false;
             but_Seen_cus.Text = "Xem tất cả";
             but_Seen_cus.UseVisualStyleBackColor = false;
+            but_Seen_cus.Click += but_Seen_cus_Click;
             // 
             // but_find_cus
             // 
@@ -424,6 +426,7 @@
             but_find_cus.TabStop = false;
             but_find_cus.Text = "Tìm kiếm";
             but_find_cus.UseVisualStyleBackColor = false;
+            but_find_cus.Click += but_find_cus_Click;
             // 
             // text_name_cli_cus
             // 
@@ -485,6 +488,7 @@
             but_find_den.TabStop = false;
             but_find_den.Text = "Tìm kiếm";
             but_find_den.UseVisualStyleBackColor = false;
+            but_find_den.Click += but_find_den_Click;
             // 
             // text_name_cli_den
             // 
@@ -737,6 +741,7 @@
             but_find_sta.TabStop = false;
             but_find_sta.Text = "Tìm kiếm";
             but_find_sta.UseVisualStyleBackColor = false;
+            but_find_sta.Click += but_find_sta_Click;
             // 
             // text_name_cli_sta
             // 

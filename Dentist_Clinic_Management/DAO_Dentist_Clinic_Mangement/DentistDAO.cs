@@ -31,13 +31,17 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
             }
             return list;
         }
-        public DataTable GetListDate()
+        public List<DentistDTO> SearchDentist(string name)
         {
-            return DataProvider.Instance.ExecuteQuery("exec USP_Dentist");
-        }
-        public DataTable GetDayWork2(DateTime day, string ma)
-        {
-            return DataProvider.Instance.ExecuteQuery("exec USP_DateWork2 @date , @maNS", new object[] {day, ma});
+            List<DentistDTO> list = new List<DentistDTO>();
+            string query = string.Format("select * from NguoiDung, NhaSi where NhaSi.MaNS = NguoiDung.MaNguoiDung and NguoiDung.HoTen like N'%{0}%'", name);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow dr in data.Rows)
+            {
+                DentistDTO dentist = new DentistDTO(dr);
+                list.Add(dentist);
+            }
+            return list;
         }
     }
 
