@@ -1,4 +1,5 @@
-﻿using Dentist_Clinic_Management.Users;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using Dentist_Clinic_Management.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace Dentist_Clinic_Management.HomePage
         public Homepage_Admin()
         {
             InitializeComponent();
+            tex_role.Text = AccountDAO.Instance.GetOtherName(AccountDAO.Instance.ID);
         }
 
 
@@ -39,6 +41,21 @@ namespace Dentist_Clinic_Management.HomePage
         {
             AccountAdmin accountAdmin = new AccountAdmin();
             accountAdmin.ShowDialog();
+        }
+
+        private void tex_role_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pic_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
