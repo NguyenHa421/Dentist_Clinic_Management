@@ -32,6 +32,7 @@
             panel1 = new Panel();
             main_panel = new Panel();
             pan_menu = new Panel();
+            but_account = new Button();
             but_medicine = new Button();
             tex_role = new TextBox();
             bt_accountmanager = new Button();
@@ -42,7 +43,6 @@
             pic_logo = new PictureBox();
             but_exit = new Button();
             pic_exit = new PictureBox();
-            but_account = new Button();
             panel1.SuspendLayout();
             main_panel.SuspendLayout();
             pan_menu.SuspendLayout();
@@ -84,13 +84,28 @@
             pan_menu.Size = new Size(271, 535);
             pan_menu.TabIndex = 10;
             // 
+            // but_account
+            // 
+            but_account.BackColor = Color.FromArgb(191, 215, 251);
+            but_account.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
+            but_account.FlatStyle = FlatStyle.Flat;
+            but_account.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            but_account.Location = new Point(22, 440);
+            but_account.Name = "but_account";
+            but_account.Size = new Size(235, 47);
+            but_account.TabIndex = 8;
+            but_account.TabStop = false;
+            but_account.Text = "Thông tin tài khoản";
+            but_account.UseVisualStyleBackColor = false;
+            but_account.Click += but_account_Click;
+            // 
             // but_medicine
             // 
             but_medicine.BackColor = Color.FromArgb(191, 215, 251);
             but_medicine.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             but_medicine.FlatStyle = FlatStyle.Flat;
             but_medicine.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_medicine.Location = new Point(22, 320);
+            but_medicine.Location = new Point(22, 352);
             but_medicine.Name = "but_medicine";
             but_medicine.Size = new Size(235, 47);
             but_medicine.TabIndex = 8;
@@ -105,14 +120,14 @@
             tex_role.BorderStyle = BorderStyle.None;
             tex_role.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tex_role.ForeColor = Color.White;
-            tex_role.Location = new Point(47, 189);
+            tex_role.Location = new Point(22, 194);
             tex_role.Name = "tex_role";
             tex_role.ReadOnly = true;
-            tex_role.Size = new Size(158, 31);
+            tex_role.Size = new Size(235, 31);
             tex_role.TabIndex = 0;
             tex_role.TabStop = false;
-            tex_role.Text = "Admin";
             tex_role.TextAlign = HorizontalAlignment.Center;
+            tex_role.TextChanged += tex_role_TextChanged;
             // 
             // bt_accountmanager
             // 
@@ -204,6 +219,7 @@
             but_exit.TabStop = false;
             but_exit.Text = "Đăng xuất";
             but_exit.UseVisualStyleBackColor = false;
+            but_exit.Click += but_exit_Click;
             // 
             // pic_exit
             // 
@@ -214,21 +230,7 @@
             pic_exit.SizeMode = PictureBoxSizeMode.Zoom;
             pic_exit.TabIndex = 5;
             pic_exit.TabStop = false;
-            // 
-            // but_account
-            // 
-            but_account.BackColor = Color.FromArgb(191, 215, 251);
-            but_account.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
-            but_account.FlatStyle = FlatStyle.Flat;
-            but_account.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_account.Location = new Point(22, 373);
-            but_account.Name = "but_account";
-            but_account.Size = new Size(235, 47);
-            but_account.TabIndex = 8;
-            but_account.TabStop = false;
-            but_account.Text = "Thông tin tài khoản";
-            but_account.UseVisualStyleBackColor = false;
-            but_account.Click += but_account_Click;
+            pic_exit.Click += pic_exit_Click;
             // 
             // Homepage_Admin
             // 
