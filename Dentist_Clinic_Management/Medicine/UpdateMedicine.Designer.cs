@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             main_panel = new Panel();
-            but_Seen = new Button();
-            pic_Back = new PictureBox();
-            data_list_medi = new DataGridView();
-            lab_main = new Label();
             panel2 = new Panel();
             tb_expired = new DateTimePicker();
             lab_expired = new Label();
@@ -49,10 +45,14 @@
             lab_cost = new Label();
             lab_name = new Label();
             lab_id = new Label();
+            but_Seen = new Button();
+            pic_Back = new PictureBox();
+            data_list_medi = new DataGridView();
+            lab_main = new Label();
             main_panel.SuspendLayout();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pic_Back).BeginInit();
             ((System.ComponentModel.ISupportInitialize)data_list_medi).BeginInit();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // main_panel
@@ -67,51 +67,6 @@
             main_panel.Name = "main_panel";
             main_panel.Size = new Size(1124, 643);
             main_panel.TabIndex = 12;
-            // 
-            // but_Seen
-            // 
-            but_Seen.BackColor = Color.FromArgb(7, 47, 128);
-            but_Seen.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_Seen.ForeColor = Color.White;
-            but_Seen.Location = new Point(334, 584);
-            but_Seen.Name = "but_Seen";
-            but_Seen.Size = new Size(173, 53);
-            but_Seen.TabIndex = 22;
-            but_Seen.TabStop = false;
-            but_Seen.Text = "Xem tất cả";
-            but_Seen.UseVisualStyleBackColor = false;
-            // 
-            // pic_Back
-            // 
-            pic_Back.BackColor = SystemColors.Control;
-            pic_Back.Image = Properties.Resources.previous;
-            pic_Back.Location = new Point(17, 3);
-            pic_Back.Name = "pic_Back";
-            pic_Back.Size = new Size(50, 48);
-            pic_Back.SizeMode = PictureBoxSizeMode.Zoom;
-            pic_Back.TabIndex = 10;
-            pic_Back.TabStop = false;
-            // 
-            // data_list_medi
-            // 
-            data_list_medi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            data_list_medi.Location = new Point(17, 115);
-            data_list_medi.Name = "data_list_medi";
-            data_list_medi.RowHeadersWidth = 51;
-            data_list_medi.RowTemplate.Height = 29;
-            data_list_medi.Size = new Size(490, 463);
-            data_list_medi.TabIndex = 21;
-            // 
-            // lab_main
-            // 
-            lab_main.AutoSize = true;
-            lab_main.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lab_main.ForeColor = Color.FromArgb(7, 47, 128);
-            lab_main.Location = new Point(334, 3);
-            lab_main.Name = "lab_main";
-            lab_main.Size = new Size(484, 38);
-            lab_main.TabIndex = 6;
-            lab_main.Text = "Quản lý danh sách thuốc - Cập nhật";
             // 
             // panel2
             // 
@@ -286,6 +241,52 @@
             lab_id.TabIndex = 0;
             lab_id.Text = "Mã thuốc";
             // 
+            // but_Seen
+            // 
+            but_Seen.BackColor = Color.FromArgb(7, 47, 128);
+            but_Seen.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            but_Seen.ForeColor = Color.White;
+            but_Seen.Location = new Point(334, 584);
+            but_Seen.Name = "but_Seen";
+            but_Seen.Size = new Size(173, 53);
+            but_Seen.TabIndex = 22;
+            but_Seen.TabStop = false;
+            but_Seen.Text = "Xem tất cả";
+            but_Seen.UseVisualStyleBackColor = false;
+            // 
+            // pic_Back
+            // 
+            pic_Back.BackColor = SystemColors.Control;
+            pic_Back.Image = Properties.Resources.previous;
+            pic_Back.Location = new Point(17, 3);
+            pic_Back.Name = "pic_Back";
+            pic_Back.Size = new Size(50, 48);
+            pic_Back.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_Back.TabIndex = 10;
+            pic_Back.TabStop = false;
+            pic_Back.Click += pic_Back_Click_1;
+            // 
+            // data_list_medi
+            // 
+            data_list_medi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            data_list_medi.Location = new Point(17, 115);
+            data_list_medi.Name = "data_list_medi";
+            data_list_medi.RowHeadersWidth = 51;
+            data_list_medi.RowTemplate.Height = 29;
+            data_list_medi.Size = new Size(490, 463);
+            data_list_medi.TabIndex = 21;
+            // 
+            // lab_main
+            // 
+            lab_main.AutoSize = true;
+            lab_main.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lab_main.ForeColor = Color.FromArgb(7, 47, 128);
+            lab_main.Location = new Point(334, 3);
+            lab_main.Name = "lab_main";
+            lab_main.Size = new Size(484, 38);
+            lab_main.TabIndex = 6;
+            lab_main.Text = "Quản lý danh sách thuốc - Cập nhật";
+            // 
             // UpdateMedicine
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -296,12 +297,13 @@
             Controls.Add(main_panel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "UpdateMedicine";
+            StartPosition = FormStartPosition.CenterScreen;
             main_panel.ResumeLayout(false);
             main_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pic_Back).EndInit();
-            ((System.ComponentModel.ISupportInitialize)data_list_medi).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_Back).EndInit();
+            ((System.ComponentModel.ISupportInitialize)data_list_medi).EndInit();
             ResumeLayout(false);
         }
 
