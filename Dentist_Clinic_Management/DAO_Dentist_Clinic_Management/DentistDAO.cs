@@ -67,6 +67,14 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management
             result += DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
+        public DataTable GetListAppo( DateTime date, string id)
+        {
+            return DataProvider.Instance.ExecuteQuery("exec USP_SeenAppoint @date , @id", new object[] { date , id });
+        }
+        public DataTable GetFullList(string id)
+        {
+            return DataProvider.Instance.ExecuteQuery("exec USP_SeenAppointAll @id", new object[] { id });
+        }
     }
 
 }
