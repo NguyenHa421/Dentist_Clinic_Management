@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
 namespace Dentist_Clinic_Management.HomePage
 {
     public partial class Homepage_Staff : Form
@@ -19,58 +17,44 @@ namespace Dentist_Clinic_Management.HomePage
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private Form currentFormChild;
+        private void OpenChildForm(Form childForm)
         {
-
+            if (currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnShowForm.Controls.Add(childForm);
+            pnShowForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        private void C_bt_ViewProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Staff.Info_Staff());
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void C_bt_AddAppointment_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Staff.Appointment_Staff());
         }
 
-        private void tb_Birth_TextChanged(object sender, EventArgs e)
+        private void C_bt_ViewMedicine_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Staff.ViewMedicine_Staff());
         }
 
-        private void tb_Phone_TextChanged(object sender, EventArgs e)
+        private void C_bt_PatientRecord_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new Staff.PatientRecord_Staff());
         }
-
-        private void tb_Clock_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void C_bt_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void C_pc_Exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void C_bt_View_Click_1(object sender, EventArgs e)
-        {
-            Staff.Info_Staff info_Staff = new Staff.Info_Staff();
-            info_Staff.ShowDialog();
-        }
-
-
-        private void C_bt_Update_Click(object sender, EventArgs e)
-        {
-            Staff.Update_Schedule update_Schedule = new Staff.Update_Schedule();
-            update_Schedule.ShowDialog();
-        }
-
-        private void C_bt_View_Cld_Click(object sender, EventArgs e)
-        {
-            Staff.Payment payment = new Staff.Payment();
-            payment.ShowDialog();
         }
     }
 }

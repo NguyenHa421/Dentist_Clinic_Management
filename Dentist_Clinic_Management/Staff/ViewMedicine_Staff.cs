@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Dentist_Clinic_Management.Staff
 {
-    public partial class Info_Staff : Form
+    public partial class ViewMedicine_Staff : Form
     {
-        public Info_Staff()
+        public ViewMedicine_Staff()
         {
             InitializeComponent();
-        }
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
