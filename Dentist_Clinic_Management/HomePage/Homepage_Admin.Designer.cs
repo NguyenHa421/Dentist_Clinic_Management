@@ -28,33 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            C_pn_header = new Panel();
+            C_bt_Exit = new Button();
+            C_pc_Exit = new PictureBox();
+            C_pn_header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)C_pc_Exit).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1111, 628);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.White;
+            panel1.Location = new Point(12, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1111, 628);
+            panel1.TabIndex = 0;
+            // 
+            // C_pn_header
+            // 
+            C_pn_header.BackColor = Color.FromArgb(8, 48, 107);
+            C_pn_header.Controls.Add(C_bt_Exit);
+            C_pn_header.Controls.Add(C_pc_Exit);
+            C_pn_header.Location = new Point(12, 275);
+            C_pn_header.Name = "C_pn_header";
+            C_pn_header.Size = new Size(1111, 102);
+            C_pn_header.TabIndex = 8;
+            // 
+            // C_bt_Exit
+            // 
+            C_bt_Exit.BackColor = Color.FromArgb(8, 48, 107);
+            C_bt_Exit.FlatAppearance.BorderColor = Color.Navy;
+            C_bt_Exit.FlatStyle = FlatStyle.Flat;
+            C_bt_Exit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            C_bt_Exit.ForeColor = Color.White;
+            C_bt_Exit.Location = new Point(898, 19);
+            C_bt_Exit.Name = "C_bt_Exit";
+            C_bt_Exit.Size = new Size(133, 48);
+            C_bt_Exit.TabIndex = 6;
+            C_bt_Exit.TabStop = false;
+            C_bt_Exit.Text = "Đăng xuất";
+            C_bt_Exit.UseVisualStyleBackColor = false;
+            C_bt_Exit.Click += C_bt_Exit_Click;
+            // 
+            // C_pc_Exit
+            // 
+            C_pc_Exit.Image = Properties.Resources.logout_2;
+            C_pc_Exit.Location = new Point(1037, 19);
+            C_pc_Exit.Name = "C_pc_Exit";
+            C_pc_Exit.Size = new Size(51, 49);
+            C_pc_Exit.SizeMode = PictureBoxSizeMode.Zoom;
+            C_pc_Exit.TabIndex = 5;
+            C_pc_Exit.TabStop = false;
             // 
             // Homepage_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1135, 652);
-            this.ControlBox = false;
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Homepage_Admin";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(255, 255, 128);
+            ClientSize = new Size(1135, 652);
+            ControlBox = false;
+            Controls.Add(C_pn_header);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "Homepage_Admin";
+            C_pn_header.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)C_pc_Exit).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
+        private Panel C_pn_header;
+        private Button C_bt_Exit;
+        private PictureBox C_pc_Exit;
     }
 }
