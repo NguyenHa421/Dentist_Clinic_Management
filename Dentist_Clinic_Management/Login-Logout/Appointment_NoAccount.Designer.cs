@@ -29,553 +29,545 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Appointment_NoAccount));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pc_Lg_Deco1 = new System.Windows.Forms.PictureBox();
-            this.lb_Lg_Info2 = new System.Windows.Forms.Label();
-            this.pn_Hp_Register = new System.Windows.Forms.Panel();
-            this.lb_rg_phone = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lb_rg_datebirth = new System.Windows.Forms.Label();
-            this.lb_rg_Name = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.tb_birth = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bt_rg_Exit = new System.Windows.Forms.Button();
-            this.pn_rg_Addr = new System.Windows.Forms.Panel();
-            this.pc_Lg_Un = new System.Windows.Forms.PictureBox();
-            this.tb_addr = new System.Windows.Forms.TextBox();
-            this.pn_rg_Name = new System.Windows.Forms.Panel();
-            this.pc_rg_name = new System.Windows.Forms.PictureBox();
-            this.tb_name = new System.Windows.Forms.TextBox();
-            this.pn_rg_Phone = new System.Windows.Forms.Panel();
-            this.pc_Hp_Login_Un = new System.Windows.Forms.PictureBox();
-            this.tb_phone = new System.Windows.Forms.TextBox();
-            this.bt_rg_Register = new System.Windows.Forms.Button();
-            this.tb_Hp_Register = new System.Windows.Forms.Label();
-            this.lb_Lg_Info = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.tb_date = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tb_dentist = new System.Windows.Forms.ComboBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.tb_time = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Lg_Deco1)).BeginInit();
-            this.pn_Hp_Register.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pn_rg_Addr.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Lg_Un)).BeginInit();
-            this.pn_rg_Name.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_rg_name)).BeginInit();
-            this.pn_rg_Phone.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Hp_Login_Un)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            pc_Lg_Deco1 = new PictureBox();
+            lb_Lg_Info2 = new Label();
+            pn_Hp_Register = new Panel();
+            ln_Success = new Label();
+            label50 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            panel4 = new Panel();
+            tb_date = new DateTimePicker();
+            pictureBox3 = new PictureBox();
+            panel2 = new Panel();
+            tb_dentist = new ComboBox();
+            pictureBox4 = new PictureBox();
+            panel5 = new Panel();
+            tb_time = new DateTimePicker();
+            pictureBox5 = new PictureBox();
+            lb_rg_phone = new Label();
+            label1 = new Label();
+            lb_rg_datebirth = new Label();
+            lb_rg_Name = new Label();
+            panel3 = new Panel();
+            tb_birth = new DateTimePicker();
+            pictureBox2 = new PictureBox();
+            bt_rg_Exit = new Button();
+            pn_rg_Addr = new Panel();
+            pc_Lg_Un = new PictureBox();
+            tb_addr = new TextBox();
+            pn_rg_Name = new Panel();
+            pc_rg_name = new PictureBox();
+            tb_name = new TextBox();
+            pn_rg_Phone = new Panel();
+            pc_Hp_Login_Un = new PictureBox();
+            tb_phone = new TextBox();
+            bt_rg_Register = new Button();
+            tb_Hp_Register = new Label();
+            lb_Lg_Info = new Label();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Lg_Deco1).BeginInit();
+            pn_Hp_Register.SuspendLayout();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pn_rg_Addr.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Lg_Un).BeginInit();
+            pn_rg_Name.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_rg_name).BeginInit();
+            pn_rg_Phone.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Hp_Login_Un).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.pc_Lg_Deco1);
-            this.panel1.Controls.Add(this.lb_Lg_Info2);
-            this.panel1.Controls.Add(this.pn_Hp_Register);
-            this.panel1.Controls.Add(this.lb_Lg_Info);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1111, 628);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(pc_Lg_Deco1);
+            panel1.Controls.Add(lb_Lg_Info2);
+            panel1.Controls.Add(pn_Hp_Register);
+            panel1.Controls.Add(lb_Lg_Info);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(12, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1111, 628);
+            panel1.TabIndex = 0;
             // 
             // pc_Lg_Deco1
             // 
-            this.pc_Lg_Deco1.Image = global::Dentist_Clinic_Management.Properties.Resources.Hp_Deco;
-            this.pc_Lg_Deco1.Location = new System.Drawing.Point(0, 0);
-            this.pc_Lg_Deco1.Name = "pc_Lg_Deco1";
-            this.pc_Lg_Deco1.Size = new System.Drawing.Size(121, 126);
-            this.pc_Lg_Deco1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_Lg_Deco1.TabIndex = 19;
-            this.pc_Lg_Deco1.TabStop = false;
+            pc_Lg_Deco1.Image = Properties.Resources.Hp_Deco;
+            pc_Lg_Deco1.Location = new Point(0, 0);
+            pc_Lg_Deco1.Name = "pc_Lg_Deco1";
+            pc_Lg_Deco1.Size = new Size(121, 126);
+            pc_Lg_Deco1.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_Lg_Deco1.TabIndex = 19;
+            pc_Lg_Deco1.TabStop = false;
             // 
             // lb_Lg_Info2
             // 
-            this.lb_Lg_Info2.AutoSize = true;
-            this.lb_Lg_Info2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_Lg_Info2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(56)))), ((int)(((byte)(107)))));
-            this.lb_Lg_Info2.Location = new System.Drawing.Point(166, 51);
-            this.lb_Lg_Info2.Name = "lb_Lg_Info2";
-            this.lb_Lg_Info2.Size = new System.Drawing.Size(163, 45);
-            this.lb_Lg_Info2.TabIndex = 18;
-            this.lb_Lg_Info2.Text = "Nhóm 20";
+            lb_Lg_Info2.AutoSize = true;
+            lb_Lg_Info2.Font = new Font("Segoe UI", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_Lg_Info2.ForeColor = Color.FromArgb(46, 56, 107);
+            lb_Lg_Info2.Location = new Point(166, 51);
+            lb_Lg_Info2.Name = "lb_Lg_Info2";
+            lb_Lg_Info2.Size = new Size(163, 45);
+            lb_Lg_Info2.TabIndex = 18;
+            lb_Lg_Info2.Text = "Nhóm 20";
             // 
             // pn_Hp_Register
             // 
-            this.pn_Hp_Register.Controls.Add(this.label50);
-            this.pn_Hp_Register.Controls.Add(this.label2);
-            this.pn_Hp_Register.Controls.Add(this.label3);
-            this.pn_Hp_Register.Controls.Add(this.panel4);
-            this.pn_Hp_Register.Controls.Add(this.panel2);
-            this.pn_Hp_Register.Controls.Add(this.panel5);
-            this.pn_Hp_Register.Controls.Add(this.lb_rg_phone);
-            this.pn_Hp_Register.Controls.Add(this.label1);
-            this.pn_Hp_Register.Controls.Add(this.lb_rg_datebirth);
-            this.pn_Hp_Register.Controls.Add(this.lb_rg_Name);
-            this.pn_Hp_Register.Controls.Add(this.panel3);
-            this.pn_Hp_Register.Controls.Add(this.bt_rg_Exit);
-            this.pn_Hp_Register.Controls.Add(this.pn_rg_Addr);
-            this.pn_Hp_Register.Controls.Add(this.pn_rg_Name);
-            this.pn_Hp_Register.Controls.Add(this.pn_rg_Phone);
-            this.pn_Hp_Register.Controls.Add(this.bt_rg_Register);
-            this.pn_Hp_Register.Controls.Add(this.tb_Hp_Register);
-            this.pn_Hp_Register.Location = new System.Drawing.Point(511, 77);
-            this.pn_Hp_Register.Name = "pn_Hp_Register";
-            this.pn_Hp_Register.Size = new System.Drawing.Size(597, 548);
-            this.pn_Hp_Register.TabIndex = 2;
+            pn_Hp_Register.Controls.Add(ln_Success);
+            pn_Hp_Register.Controls.Add(label50);
+            pn_Hp_Register.Controls.Add(label2);
+            pn_Hp_Register.Controls.Add(label3);
+            pn_Hp_Register.Controls.Add(panel4);
+            pn_Hp_Register.Controls.Add(panel2);
+            pn_Hp_Register.Controls.Add(panel5);
+            pn_Hp_Register.Controls.Add(lb_rg_phone);
+            pn_Hp_Register.Controls.Add(label1);
+            pn_Hp_Register.Controls.Add(lb_rg_datebirth);
+            pn_Hp_Register.Controls.Add(lb_rg_Name);
+            pn_Hp_Register.Controls.Add(panel3);
+            pn_Hp_Register.Controls.Add(bt_rg_Exit);
+            pn_Hp_Register.Controls.Add(pn_rg_Addr);
+            pn_Hp_Register.Controls.Add(pn_rg_Name);
+            pn_Hp_Register.Controls.Add(pn_rg_Phone);
+            pn_Hp_Register.Controls.Add(bt_rg_Register);
+            pn_Hp_Register.Controls.Add(tb_Hp_Register);
+            pn_Hp_Register.Location = new Point(511, 77);
+            pn_Hp_Register.Name = "pn_Hp_Register";
+            pn_Hp_Register.Size = new Size(597, 548);
+            pn_Hp_Register.TabIndex = 2;
             // 
-            // lb_rg_phone
+            // ln_Success
             // 
-            this.lb_rg_phone.AutoSize = true;
-            this.lb_rg_phone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_phone.Location = new System.Drawing.Point(22, 246);
-            this.lb_rg_phone.Name = "lb_rg_phone";
-            this.lb_rg_phone.Size = new System.Drawing.Size(148, 31);
-            this.lb_rg_phone.TabIndex = 8;
-            this.lb_rg_phone.Text = "Số điện thoại";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(22, 190);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 31);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Địa chỉ";
-            // 
-            // lb_rg_datebirth
-            // 
-            this.lb_rg_datebirth.AutoSize = true;
-            this.lb_rg_datebirth.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_datebirth.Location = new System.Drawing.Point(22, 134);
-            this.lb_rg_datebirth.Name = "lb_rg_datebirth";
-            this.lb_rg_datebirth.Size = new System.Drawing.Size(116, 31);
-            this.lb_rg_datebirth.TabIndex = 4;
-            this.lb_rg_datebirth.Text = "Ngày sinh";
-            // 
-            // lb_rg_Name
-            // 
-            this.lb_rg_Name.AutoSize = true;
-            this.lb_rg_Name.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_Name.Location = new System.Drawing.Point(22, 78);
-            this.lb_rg_Name.Name = "lb_rg_Name";
-            this.lb_rg_Name.Size = new System.Drawing.Size(111, 31);
-            this.lb_rg_Name.TabIndex = 2;
-            this.lb_rg_Name.Text = "Họ và tên";
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.tb_birth);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(176, 125);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(391, 45);
-            this.panel3.TabIndex = 5;
-            // 
-            // tb_birth
-            // 
-            this.tb_birth.CalendarMonthBackground = System.Drawing.Color.White;
-            this.tb_birth.CalendarTitleBackColor = System.Drawing.Color.White;
-            this.tb_birth.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tb_birth.CustomFormat = "dd/MM/yyyy";
-            this.tb_birth.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_birth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.tb_birth.Location = new System.Drawing.Point(56, 3);
-            this.tb_birth.MaxDate = new System.DateTime(2023, 12, 22, 0, 0, 0, 0);
-            this.tb_birth.Name = "tb_birth";
-            this.tb_birth.Size = new System.Drawing.Size(330, 38);
-            this.tb_birth.TabIndex = 0;
-            this.tb_birth.TabStop = false;
-            this.tb_birth.Tag = "";
-            this.tb_birth.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // bt_rg_Exit
-            // 
-            this.bt_rg_Exit.BackColor = System.Drawing.Color.Navy;
-            this.bt_rg_Exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_rg_Exit.ForeColor = System.Drawing.Color.White;
-            this.bt_rg_Exit.Location = new System.Drawing.Point(120, 469);
-            this.bt_rg_Exit.Name = "bt_rg_Exit";
-            this.bt_rg_Exit.Size = new System.Drawing.Size(151, 60);
-            this.bt_rg_Exit.TabIndex = 0;
-            this.bt_rg_Exit.TabStop = false;
-            this.bt_rg_Exit.Text = "Quay lại";
-            this.bt_rg_Exit.UseVisualStyleBackColor = false;
-            this.bt_rg_Exit.Click += new System.EventHandler(this.bt_rg_Exit_Click);
-            // 
-            // pn_rg_Addr
-            // 
-            this.pn_rg_Addr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_rg_Addr.Controls.Add(this.pc_Lg_Un);
-            this.pn_rg_Addr.Controls.Add(this.tb_addr);
-            this.pn_rg_Addr.Location = new System.Drawing.Point(176, 181);
-            this.pn_rg_Addr.Name = "pn_rg_Addr";
-            this.pn_rg_Addr.Size = new System.Drawing.Size(391, 45);
-            this.pn_rg_Addr.TabIndex = 7;
-            // 
-            // pc_Lg_Un
-            // 
-            this.pc_Lg_Un.Image = ((System.Drawing.Image)(resources.GetObject("pc_Lg_Un.Image")));
-            this.pc_Lg_Un.Location = new System.Drawing.Point(4, 3);
-            this.pc_Lg_Un.Name = "pc_Lg_Un";
-            this.pc_Lg_Un.Size = new System.Drawing.Size(46, 36);
-            this.pc_Lg_Un.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_Lg_Un.TabIndex = 9;
-            this.pc_Lg_Un.TabStop = false;
-            // 
-            // tb_addr
-            // 
-            this.tb_addr.BackColor = System.Drawing.Color.White;
-            this.tb_addr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_addr.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_addr.Location = new System.Drawing.Point(55, 3);
-            this.tb_addr.Name = "tb_addr";
-            this.tb_addr.PlaceholderText = "Tỉnh/Thành phố";
-            this.tb_addr.Size = new System.Drawing.Size(333, 31);
-            this.tb_addr.TabIndex = 0;
-            this.tb_addr.TabStop = false;
-            // 
-            // pn_rg_Name
-            // 
-            this.pn_rg_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_rg_Name.Controls.Add(this.pc_rg_name);
-            this.pn_rg_Name.Controls.Add(this.tb_name);
-            this.pn_rg_Name.Location = new System.Drawing.Point(176, 69);
-            this.pn_rg_Name.Name = "pn_rg_Name";
-            this.pn_rg_Name.Size = new System.Drawing.Size(391, 45);
-            this.pn_rg_Name.TabIndex = 3;
-            // 
-            // pc_rg_name
-            // 
-            this.pc_rg_name.Image = global::Dentist_Clinic_Management.Properties.Resources.user;
-            this.pc_rg_name.Location = new System.Drawing.Point(4, 3);
-            this.pc_rg_name.Name = "pc_rg_name";
-            this.pc_rg_name.Size = new System.Drawing.Size(46, 36);
-            this.pc_rg_name.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_rg_name.TabIndex = 9;
-            this.pc_rg_name.TabStop = false;
-            // 
-            // tb_name
-            // 
-            this.tb_name.BackColor = System.Drawing.Color.White;
-            this.tb_name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_name.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_name.Location = new System.Drawing.Point(55, 5);
-            this.tb_name.Name = "tb_name";
-            this.tb_name.PlaceholderText = "Họ và tên";
-            this.tb_name.Size = new System.Drawing.Size(333, 31);
-            this.tb_name.TabIndex = 0;
-            this.tb_name.TabStop = false;
-            // 
-            // pn_rg_Phone
-            // 
-            this.pn_rg_Phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_rg_Phone.Controls.Add(this.pc_Hp_Login_Un);
-            this.pn_rg_Phone.Controls.Add(this.tb_phone);
-            this.pn_rg_Phone.Location = new System.Drawing.Point(176, 237);
-            this.pn_rg_Phone.Name = "pn_rg_Phone";
-            this.pn_rg_Phone.Size = new System.Drawing.Size(391, 45);
-            this.pn_rg_Phone.TabIndex = 9;
-            // 
-            // pc_Hp_Login_Un
-            // 
-            this.pc_Hp_Login_Un.Image = ((System.Drawing.Image)(resources.GetObject("pc_Hp_Login_Un.Image")));
-            this.pc_Hp_Login_Un.Location = new System.Drawing.Point(4, 3);
-            this.pc_Hp_Login_Un.Name = "pc_Hp_Login_Un";
-            this.pc_Hp_Login_Un.Size = new System.Drawing.Size(46, 36);
-            this.pc_Hp_Login_Un.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_Hp_Login_Un.TabIndex = 9;
-            this.pc_Hp_Login_Un.TabStop = false;
-            // 
-            // tb_phone
-            // 
-            this.tb_phone.BackColor = System.Drawing.Color.White;
-            this.tb_phone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tb_phone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_phone.Location = new System.Drawing.Point(55, 3);
-            this.tb_phone.Name = "tb_phone";
-            this.tb_phone.PlaceholderText = "Số điện thoại";
-            this.tb_phone.Size = new System.Drawing.Size(333, 31);
-            this.tb_phone.TabIndex = 0;
-            this.tb_phone.TabStop = false;
-            // 
-            // bt_rg_Register
-            // 
-            this.bt_rg_Register.BackColor = System.Drawing.Color.Navy;
-            this.bt_rg_Register.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_rg_Register.ForeColor = System.Drawing.Color.White;
-            this.bt_rg_Register.Location = new System.Drawing.Point(369, 469);
-            this.bt_rg_Register.Name = "bt_rg_Register";
-            this.bt_rg_Register.Size = new System.Drawing.Size(151, 60);
-            this.bt_rg_Register.TabIndex = 14;
-            this.bt_rg_Register.TabStop = false;
-            this.bt_rg_Register.Text = "Tiếp tục";
-            this.bt_rg_Register.UseVisualStyleBackColor = false;
-            this.bt_rg_Register.Click += new System.EventHandler(this.bt_rg_Register_Click);
-            // 
-            // tb_Hp_Register
-            // 
-            this.tb_Hp_Register.AutoSize = true;
-            this.tb_Hp_Register.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tb_Hp_Register.Location = new System.Drawing.Point(176, 4);
-            this.tb_Hp_Register.Name = "tb_Hp_Register";
-            this.tb_Hp_Register.Size = new System.Drawing.Size(226, 45);
-            this.tb_Hp_Register.TabIndex = 1;
-            this.tb_Hp_Register.Text = "Đặt lịch khám";
-            // 
-            // lb_Lg_Info
-            // 
-            this.lb_Lg_Info.AutoSize = true;
-            this.lb_Lg_Info.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_Lg_Info.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(56)))), ((int)(((byte)(107)))));
-            this.lb_Lg_Info.Location = new System.Drawing.Point(166, 5);
-            this.lb_Lg_Info.Name = "lb_Lg_Info";
-            this.lb_Lg_Info.Size = new System.Drawing.Size(660, 45);
-            this.lb_Lg_Info.TabIndex = 17;
-            this.lb_Lg_Info.Text = "Phòng khám nha khoa Khoa học tự nhiên";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Dentist_Clinic_Management.Properties.Resources.Logo_appoitment1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 129);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(505, 414);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            ln_Success.AutoSize = true;
+            ln_Success.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            ln_Success.Location = new Point(209, 516);
+            ln_Success.Name = "ln_Success";
+            ln_Success.Size = new Size(219, 31);
+            ln_Success.TabIndex = 32;
+            ln_Success.Text = "Đặt lịch thành công.";
+            ln_Success.Visible = false;
             // 
             // label50
             // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label50.Location = new System.Drawing.Point(22, 411);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(78, 31);
-            this.label50.TabIndex = 20;
-            this.label50.Text = "Nha sĩ";
+            label50.AutoSize = true;
+            label50.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label50.Location = new Point(22, 411);
+            label50.Name = "label50";
+            label50.Size = new Size(78, 31);
+            label50.TabIndex = 20;
+            label50.Text = "Nha sĩ";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(22, 301);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 31);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Ngày khám";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(22, 301);
+            label2.Name = "label2";
+            label2.Size = new Size(130, 31);
+            label2.TabIndex = 19;
+            label2.Text = "Ngày khám";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(22, 356);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 31);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Giờ khám";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(22, 356);
+            label3.Name = "label3";
+            label3.Size = new Size(112, 31);
+            label3.TabIndex = 18;
+            label3.Text = "Giờ khám";
             // 
             // panel4
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.tb_date);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Location = new System.Drawing.Point(176, 292);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(391, 45);
-            this.panel4.TabIndex = 15;
+            panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(tb_date);
+            panel4.Controls.Add(pictureBox3);
+            panel4.Location = new Point(176, 292);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(391, 45);
+            panel4.TabIndex = 15;
             // 
             // tb_date
             // 
-            this.tb_date.CalendarForeColor = System.Drawing.Color.White;
-            this.tb_date.CalendarMonthBackground = System.Drawing.Color.White;
-            this.tb_date.CalendarTitleBackColor = System.Drawing.Color.White;
-            this.tb_date.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.tb_date.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.tb_date.CustomFormat = "dd/MM/yyyy";
-            this.tb_date.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.tb_date.Location = new System.Drawing.Point(56, 2);
-            this.tb_date.MinDate = new System.DateTime(2023, 12, 21, 0, 0, 0, 0);
-            this.tb_date.Name = "tb_date";
-            this.tb_date.Size = new System.Drawing.Size(330, 38);
-            this.tb_date.TabIndex = 0;
-            this.tb_date.TabStop = false;
-            this.tb_date.Tag = "";
-            this.tb_date.Value = new System.DateTime(2023, 12, 21, 0, 0, 0, 0);
+            tb_date.CalendarForeColor = Color.White;
+            tb_date.CalendarMonthBackground = Color.White;
+            tb_date.CalendarTitleBackColor = Color.White;
+            tb_date.CalendarTitleForeColor = Color.White;
+            tb_date.CalendarTrailingForeColor = Color.White;
+            tb_date.CustomFormat = "dd/MM/yyyy";
+            tb_date.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_date.Format = DateTimePickerFormat.Custom;
+            tb_date.Location = new Point(56, 2);
+            tb_date.MinDate = new DateTime(2023, 12, 21, 0, 0, 0, 0);
+            tb_date.Name = "tb_date";
+            tb_date.Size = new Size(330, 38);
+            tb_date.TabIndex = 0;
+            tb_date.TabStop = false;
+            tb_date.Tag = "";
+            tb_date.Value = new DateTime(2023, 12, 21, 0, 0, 0, 0);
+            tb_date.ValueChanged += tb_date_ValueChanged;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Dentist_Clinic_Management.Properties.Resources.calendar__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(46, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = Properties.Resources.calendar__2_;
+            pictureBox3.Location = new Point(4, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(46, 36);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 9;
+            pictureBox3.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.tb_dentist);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Location = new System.Drawing.Point(176, 402);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(391, 45);
-            this.panel2.TabIndex = 17;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(tb_dentist);
+            panel2.Controls.Add(pictureBox4);
+            panel2.Location = new Point(176, 402);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(391, 45);
+            panel2.TabIndex = 17;
             // 
             // tb_dentist
             // 
-            this.tb_dentist.BackColor = System.Drawing.Color.White;
-            this.tb_dentist.DropDownHeight = 125;
-            this.tb_dentist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tb_dentist.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_dentist.IntegralHeight = false;
-            this.tb_dentist.Items.AddRange(new object[] {
-            "Trần Huỳnh",
-            "Lê Bích Trâm",
-            "Phan Nhã Tiền",
-            "Nguyễn Văn An",
-            "Trần Thị Bích",
-            "Lê Hoàng Cẩm",
-            "Phạm Duy Diễm",
-            "Hồ Thị Hằng",
-            "Nguyễn Thị Kiều",
-            "Lê Anh Dũng",
-            "Đỗ Thị Mai",
-            "Nguyễn Thị Mỹ",
-            "Nguyễn Quang Nam",
-            "Vũ Thị Ngọc",
-            "Trần Thị Oanh",
-            "Nguyễn Văn Phước",
-            "Nguyễn Thị Quỳnh",
-            "Phạm Thị Trang",
-            "Nguyễn Văn Tuấn",
-            "Nguyễn Thị Vân",
-            "Lê Thị Yến"});
-            this.tb_dentist.Location = new System.Drawing.Point(54, 2);
-            this.tb_dentist.Name = "tb_dentist";
-            this.tb_dentist.Size = new System.Drawing.Size(331, 39);
-            this.tb_dentist.TabIndex = 15;
-            this.tb_dentist.TabStop = false;
+            tb_dentist.BackColor = Color.White;
+            tb_dentist.DropDownHeight = 125;
+            tb_dentist.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_dentist.IntegralHeight = false;
+            tb_dentist.Items.AddRange(new object[] { "Trần Huỳnh", "Lê Bích Trâm", "Phan Nhã Tiền", "Nguyễn Văn An", "Trần Thị Bích", "Lê Hoàng Cẩm", "Phạm Duy Diễm", "Hồ Thị Hằng", "Nguyễn Thị Kiều", "Lê Anh Dũng", "Đỗ Thị Mai", "Nguyễn Thị Mỹ", "Nguyễn Quang Nam", "Vũ Thị Ngọc", "Trần Thị Oanh", "Nguyễn Văn Phước", "Nguyễn Thị Quỳnh", "Phạm Thị Trang", "Nguyễn Văn Tuấn", "Nguyễn Thị Vân", "Lê Thị Yến" });
+            tb_dentist.Location = new Point(54, 2);
+            tb_dentist.Name = "tb_dentist";
+            tb_dentist.Size = new Size(331, 39);
+            tb_dentist.TabIndex = 15;
+            tb_dentist.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::Dentist_Clinic_Management.Properties.Resources.doctor;
-            this.pictureBox4.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(46, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            pictureBox4.Image = Properties.Resources.doctor;
+            pictureBox4.Location = new Point(4, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(46, 36);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 9;
+            pictureBox4.TabStop = false;
             // 
             // panel5
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.tb_time);
-            this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(176, 347);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(391, 45);
-            this.panel5.TabIndex = 16;
+            panel5.BorderStyle = BorderStyle.FixedSingle;
+            panel5.Controls.Add(tb_time);
+            panel5.Controls.Add(pictureBox5);
+            panel5.Location = new Point(176, 347);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(391, 45);
+            panel5.TabIndex = 16;
             // 
             // tb_time
             // 
-            this.tb_time.CalendarForeColor = System.Drawing.Color.White;
-            this.tb_time.CalendarMonthBackground = System.Drawing.Color.White;
-            this.tb_time.CalendarTitleBackColor = System.Drawing.Color.White;
-            this.tb_time.CalendarTitleForeColor = System.Drawing.Color.White;
-            this.tb_time.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.tb_time.CustomFormat = "HH:mm";
-            this.tb_time.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.tb_time.Location = new System.Drawing.Point(55, 2);
-            this.tb_time.Name = "tb_time";
-            this.tb_time.ShowUpDown = true;
-            this.tb_time.Size = new System.Drawing.Size(331, 38);
-            this.tb_time.TabIndex = 17;
-            this.tb_time.TabStop = false;
-            this.tb_time.Value = new System.DateTime(2023, 12, 21, 7, 0, 0, 0);
+            tb_time.CalendarForeColor = Color.White;
+            tb_time.CalendarMonthBackground = Color.White;
+            tb_time.CalendarTitleBackColor = Color.White;
+            tb_time.CalendarTitleForeColor = Color.White;
+            tb_time.CalendarTrailingForeColor = Color.White;
+            tb_time.CustomFormat = "HH:mm";
+            tb_time.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_time.Format = DateTimePickerFormat.Custom;
+            tb_time.Location = new Point(55, 2);
+            tb_time.Name = "tb_time";
+            tb_time.ShowUpDown = true;
+            tb_time.Size = new Size(331, 38);
+            tb_time.TabIndex = 17;
+            tb_time.TabStop = false;
+            tb_time.Value = new DateTime(2023, 12, 21, 7, 0, 0, 0);
+            tb_time.ValueChanged += tb_time_ValueChanged;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::Dentist_Clinic_Management.Properties.Resources.clock__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(46, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
+            pictureBox5.Image = Properties.Resources.clock__1_;
+            pictureBox5.Location = new Point(4, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(46, 36);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 9;
+            pictureBox5.TabStop = false;
+            // 
+            // lb_rg_phone
+            // 
+            lb_rg_phone.AutoSize = true;
+            lb_rg_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_phone.Location = new Point(22, 246);
+            lb_rg_phone.Name = "lb_rg_phone";
+            lb_rg_phone.Size = new Size(148, 31);
+            lb_rg_phone.TabIndex = 8;
+            lb_rg_phone.Text = "Số điện thoại";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(22, 190);
+            label1.Name = "label1";
+            label1.Size = new Size(84, 31);
+            label1.TabIndex = 6;
+            label1.Text = "Địa chỉ";
+            // 
+            // lb_rg_datebirth
+            // 
+            lb_rg_datebirth.AutoSize = true;
+            lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_datebirth.Location = new Point(22, 134);
+            lb_rg_datebirth.Name = "lb_rg_datebirth";
+            lb_rg_datebirth.Size = new Size(116, 31);
+            lb_rg_datebirth.TabIndex = 4;
+            lb_rg_datebirth.Text = "Ngày sinh";
+            // 
+            // lb_rg_Name
+            // 
+            lb_rg_Name.AutoSize = true;
+            lb_rg_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_Name.Location = new Point(22, 78);
+            lb_rg_Name.Name = "lb_rg_Name";
+            lb_rg_Name.Size = new Size(111, 31);
+            lb_rg_Name.TabIndex = 2;
+            lb_rg_Name.Text = "Họ và tên";
+            // 
+            // panel3
+            // 
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(tb_birth);
+            panel3.Controls.Add(pictureBox2);
+            panel3.Location = new Point(176, 125);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(391, 45);
+            panel3.TabIndex = 5;
+            // 
+            // tb_birth
+            // 
+            tb_birth.CalendarMonthBackground = Color.White;
+            tb_birth.CalendarTitleBackColor = Color.White;
+            tb_birth.CalendarTrailingForeColor = Color.FromArgb(192, 255, 255);
+            tb_birth.CustomFormat = "dd/MM/yyyy";
+            tb_birth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_birth.Format = DateTimePickerFormat.Custom;
+            tb_birth.Location = new Point(56, 3);
+            tb_birth.MaxDate = new DateTime(2023, 12, 22, 0, 0, 0, 0);
+            tb_birth.Name = "tb_birth";
+            tb_birth.Size = new Size(330, 38);
+            tb_birth.TabIndex = 0;
+            tb_birth.TabStop = false;
+            tb_birth.Tag = "";
+            tb_birth.Value = new DateTime(2000, 1, 1, 0, 0, 0, 0);
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(4, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(46, 36);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
+            // 
+            // bt_rg_Exit
+            // 
+            bt_rg_Exit.BackColor = Color.Navy;
+            bt_rg_Exit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            bt_rg_Exit.ForeColor = Color.White;
+            bt_rg_Exit.Location = new Point(129, 453);
+            bt_rg_Exit.Name = "bt_rg_Exit";
+            bt_rg_Exit.Size = new Size(151, 60);
+            bt_rg_Exit.TabIndex = 0;
+            bt_rg_Exit.TabStop = false;
+            bt_rg_Exit.Text = "Quay lại";
+            bt_rg_Exit.UseVisualStyleBackColor = false;
+            bt_rg_Exit.Click += bt_rg_Exit_Click;
+            // 
+            // pn_rg_Addr
+            // 
+            pn_rg_Addr.BorderStyle = BorderStyle.FixedSingle;
+            pn_rg_Addr.Controls.Add(pc_Lg_Un);
+            pn_rg_Addr.Controls.Add(tb_addr);
+            pn_rg_Addr.Location = new Point(176, 181);
+            pn_rg_Addr.Name = "pn_rg_Addr";
+            pn_rg_Addr.Size = new Size(391, 45);
+            pn_rg_Addr.TabIndex = 7;
+            // 
+            // pc_Lg_Un
+            // 
+            pc_Lg_Un.Image = (Image)resources.GetObject("pc_Lg_Un.Image");
+            pc_Lg_Un.Location = new Point(4, 3);
+            pc_Lg_Un.Name = "pc_Lg_Un";
+            pc_Lg_Un.Size = new Size(46, 36);
+            pc_Lg_Un.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_Lg_Un.TabIndex = 9;
+            pc_Lg_Un.TabStop = false;
+            // 
+            // tb_addr
+            // 
+            tb_addr.BackColor = Color.White;
+            tb_addr.BorderStyle = BorderStyle.None;
+            tb_addr.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_addr.Location = new Point(55, 3);
+            tb_addr.Name = "tb_addr";
+            tb_addr.PlaceholderText = "Tỉnh/Thành phố";
+            tb_addr.Size = new Size(333, 31);
+            tb_addr.TabIndex = 0;
+            tb_addr.TabStop = false;
+            // 
+            // pn_rg_Name
+            // 
+            pn_rg_Name.BorderStyle = BorderStyle.FixedSingle;
+            pn_rg_Name.Controls.Add(pc_rg_name);
+            pn_rg_Name.Controls.Add(tb_name);
+            pn_rg_Name.Location = new Point(176, 69);
+            pn_rg_Name.Name = "pn_rg_Name";
+            pn_rg_Name.Size = new Size(391, 45);
+            pn_rg_Name.TabIndex = 3;
+            // 
+            // pc_rg_name
+            // 
+            pc_rg_name.Image = Properties.Resources.user;
+            pc_rg_name.Location = new Point(4, 3);
+            pc_rg_name.Name = "pc_rg_name";
+            pc_rg_name.Size = new Size(46, 36);
+            pc_rg_name.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_rg_name.TabIndex = 9;
+            pc_rg_name.TabStop = false;
+            // 
+            // tb_name
+            // 
+            tb_name.BackColor = Color.White;
+            tb_name.BorderStyle = BorderStyle.None;
+            tb_name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_name.Location = new Point(55, 5);
+            tb_name.Name = "tb_name";
+            tb_name.PlaceholderText = "Họ và tên";
+            tb_name.Size = new Size(333, 31);
+            tb_name.TabIndex = 0;
+            tb_name.TabStop = false;
+            // 
+            // pn_rg_Phone
+            // 
+            pn_rg_Phone.BorderStyle = BorderStyle.FixedSingle;
+            pn_rg_Phone.Controls.Add(pc_Hp_Login_Un);
+            pn_rg_Phone.Controls.Add(tb_phone);
+            pn_rg_Phone.Location = new Point(176, 237);
+            pn_rg_Phone.Name = "pn_rg_Phone";
+            pn_rg_Phone.Size = new Size(391, 45);
+            pn_rg_Phone.TabIndex = 9;
+            // 
+            // pc_Hp_Login_Un
+            // 
+            pc_Hp_Login_Un.Image = (Image)resources.GetObject("pc_Hp_Login_Un.Image");
+            pc_Hp_Login_Un.Location = new Point(4, 3);
+            pc_Hp_Login_Un.Name = "pc_Hp_Login_Un";
+            pc_Hp_Login_Un.Size = new Size(46, 36);
+            pc_Hp_Login_Un.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_Hp_Login_Un.TabIndex = 9;
+            pc_Hp_Login_Un.TabStop = false;
+            // 
+            // tb_phone
+            // 
+            tb_phone.BackColor = Color.White;
+            tb_phone.BorderStyle = BorderStyle.None;
+            tb_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_phone.Location = new Point(55, 3);
+            tb_phone.Name = "tb_phone";
+            tb_phone.PlaceholderText = "Số điện thoại";
+            tb_phone.Size = new Size(333, 31);
+            tb_phone.TabIndex = 0;
+            tb_phone.TabStop = false;
+            // 
+            // bt_rg_Register
+            // 
+            bt_rg_Register.BackColor = Color.Navy;
+            bt_rg_Register.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            bt_rg_Register.ForeColor = Color.White;
+            bt_rg_Register.Location = new Point(378, 453);
+            bt_rg_Register.Name = "bt_rg_Register";
+            bt_rg_Register.Size = new Size(151, 60);
+            bt_rg_Register.TabIndex = 14;
+            bt_rg_Register.TabStop = false;
+            bt_rg_Register.Text = "Đặt lịch";
+            bt_rg_Register.UseVisualStyleBackColor = false;
+            bt_rg_Register.Click += bt_rg_Register_Click;
+            // 
+            // tb_Hp_Register
+            // 
+            tb_Hp_Register.AutoSize = true;
+            tb_Hp_Register.Font = new Font("Segoe UI Semibold", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            tb_Hp_Register.Location = new Point(176, 4);
+            tb_Hp_Register.Name = "tb_Hp_Register";
+            tb_Hp_Register.Size = new Size(226, 45);
+            tb_Hp_Register.TabIndex = 1;
+            tb_Hp_Register.Text = "Đặt lịch khám";
+            // 
+            // lb_Lg_Info
+            // 
+            lb_Lg_Info.AutoSize = true;
+            lb_Lg_Info.Font = new Font("Segoe UI", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_Lg_Info.ForeColor = Color.FromArgb(46, 56, 107);
+            lb_Lg_Info.Location = new Point(166, 5);
+            lb_Lg_Info.Name = "lb_Lg_Info";
+            lb_Lg_Info.Size = new Size(660, 45);
+            lb_Lg_Info.TabIndex = 17;
+            lb_Lg_Info.Text = "Phòng khám nha khoa Khoa học tự nhiên";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Logo_appoitment1;
+            pictureBox1.Location = new Point(0, 129);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(505, 414);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Appointment_NoAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1135, 652);
-            this.ControlBox = false;
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Appointment_NoAccount";
-            this.RightToLeftLayout = true;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Lg_Deco1)).EndInit();
-            this.pn_Hp_Register.ResumeLayout(false);
-            this.pn_Hp_Register.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.pn_rg_Addr.ResumeLayout(false);
-            this.pn_rg_Addr.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Lg_Un)).EndInit();
-            this.pn_rg_Name.ResumeLayout(false);
-            this.pn_rg_Name.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_rg_name)).EndInit();
-            this.pn_rg_Phone.ResumeLayout(false);
-            this.pn_rg_Phone.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Hp_Login_Un)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(255, 255, 128);
+            ClientSize = new Size(1135, 652);
+            ControlBox = false;
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "Appointment_NoAccount";
+            RightToLeftLayout = true;
+            StartPosition = FormStartPosition.CenterScreen;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Lg_Deco1).EndInit();
+            pn_Hp_Register.ResumeLayout(false);
+            pn_Hp_Register.PerformLayout();
+            panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            pn_rg_Addr.ResumeLayout(false);
+            pn_rg_Addr.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Lg_Un).EndInit();
+            pn_rg_Name.ResumeLayout(false);
+            pn_rg_Name.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_rg_name).EndInit();
+            pn_rg_Phone.ResumeLayout(false);
+            pn_rg_Phone.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Hp_Login_Un).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -617,5 +609,6 @@
         private Panel panel5;
         private DateTimePicker tb_time;
         private PictureBox pictureBox5;
+        private Label ln_Success;
     }
 }
