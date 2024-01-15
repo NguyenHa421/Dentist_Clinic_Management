@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,46 +34,17 @@ namespace Dentist_Clinic_Management.Login_Logout
 
         private void bt_rg_Register_Click(object sender, EventArgs e)
         {
-            bool Error_Register = false;
-
-            if(tb_rg_Name.Text.Length == 0)
+            string name = tb_rg_Name.Text;
+            DateTime birth = dateTime_rg.Value;
+            string addr = tb_rg_Address.Text;
+            string phone = tb_rg_Phone.Text;
+            string pass = tb_rg_pw.Text;
+            if (tb_rg_pw.Text != tb_rg_pw_ag.Text)
             {
-                Error_Register = true;
-                MessageBox.Show("Vui lòng nhập họ và tên của bạn!", "Thông tin đăng ký không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Warming_Admin.Failed failed = new Warming_Admin.Failed();
+                failed.Show();
             }
-            if(Error_Register == false)
-            {
-                if (tb_rg_Address.Text.Length == 0)
-                {
-                    Error_Register = true;
-                    MessageBox.Show("Vui lòng nhập địa chỉ của bạn!", "Thông tin đăng ký không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if (Error_Register == false)
-            {
-                if (tb_rg_Phone.Text.Length == 0)
-                {
-                    Error_Register = true;
-                    MessageBox.Show("Vui lòng nhập số điện thoại của bạn!", "Thông tin đăng ký không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if (Error_Register == false)
-            {
-                if (tb_rg_pw.Text.Length < 6)
-                {
-                    Error_Register = true;
-                    MessageBox.Show("Mật khẩu phải có tối thiểu 6 ký tự!", "Thông tin đăng ký không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if (Error_Register == false)
-            {
-                if (tb_rg_pw_ag.Text != tb_rg_pw.Text)
-                {
-                    Error_Register = true;
-                    MessageBox.Show("Mật khẩu nhập lại không khớp!", "Thông tin đăng ký không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if (Error_Register == false)
+            else if (AccountDAO.Instance.Insert_Account(name, birth, addr, phone, pass))
             {
                 ln_Rg_Success.Visible = true;
                 bt_rg_Login.Visible = true;
@@ -96,7 +68,7 @@ namespace Dentist_Clinic_Management.Login_Logout
 
         private void pc_Lg_Deco2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void bt_rgr_Login_Click(object sender, EventArgs e)
@@ -105,6 +77,20 @@ namespace Dentist_Clinic_Management.Login_Logout
             this.Hide();
             login.ShowDialog();
             this.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            tb_rg_pw_ag.UseSystemPasswordChar = false;
+            pictureBox4.Visible = true;
+            pictureBox3.Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            tb_rg_pw_ag.UseSystemPasswordChar = true;
+            pictureBox4.Visible = false;
+            pictureBox3.Visible = true;
         }
     }
 }
