@@ -24,7 +24,7 @@ namespace Dentist_Clinic_Management.Login_Logout
         {
             return AccountDAO.Instance.login(user, pass, role);
         }
-        
+
         bool Have_Lock(string user, string pass, string role)
         {
             return AccountDAO.Instance.account_lock(user, pass, role);
@@ -70,14 +70,14 @@ namespace Dentist_Clinic_Management.Login_Logout
             AccountDAO.Instance.Pass = password;
 
             string role = "2";
-            if(role == "2")
+            if (role == "2")
             {
-                if(Have_Lock(username, password, role))
+                if (Have_Lock(username, password, role))
                 {
                     Warming_Admin.Lock_Account lock_ = new Warming_Admin.Lock_Account();
                     lock_.ShowDialog();
                 }
-                else if(Login_Success(username, password, role))
+                else if (Login_Success(username, password, role))
                 {
                     AccountDAO.Instance.ID = username;
                     HomePage.Homepage_Dentist homepage_Dentist = new HomePage.Homepage_Dentist();
@@ -86,9 +86,9 @@ namespace Dentist_Clinic_Management.Login_Logout
                     this.Show();
                 }
                 else role = "1";
-                
+
             }
-            if(role == "1")
+            if (role == "1")
             {
                 if (Have_Lock(username, password, role))
                 {
@@ -108,7 +108,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                     role = "3";
                 }
             }
-            if(role == "3")
+            if (role == "3")
             {
                 if (Have_Lock(username, password, role))
                 {
@@ -117,6 +117,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                 }
                 else if (Login_Success(username, password, role))
                 {
+                    AccountDAO.Instance.ID = ClientDAO.Instance.GetClientID(username, password);
                     ClientDAO.Instance.Phone = username;
                     HomePage.Homepage_Client homepage_Client = new HomePage.Homepage_Client();
                     this.Hide();
@@ -128,7 +129,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                     role = "0";
                 }
             }
-            if(role == "0")
+            if (role == "0")
             {
                 if (Have_Lock(username, password, role))
                 {
@@ -145,7 +146,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                 }
                 else { role = "5"; }
             }
-            if(role == "5")
+            if (role == "5")
             {
                 Warming_Admin.Login_Failed failed = new Warming_Admin.Login_Failed();
                 failed.ShowDialog();
@@ -191,6 +192,11 @@ namespace Dentist_Clinic_Management.Login_Logout
         }
 
         private void pc_Lg_Deco1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_Hp_Login_Username_TextChanged(object sender, EventArgs e)
         {
 
         }
