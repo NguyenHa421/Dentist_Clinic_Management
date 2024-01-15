@@ -1,6 +1,7 @@
 ﻿using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,5 +58,14 @@ namespace Dentist_Clinic_Management.DAO_Dentist_Clinic_Management
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { id , name , birth , sddr , phone , pass });
             return result > 0;
         }
+        public DataTable GetListPat()
+        {
+            return DataProvider.Instance.ExecuteQuery("exec USP_List_Pati");
+        }
+        public DataTable GetListRecL()
+        {
+            return DataProvider.Instance.ExecuteQuery("exec USP_RecordList");
+        }
+        
     }
 }
