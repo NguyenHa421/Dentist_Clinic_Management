@@ -20,6 +20,9 @@
     <Compile Update="Dentist\Info_Dentist.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Dentist\Info_Dentist_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Dentist\Update_Client.cs">
       <SubType>Form</SubType>
     </Compile>

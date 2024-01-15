@@ -157,3 +157,9 @@ C:\Users\Thu Ha\Source\Repos\KamisatoNoel\Dentist_Clinic_Management\Dentist_Clin
 C:\Users\Thu Ha\Source\Repos\KamisatoNoel\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.genruntimeconfig.cache
 C:\Users\Thu Ha\Source\Repos\KamisatoNoel\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\ref\Dentist_Clinic_Management.dll
 C:\Users\Thu Ha\Source\Repos\KamisatoNoel\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.Med_List_Seen.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Dentist.Info_Dentist_Update.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.AppointmentInfo_Staff.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.Appointment_Staff.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.Info_Staff.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.Med_List_Seen.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Staff.PatientRecord_Staff.resources
