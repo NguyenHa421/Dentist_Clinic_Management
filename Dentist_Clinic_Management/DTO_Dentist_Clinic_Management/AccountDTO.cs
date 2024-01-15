@@ -1,8 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Dentist_Clinic_Management.DTO_Dentist_Clinic_Management
 {
@@ -19,6 +21,7 @@ namespace Dentist_Clinic_Management.DTO_Dentist_Clinic_Management
         public string Role { get => _role; set => _role = value; }
         public string Pass { get => _pass; set => _pass = value; }
         public string Lock { get => _lock; set => _lock = value; }
+
 
     }
 }
