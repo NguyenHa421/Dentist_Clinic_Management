@@ -85,5 +85,12 @@ namespace Dentist_Clinic_Management.DAO_Dentist_Clinic_Management
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { name , phone , id3 , book , date , id2 });
             return result > 0;
         }
+        public bool Insert_D_A(string id, DateTime date, string id2, DateTime date2)
+        {
+            string query = "USP_Add_App_Dent @id , @date , @id2 , @date2";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { id , date , id2 , date2 });
+            return result > 0;
+        }
+
     }
 }
