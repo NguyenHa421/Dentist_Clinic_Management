@@ -12,7 +12,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management
     {
         private static DataProvider instance;
 
-        private string connectionStr = "Data Source=MSI;Initial Catalog=QL_PhongKhamNhaKhoa;Integrated Security=True";
+        private string connectionStr = "Data Source=LAPTOP-HEF1BJHQ;Initial Catalog=QL_PhongKhamNhaKhoa;Integrated Security=True";
         public static DataProvider Instance
         {
             get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
