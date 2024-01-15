@@ -207,7 +207,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 127);
-            ClientSize = new Size(1148, 697);
+            ClientSize = new Size(1148, 668);
             ControlBox = false;
             Controls.Add(main_panel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
