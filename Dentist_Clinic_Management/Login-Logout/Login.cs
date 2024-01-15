@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using Dentist_Clinic_Management.DTO_Dentist_Clinic_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +18,16 @@ namespace Dentist_Clinic_Management.Login_Logout
         public Login()
         {
             InitializeComponent();
+        }
+
+        bool Login_Success(string user, string pass, string role)
+        {
+            return AccountDAO.Instance.login(user, pass, role);
+        }
+        
+        bool Have_Lock(string user, string pass, string role)
+        {
+            return AccountDAO.Instance.account_lock(user, pass, role);
         }
 
         private void bt_Close_Click(object sender, EventArgs e)
@@ -51,33 +64,91 @@ namespace Dentist_Clinic_Management.Login_Logout
 
         private void bt_Lg_Login_Click(object sender, EventArgs e)
         {
-            if (tb_Hp_Login_Username.Text == "1")
+            string username = tb_Hp_Login_Username.Text;
+            string password = tb_Hp_Login_Password.Text;
+
+            AccountDAO.Instance.Pass = password;
+
+            string role = "2";
+            if(role == "2")
             {
-                HomePage.Homepage_Dentist homepage_Dentist = new HomePage.Homepage_Dentist();
-                this.Hide();
-                homepage_Dentist.ShowDialog();
-                this.Show();
+                if(Have_Lock(username, password, role))
+                {
+                    Warming_Admin.Lock_Account lock_ = new Warming_Admin.Lock_Account();
+                    lock_.ShowDialog();
+                }
+                else if(Login_Success(username, password, role))
+                {
+                    AccountDAO.Instance.ID = username;
+                    HomePage.Homepage_Dentist homepage_Dentist = new HomePage.Homepage_Dentist();
+                    this.Hide();
+                    homepage_Dentist.ShowDialog();
+                    this.Show();
+                }
+                else role = "1";
+                
             }
-            else if (tb_Hp_Login_Username.Text == "2")
+            if(role == "1")
             {
-                HomePage.Homepage_Staff homepage_Staff = new HomePage.Homepage_Staff();
-                this.Hide();
-                homepage_Staff.ShowDialog();
-                this.Show();
+                if (Have_Lock(username, password, role))
+                {
+                    Warming_Admin.Lock_Account lock_ = new Warming_Admin.Lock_Account();
+                    lock_.ShowDialog();
+                }
+                else if (Login_Success(username, password, role))
+                {
+                    AccountDAO.Instance.ID = username;
+                    HomePage.Homepage_Staff homepage_Staff = new HomePage.Homepage_Staff();
+                    this.Hide();
+                    homepage_Staff.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    role = "3";
+                }
             }
-            else if (tb_Hp_Login_Username.Text == "admin" && tb_Hp_Login_Password.Text == "admin")
+            if(role == "3")
             {
-                HomePage.Homepage_Admin homepage_Admin = new HomePage.Homepage_Admin(); 
-                this.Hide();
-                homepage_Admin.ShowDialog();
-                this.Show();
+                if (Have_Lock(username, password, role))
+                {
+                    Warming_Admin.Lock_Account lock_ = new Warming_Admin.Lock_Account();
+                    lock_.ShowDialog();
+                }
+                else if (Login_Success(username, password, role))
+                {
+                    ClientDAO.Instance.Phone = username;
+                    HomePage.Homepage_Client homepage_Client = new HomePage.Homepage_Client();
+                    this.Hide();
+                    homepage_Client.ShowDialog();
+                    this.Show();
+                }
+                else
+                {
+                    role = "0";
+                }
             }
-            else
+            if(role == "0")
             {
-                HomePage.Homepage_Client homepage_Client = new HomePage.Homepage_Client();
-                this.Hide();
-                homepage_Client.ShowDialog();
-                this.Show();
+                if (Have_Lock(username, password, role))
+                {
+                    Warming_Admin.Lock_Account lock_ = new Warming_Admin.Lock_Account();
+                    lock_.ShowDialog();
+                }
+                else if (Login_Success(username, password, role))
+                {
+                    AccountDAO.Instance.ID = username;
+                    HomePage.Homepage_Admin homepage_Admin = new HomePage.Homepage_Admin();
+                    this.Hide();
+                    homepage_Admin.ShowDialog();
+                    this.Show();
+                }
+                else { role = "5"; }
+            }
+            if(role == "5")
+            {
+                Warming_Admin.Login_Failed failed = new Warming_Admin.Login_Failed();
+                failed.ShowDialog();
             }
         }
 
