@@ -29,287 +29,296 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info_Client));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_Beck = new System.Windows.Forms.Button();
-            this.bt_Ok = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lb_rg_phone = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb_rg_datebirth = new System.Windows.Forms.Label();
-            this.lb_rg_Name = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.tb_Birth = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pn_rg_Addr = new System.Windows.Forms.Panel();
-            this.tb_Address = new System.Windows.Forms.TextBox();
-            this.pc_Lg_Un = new System.Windows.Forms.PictureBox();
-            this.pn_rg_Name = new System.Windows.Forms.Panel();
-            this.tb_Name = new System.Windows.Forms.TextBox();
-            this.pc_rg_name = new System.Windows.Forms.PictureBox();
-            this.pn_rg_Phone = new System.Windows.Forms.Panel();
-            this.tb_Phone = new System.Windows.Forms.TextBox();
-            this.pc_Hp_Login_Un = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.pn_rg_Addr.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Lg_Un)).BeginInit();
-            this.pn_rg_Name.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_rg_name)).BeginInit();
-            this.pn_rg_Phone.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Hp_Login_Un)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            bt_Beck = new Button();
+            bt_Ok = new Button();
+            label1 = new Label();
+            lb_rg_phone = new Label();
+            label2 = new Label();
+            lb_rg_datebirth = new Label();
+            lb_rg_Name = new Label();
+            panel3 = new Panel();
+            tb_Birth = new TextBox();
+            pictureBox2 = new PictureBox();
+            pn_rg_Addr = new Panel();
+            tb_Address = new TextBox();
+            pc_Lg_Un = new PictureBox();
+            pn_rg_Name = new Panel();
+            tb_Name = new TextBox();
+            pc_rg_name = new PictureBox();
+            pn_rg_Phone = new Panel();
+            tb_Phone = new TextBox();
+            pc_Hp_Login_Un = new PictureBox();
+            pictureBox5 = new PictureBox();
+            panel1.SuspendLayout();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pn_rg_Addr.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Lg_Un).BeginInit();
+            pn_rg_Name.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_rg_name).BeginInit();
+            pn_rg_Phone.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Hp_Login_Un).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.bt_Beck);
-            this.panel1.Controls.Add(this.bt_Ok);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lb_rg_phone);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.lb_rg_datebirth);
-            this.panel1.Controls.Add(this.lb_rg_Name);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.pn_rg_Addr);
-            this.panel1.Controls.Add(this.pn_rg_Name);
-            this.panel1.Controls.Add(this.pn_rg_Phone);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1111, 628);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(bt_Beck);
+            panel1.Controls.Add(bt_Ok);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lb_rg_phone);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(lb_rg_datebirth);
+            panel1.Controls.Add(lb_rg_Name);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(pn_rg_Addr);
+            panel1.Controls.Add(pn_rg_Name);
+            panel1.Controls.Add(pn_rg_Phone);
+            panel1.Location = new Point(12, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1111, 628);
+            panel1.TabIndex = 0;
             // 
             // bt_Beck
             // 
-            this.bt_Beck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.bt_Beck.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_Beck.ForeColor = System.Drawing.Color.White;
-            this.bt_Beck.Location = new System.Drawing.Point(70, 348);
-            this.bt_Beck.Name = "bt_Beck";
-            this.bt_Beck.Size = new System.Drawing.Size(151, 60);
-            this.bt_Beck.TabIndex = 28;
-            this.bt_Beck.TabStop = false;
-            this.bt_Beck.Text = "Quay lại";
-            this.bt_Beck.UseVisualStyleBackColor = false;
-            this.bt_Beck.Click += new System.EventHandler(this.bt_Beck_Click);
+            bt_Beck.BackColor = Color.FromArgb(8, 48, 107);
+            bt_Beck.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            bt_Beck.ForeColor = Color.White;
+            bt_Beck.Location = new Point(561, 526);
+            bt_Beck.Name = "bt_Beck";
+            bt_Beck.Size = new Size(151, 60);
+            bt_Beck.TabIndex = 28;
+            bt_Beck.TabStop = false;
+            bt_Beck.Text = "Quay lại";
+            bt_Beck.UseVisualStyleBackColor = false;
+            bt_Beck.Click += bt_Beck_Click;
             // 
             // bt_Ok
             // 
-            this.bt_Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.bt_Ok.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.bt_Ok.ForeColor = System.Drawing.Color.White;
-            this.bt_Ok.Location = new System.Drawing.Point(357, 348);
-            this.bt_Ok.Name = "bt_Ok";
-            this.bt_Ok.Size = new System.Drawing.Size(151, 60);
-            this.bt_Ok.TabIndex = 27;
-            this.bt_Ok.TabStop = false;
-            this.bt_Ok.Text = "Cập nhật";
-            this.bt_Ok.UseVisualStyleBackColor = false;
-            this.bt_Ok.Click += new System.EventHandler(this.bt_Ok_Click);
+            bt_Ok.BackColor = Color.FromArgb(8, 48, 107);
+            bt_Ok.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            bt_Ok.ForeColor = Color.White;
+            bt_Ok.Location = new Point(848, 526);
+            bt_Ok.Name = "bt_Ok";
+            bt_Ok.Size = new Size(151, 60);
+            bt_Ok.TabIndex = 27;
+            bt_Ok.TabStop = false;
+            bt_Ok.Text = "Cập nhật";
+            bt_Ok.UseVisualStyleBackColor = false;
+            bt_Ok.Click += bt_Ok_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.label1.Location = new System.Drawing.Point(172, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 38);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Thông tin cá nhân";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(8, 48, 107);
+            label1.Location = new Point(668, 37);
+            label1.Name = "label1";
+            label1.Size = new Size(255, 38);
+            label1.TabIndex = 26;
+            label1.Text = "Thông tin cá nhân";
             // 
             // lb_rg_phone
             // 
-            this.lb_rg_phone.AutoSize = true;
-            this.lb_rg_phone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_phone.Location = new System.Drawing.Point(22, 281);
-            this.lb_rg_phone.Name = "lb_rg_phone";
-            this.lb_rg_phone.Size = new System.Drawing.Size(148, 31);
-            this.lb_rg_phone.TabIndex = 24;
-            this.lb_rg_phone.Text = "Số điện thoại";
+            lb_rg_phone.AutoSize = true;
+            lb_rg_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_phone.Location = new Point(514, 435);
+            lb_rg_phone.Name = "lb_rg_phone";
+            lb_rg_phone.Size = new Size(148, 31);
+            lb_rg_phone.TabIndex = 24;
+            lb_rg_phone.Text = "Số điện thoại";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(22, 220);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 31);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Địa chỉ";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(514, 337);
+            label2.Name = "label2";
+            label2.Size = new Size(84, 31);
+            label2.TabIndex = 22;
+            label2.Text = "Địa chỉ";
             // 
             // lb_rg_datebirth
             // 
-            this.lb_rg_datebirth.AutoSize = true;
-            this.lb_rg_datebirth.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_datebirth.Location = new System.Drawing.Point(22, 160);
-            this.lb_rg_datebirth.Name = "lb_rg_datebirth";
-            this.lb_rg_datebirth.Size = new System.Drawing.Size(116, 31);
-            this.lb_rg_datebirth.TabIndex = 20;
-            this.lb_rg_datebirth.Text = "Ngày sinh";
+            lb_rg_datebirth.AutoSize = true;
+            lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_datebirth.Location = new Point(514, 231);
+            lb_rg_datebirth.Name = "lb_rg_datebirth";
+            lb_rg_datebirth.Size = new Size(116, 31);
+            lb_rg_datebirth.TabIndex = 20;
+            lb_rg_datebirth.Text = "Ngày sinh";
             // 
             // lb_rg_Name
             // 
-            this.lb_rg_Name.AutoSize = true;
-            this.lb_rg_Name.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_Name.Location = new System.Drawing.Point(22, 103);
-            this.lb_rg_Name.Name = "lb_rg_Name";
-            this.lb_rg_Name.Size = new System.Drawing.Size(111, 31);
-            this.lb_rg_Name.TabIndex = 18;
-            this.lb_rg_Name.Text = "Họ và tên";
+            lb_rg_Name.AutoSize = true;
+            lb_rg_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_Name.Location = new Point(514, 128);
+            lb_rg_Name.Name = "lb_rg_Name";
+            lb_rg_Name.Size = new Size(111, 31);
+            lb_rg_Name.TabIndex = 18;
+            lb_rg_Name.Text = "Họ và tên";
             // 
             // panel3
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.tb_Birth);
-            this.panel3.Controls.Add(this.pictureBox2);
-            this.panel3.Location = new System.Drawing.Point(172, 150);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(391, 45);
-            this.panel3.TabIndex = 21;
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(tb_Birth);
+            panel3.Controls.Add(pictureBox2);
+            panel3.Location = new Point(664, 221);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(391, 45);
+            panel3.TabIndex = 21;
             // 
             // tb_Birth
             // 
-            this.tb_Birth.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Birth.Location = new System.Drawing.Point(54, 2);
-            this.tb_Birth.Name = "tb_Birth";
-            this.tb_Birth.ReadOnly = true;
-            this.tb_Birth.Size = new System.Drawing.Size(331, 38);
-            this.tb_Birth.TabIndex = 13;
-            this.tb_Birth.TabStop = false;
-            this.tb_Birth.Text = "11/08/2003";
+            tb_Birth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Birth.Location = new Point(54, 2);
+            tb_Birth.Name = "tb_Birth";
+            tb_Birth.ReadOnly = true;
+            tb_Birth.Size = new Size(331, 38);
+            tb_Birth.TabIndex = 13;
+            tb_Birth.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(4, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(46, 36);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
             // 
             // pn_rg_Addr
             // 
-            this.pn_rg_Addr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_rg_Addr.Controls.Add(this.tb_Address);
-            this.pn_rg_Addr.Controls.Add(this.pc_Lg_Un);
-            this.pn_rg_Addr.Location = new System.Drawing.Point(172, 210);
-            this.pn_rg_Addr.Name = "pn_rg_Addr";
-            this.pn_rg_Addr.Size = new System.Drawing.Size(391, 45);
-            this.pn_rg_Addr.TabIndex = 23;
+            pn_rg_Addr.BorderStyle = BorderStyle.FixedSingle;
+            pn_rg_Addr.Controls.Add(tb_Address);
+            pn_rg_Addr.Controls.Add(pc_Lg_Un);
+            pn_rg_Addr.Location = new Point(664, 327);
+            pn_rg_Addr.Name = "pn_rg_Addr";
+            pn_rg_Addr.Size = new Size(391, 45);
+            pn_rg_Addr.TabIndex = 23;
             // 
             // tb_Address
             // 
-            this.tb_Address.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Address.Location = new System.Drawing.Point(54, 2);
-            this.tb_Address.Name = "tb_Address";
-            this.tb_Address.ReadOnly = true;
-            this.tb_Address.Size = new System.Drawing.Size(331, 38);
-            this.tb_Address.TabIndex = 12;
-            this.tb_Address.TabStop = false;
-            this.tb_Address.Text = "TP. Hồ Chí Minh";
+            tb_Address.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Address.Location = new Point(54, 2);
+            tb_Address.Name = "tb_Address";
+            tb_Address.ReadOnly = true;
+            tb_Address.Size = new Size(331, 38);
+            tb_Address.TabIndex = 12;
+            tb_Address.TabStop = false;
             // 
             // pc_Lg_Un
             // 
-            this.pc_Lg_Un.Image = ((System.Drawing.Image)(resources.GetObject("pc_Lg_Un.Image")));
-            this.pc_Lg_Un.Location = new System.Drawing.Point(4, 3);
-            this.pc_Lg_Un.Name = "pc_Lg_Un";
-            this.pc_Lg_Un.Size = new System.Drawing.Size(46, 36);
-            this.pc_Lg_Un.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_Lg_Un.TabIndex = 9;
-            this.pc_Lg_Un.TabStop = false;
+            pc_Lg_Un.Image = (Image)resources.GetObject("pc_Lg_Un.Image");
+            pc_Lg_Un.Location = new Point(4, 3);
+            pc_Lg_Un.Name = "pc_Lg_Un";
+            pc_Lg_Un.Size = new Size(46, 36);
+            pc_Lg_Un.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_Lg_Un.TabIndex = 9;
+            pc_Lg_Un.TabStop = false;
             // 
             // pn_rg_Name
             // 
-            this.pn_rg_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_rg_Name.Controls.Add(this.tb_Name);
-            this.pn_rg_Name.Controls.Add(this.pc_rg_name);
-            this.pn_rg_Name.Location = new System.Drawing.Point(172, 93);
-            this.pn_rg_Name.Name = "pn_rg_Name";
-            this.pn_rg_Name.Size = new System.Drawing.Size(391, 45);
-            this.pn_rg_Name.TabIndex = 19;
+            pn_rg_Name.BorderStyle = BorderStyle.FixedSingle;
+            pn_rg_Name.Controls.Add(tb_Name);
+            pn_rg_Name.Controls.Add(pc_rg_name);
+            pn_rg_Name.Location = new Point(664, 118);
+            pn_rg_Name.Name = "pn_rg_Name";
+            pn_rg_Name.Size = new Size(391, 45);
+            pn_rg_Name.TabIndex = 19;
             // 
             // tb_Name
             // 
-            this.tb_Name.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Name.Location = new System.Drawing.Point(54, 2);
-            this.tb_Name.Name = "tb_Name";
-            this.tb_Name.ReadOnly = true;
-            this.tb_Name.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tb_Name.Size = new System.Drawing.Size(331, 38);
-            this.tb_Name.TabIndex = 14;
-            this.tb_Name.TabStop = false;
-            this.tb_Name.Text = "Username";
+            tb_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Name.Location = new Point(54, 2);
+            tb_Name.Name = "tb_Name";
+            tb_Name.ReadOnly = true;
+            tb_Name.RightToLeft = RightToLeft.No;
+            tb_Name.Size = new Size(331, 38);
+            tb_Name.TabIndex = 14;
+            tb_Name.TabStop = false;
             // 
             // pc_rg_name
             // 
-            this.pc_rg_name.Image = global::Dentist_Clinic_Management.Properties.Resources.user;
-            this.pc_rg_name.Location = new System.Drawing.Point(4, 3);
-            this.pc_rg_name.Name = "pc_rg_name";
-            this.pc_rg_name.Size = new System.Drawing.Size(46, 36);
-            this.pc_rg_name.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_rg_name.TabIndex = 9;
-            this.pc_rg_name.TabStop = false;
+            pc_rg_name.Image = Properties.Resources.user;
+            pc_rg_name.Location = new Point(4, 3);
+            pc_rg_name.Name = "pc_rg_name";
+            pc_rg_name.Size = new Size(46, 36);
+            pc_rg_name.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_rg_name.TabIndex = 9;
+            pc_rg_name.TabStop = false;
             // 
             // pn_rg_Phone
             // 
-            this.pn_rg_Phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_rg_Phone.Controls.Add(this.tb_Phone);
-            this.pn_rg_Phone.Controls.Add(this.pc_Hp_Login_Un);
-            this.pn_rg_Phone.Location = new System.Drawing.Point(172, 271);
-            this.pn_rg_Phone.Name = "pn_rg_Phone";
-            this.pn_rg_Phone.Size = new System.Drawing.Size(391, 45);
-            this.pn_rg_Phone.TabIndex = 25;
+            pn_rg_Phone.BorderStyle = BorderStyle.FixedSingle;
+            pn_rg_Phone.Controls.Add(tb_Phone);
+            pn_rg_Phone.Controls.Add(pc_Hp_Login_Un);
+            pn_rg_Phone.Location = new Point(664, 425);
+            pn_rg_Phone.Name = "pn_rg_Phone";
+            pn_rg_Phone.Size = new Size(391, 45);
+            pn_rg_Phone.TabIndex = 25;
             // 
             // tb_Phone
             // 
-            this.tb_Phone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Phone.Location = new System.Drawing.Point(54, 2);
-            this.tb_Phone.Name = "tb_Phone";
-            this.tb_Phone.ReadOnly = true;
-            this.tb_Phone.Size = new System.Drawing.Size(331, 38);
-            this.tb_Phone.TabIndex = 11;
-            this.tb_Phone.TabStop = false;
-            this.tb_Phone.Text = "0952187177";
+            tb_Phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Phone.Location = new Point(54, 2);
+            tb_Phone.Name = "tb_Phone";
+            tb_Phone.ReadOnly = true;
+            tb_Phone.Size = new Size(331, 38);
+            tb_Phone.TabIndex = 11;
+            tb_Phone.TabStop = false;
             // 
             // pc_Hp_Login_Un
             // 
-            this.pc_Hp_Login_Un.Image = ((System.Drawing.Image)(resources.GetObject("pc_Hp_Login_Un.Image")));
-            this.pc_Hp_Login_Un.Location = new System.Drawing.Point(4, 3);
-            this.pc_Hp_Login_Un.Name = "pc_Hp_Login_Un";
-            this.pc_Hp_Login_Un.Size = new System.Drawing.Size(46, 36);
-            this.pc_Hp_Login_Un.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_Hp_Login_Un.TabIndex = 9;
-            this.pc_Hp_Login_Un.TabStop = false;
+            pc_Hp_Login_Un.Image = (Image)resources.GetObject("pc_Hp_Login_Un.Image");
+            pc_Hp_Login_Un.Location = new Point(4, 3);
+            pc_Hp_Login_Un.Name = "pc_Hp_Login_Un";
+            pc_Hp_Login_Un.Size = new Size(46, 36);
+            pc_Hp_Login_Un.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_Hp_Login_Un.TabIndex = 9;
+            pc_Hp_Login_Un.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.User_info_svg;
+            pictureBox5.Location = new Point(15, 80);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(493, 427);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 27;
+            pictureBox5.TabStop = false;
             // 
             // Info_Client
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.ClientSize = new System.Drawing.Size(1135, 652);
-            this.ControlBox = false;
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Info_Client";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.pn_rg_Addr.ResumeLayout(false);
-            this.pn_rg_Addr.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Lg_Un)).EndInit();
-            this.pn_rg_Name.ResumeLayout(false);
-            this.pn_rg_Name.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_rg_name)).EndInit();
-            this.pn_rg_Phone.ResumeLayout(false);
-            this.pn_rg_Phone.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_Hp_Login_Un)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(8, 48, 107);
+            ClientSize = new Size(1135, 652);
+            ControlBox = false;
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "Info_Client";
+            StartPosition = FormStartPosition.CenterScreen;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            pn_rg_Addr.ResumeLayout(false);
+            pn_rg_Addr.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Lg_Un).EndInit();
+            pn_rg_Name.ResumeLayout(false);
+            pn_rg_Name.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_rg_name).EndInit();
+            pn_rg_Phone.ResumeLayout(false);
+            pn_rg_Phone.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_Hp_Login_Un).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -334,5 +343,6 @@
         private Label label1;
         private Button bt_Beck;
         private Button bt_Ok;
+        private PictureBox pictureBox5;
     }
 }
