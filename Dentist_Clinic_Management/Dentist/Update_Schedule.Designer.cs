@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            comboBox1 = new ComboBox();
+            tb_Dentist = new ComboBox();
             button4 = new Button();
             lb_Success2 = new Label();
             button2 = new Button();
@@ -43,8 +45,6 @@
             tb_Choose = new DateTimePicker();
             label5 = new Label();
             label4 = new Label();
-            tb_NameClient = new TextBox();
-            tb_Date = new DateTimePicker();
             lb_Success = new Label();
             label1 = new Label();
             label2 = new Label();
@@ -58,6 +58,8 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(tb_Dentist);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(lb_Success2);
             panel1.Controls.Add(button2);
@@ -72,8 +74,6 @@
             panel1.Controls.Add(tb_Choose);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(tb_NameClient);
-            panel1.Controls.Add(tb_Date);
             panel1.Controls.Add(lb_Success);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
@@ -84,6 +84,29 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1111, 628);
             panel1.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            comboBox1.AllowDrop = true;
+            comboBox1.DropDownHeight = 140;
+            comboBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.IntegralHeight = false;
+            comboBox1.Items.AddRange(new object[] { "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật" });
+            comboBox1.Location = new Point(738, 459);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(332, 39);
+            comboBox1.TabIndex = 122;
+            // 
+            // tb_Dentist
+            // 
+            tb_Dentist.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Dentist.FormattingEnabled = true;
+            tb_Dentist.Items.AddRange(new object[] { "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy", "Chủ nhật" });
+            tb_Dentist.Location = new Point(707, 89);
+            tb_Dentist.Name = "tb_Dentist";
+            tb_Dentist.Size = new Size(363, 39);
+            tb_Dentist.TabIndex = 121;
             // 
             // button4
             // 
@@ -103,7 +126,7 @@
             lb_Success2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_Success2.Location = new Point(707, 590);
             lb_Success2.Name = "lb_Success2";
-            lb_Success2.Size = new Size(237, 25);
+            lb_Success2.Size = new Size(286, 31);
             lb_Success2.TabIndex = 119;
             lb_Success2.Text = "Thêm lịch hẹn thành công!";
             lb_Success2.Visible = false;
@@ -131,7 +154,7 @@
             dateTimePicker4.MaxDate = new DateTime(2999, 12, 31, 0, 0, 0, 0);
             dateTimePicker4.MinDate = new DateTime(2024, 1, 3, 0, 0, 0, 0);
             dateTimePicker4.Name = "dateTimePicker4";
-            dateTimePicker4.Size = new Size(203, 32);
+            dateTimePicker4.Size = new Size(203, 38);
             dateTimePicker4.TabIndex = 116;
             dateTimePicker4.Value = new DateTime(2024, 1, 3, 12, 19, 52, 0);
             // 
@@ -141,7 +164,7 @@
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(39, 92);
             label3.Name = "label3";
-            label3.Size = new Size(118, 25);
+            label3.Size = new Size(141, 31);
             label3.TabIndex = 117;
             label3.Text = "Lịch cá nhân";
             // 
@@ -163,7 +186,7 @@
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
             dateTimePicker3.Location = new Point(974, 156);
             dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(96, 32);
+            dateTimePicker3.Size = new Size(96, 38);
             dateTimePicker3.TabIndex = 113;
             dateTimePicker3.Value = new DateTime(2024, 1, 4, 0, 0, 0, 0);
             // 
@@ -173,7 +196,7 @@
             label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(835, 163);
             label7.Name = "label7";
-            label7.Size = new Size(113, 25);
+            label7.Size = new Size(138, 31);
             label7.TabIndex = 114;
             label7.Text = "Giờ kết thúc";
             // 
@@ -185,7 +208,7 @@
             dateTimePicker2.Format = DateTimePickerFormat.Custom;
             dateTimePicker2.Location = new Point(707, 156);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(96, 32);
+            dateTimePicker2.Size = new Size(96, 38);
             dateTimePicker2.TabIndex = 111;
             dateTimePicker2.Value = new DateTime(2024, 1, 4, 0, 0, 0, 0);
             // 
@@ -195,7 +218,7 @@
             label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(568, 163);
             label6.Name = "label6";
-            label6.Size = new Size(110, 25);
+            label6.Size = new Size(135, 31);
             label6.TabIndex = 112;
             label6.Text = "Giờ bắt đầu";
             // 
@@ -207,7 +230,7 @@
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.Location = new Point(742, 394);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(328, 32);
+            dateTimePicker1.Size = new Size(328, 38);
             dateTimePicker1.TabIndex = 106;
             dateTimePicker1.Value = new DateTime(2024, 1, 4, 0, 0, 0, 0);
             // 
@@ -219,7 +242,7 @@
             tb_Choose.Format = DateTimePickerFormat.Custom;
             tb_Choose.Location = new Point(742, 334);
             tb_Choose.Name = "tb_Choose";
-            tb_Choose.Size = new Size(328, 32);
+            tb_Choose.Size = new Size(328, 38);
             tb_Choose.TabIndex = 106;
             tb_Choose.Value = new DateTime(2024, 1, 4, 0, 0, 0, 0);
             // 
@@ -229,7 +252,7 @@
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(568, 401);
             label5.Name = "label5";
-            label5.Size = new Size(78, 25);
+            label5.Size = new Size(94, 31);
             label5.TabIndex = 110;
             label5.Text = "Giờ hẹn";
             // 
@@ -239,32 +262,9 @@
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(568, 340);
             label4.Name = "label4";
-            label4.Size = new Size(93, 25);
+            label4.Size = new Size(112, 31);
             label4.TabIndex = 108;
             label4.Text = "Ngày hẹn";
-            // 
-            // tb_NameClient
-            // 
-            tb_NameClient.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_NameClient.Location = new Point(742, 460);
-            tb_NameClient.Name = "tb_NameClient";
-            tb_NameClient.Size = new Size(328, 32);
-            tb_NameClient.TabIndex = 107;
-            // 
-            // tb_Date
-            // 
-            tb_Date.CalendarFont = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_Date.CustomFormat = "dd/MM/yyyy";
-            tb_Date.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_Date.Format = DateTimePickerFormat.Custom;
-            tb_Date.Location = new Point(707, 85);
-            tb_Date.MaxDate = new DateTime(2999, 12, 31, 0, 0, 0, 0);
-            tb_Date.MinDate = new DateTime(2024, 1, 3, 0, 0, 0, 0);
-            tb_Date.Name = "tb_Date";
-            tb_Date.Size = new Size(363, 32);
-            tb_Date.TabIndex = 80;
-            tb_Date.Value = new DateTime(2024, 1, 3, 12, 19, 52, 0);
-            tb_Date.ValueChanged += tb_Date_ValueChanged;
             // 
             // lb_Success
             // 
@@ -272,7 +272,7 @@
             lb_Success.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_Success.Location = new Point(738, 280);
             lb_Success.Name = "lb_Success";
-            lb_Success.Size = new Size(194, 25);
+            lb_Success.Size = new Size(235, 31);
             lb_Success.TabIndex = 90;
             lb_Success.Text = "Cập nhật thành công!";
             lb_Success.Visible = false;
@@ -284,7 +284,7 @@
             label1.ForeColor = Color.FromArgb(8, 48, 107);
             label1.Location = new Point(504, 9);
             label1.Name = "label1";
-            label1.Size = new Size(140, 30);
+            label1.Size = new Size(179, 38);
             label1.TabIndex = 89;
             label1.Text = "Lịch cá nhân";
             // 
@@ -294,7 +294,7 @@
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(568, 467);
             label2.Name = "label2";
-            label2.Size = new Size(137, 25);
+            label2.Size = new Size(164, 31);
             label2.TabIndex = 87;
             label2.Text = "Tên bệnh nhân";
             // 
@@ -304,9 +304,9 @@
             lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_rg_datebirth.Location = new Point(568, 91);
             lb_rg_datebirth.Name = "lb_rg_datebirth";
-            lb_rg_datebirth.Size = new Size(56, 25);
+            lb_rg_datebirth.Size = new Size(53, 31);
             lb_rg_datebirth.TabIndex = 86;
-            lb_rg_datebirth.Text = "Ngày";
+            lb_rg_datebirth.Text = "Thứ";
             // 
             // button1
             // 
@@ -336,7 +336,7 @@
             // 
             // Update_Schedule
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(13F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(8, 48, 107);
             ClientSize = new Size(1135, 652);
@@ -356,7 +356,6 @@
         #endregion
 
         private Panel panel1;
-        private DateTimePicker tb_Date;
         private Label lb_Success;
         private Label label1;
         private Label label2;
@@ -364,7 +363,6 @@
         private Button button1;
         private Button button3;
         private Label label4;
-        private TextBox tb_NameClient;
         private DateTimePicker tb_Choose;
         private DateTimePicker dateTimePicker1;
         private Label label5;
@@ -378,5 +376,7 @@
         private Label lb_Success2;
         private Button button2;
         private Button button4;
+        private ComboBox tb_Dentist;
+        private ComboBox comboBox1;
     }
 }
