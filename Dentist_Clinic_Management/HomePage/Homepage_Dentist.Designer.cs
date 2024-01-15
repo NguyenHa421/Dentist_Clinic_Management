@@ -196,9 +196,9 @@
             lb_rg_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_rg_phone.Location = new Point(363, 347);
             lb_rg_phone.Name = "lb_rg_phone";
-            lb_rg_phone.Size = new Size(148, 31);
+            lb_rg_phone.Size = new Size(150, 31);
             lb_rg_phone.TabIndex = 30;
-            lb_rg_phone.Text = "Số điện thoại";
+            lb_rg_phone.Text = "Ngày đặt lịch";
             // 
             // label2
             // 
@@ -206,19 +206,19 @@
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(363, 290);
             label2.Name = "label2";
-            label2.Size = new Size(84, 31);
+            label2.Size = new Size(117, 31);
             label2.TabIndex = 28;
-            label2.Text = "Địa chỉ";
+            label2.Text = "Nhân viên";
             // 
             // lb_rg_datebirth
             // 
             lb_rg_datebirth.AutoSize = true;
             lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_datebirth.Location = new Point(359, 235);
+            lb_rg_datebirth.Location = new Point(361, 235);
             lb_rg_datebirth.Name = "lb_rg_datebirth";
-            lb_rg_datebirth.Size = new Size(116, 31);
+            lb_rg_datebirth.Size = new Size(78, 31);
             lb_rg_datebirth.TabIndex = 26;
-            lb_rg_datebirth.Text = "Ngày sinh";
+            lb_rg_datebirth.Text = "Nha sĩ";
             // 
             // lb_rg_Name
             // 
@@ -254,6 +254,7 @@
             button1.TabStop = false;
             button1.Text = "Xem";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // lb_DateTime
             // 
@@ -345,15 +346,15 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(45, 184);
+            textBox1.Location = new Point(3, 184);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Username";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(158, 27);
+            textBox1.Size = new Size(247, 27);
             textBox1.TabIndex = 0;
             textBox1.TabStop = false;
-            textBox1.Text = "Username";
             textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // C_bt_View
             // 
