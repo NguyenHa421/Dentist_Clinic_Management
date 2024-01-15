@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,10 @@ namespace Dentist_Clinic_Management.Dentist
             InitializeComponent();
         }
 
+        void LoadList()
+        {
+            dataGridView1.DataSource = ClientDAO.Instance.GetListRecL();
+        }
         private void button3_Click_1(object sender, EventArgs e)
         {
             this.Close();
@@ -61,6 +66,11 @@ namespace Dentist_Clinic_Management.Dentist
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
