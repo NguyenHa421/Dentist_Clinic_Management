@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +18,27 @@ namespace Dentist_Clinic_Management.HomePage
             InitializeComponent();
         }
 
-        private void C_bt_Exit_Click(object sender, EventArgs e)
+
+        private void bt_accountmanager_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Users.UserList_Admin user_Records = new Users.UserList_Admin();
+            this.Hide();
+            user_Records.ShowDialog();
+            this.Show();
+        }
+
+        private void but_medicine_Click(object sender, EventArgs e)
+        {
+            Medicine.MedList_Admin patient_Records = new Medicine.MedList_Admin();
+            this.Hide();
+            patient_Records.ShowDialog();
+            this.Show();
+
+        }
+        private void but_account_Click(object sender, EventArgs e)
+        {
+            AccountAdmin accountAdmin = new AccountAdmin();
+            accountAdmin.ShowDialog();
         }
     }
 }

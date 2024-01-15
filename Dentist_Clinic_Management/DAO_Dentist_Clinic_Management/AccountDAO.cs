@@ -1,5 +1,5 @@
 ﻿using Dentist_Clinic_Management.DTO_Dentist_Clinic_Management;
-using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement;
+using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
 
 namespace Dentist_Clinic_Management.DAO_Dentist_Clinic_Management
 {

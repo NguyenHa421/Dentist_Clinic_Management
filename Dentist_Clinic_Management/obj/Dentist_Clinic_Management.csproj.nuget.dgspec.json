@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Tài liệu\\Năm 3 - 1\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj": {}
+    "D:\\Projects\\DBMS\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj": {}
   },
   "projects": {
-    "D:\\Tài liệu\\Năm 3 - 1\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj": {
+    "D:\\Projects\\DBMS\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Tài liệu\\Năm 3 - 1\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj",
+        "projectUniqueName": "D:\\Projects\\DBMS\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj",
         "projectName": "Dentist_Clinic_Management",
-        "projectPath": "D:\\Tài liệu\\Năm 3 - 1\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj",
-        "packagesPath": "C:\\Users\\Thu Ha\\.nuget\\packages\\",
-        "outputPath": "D:\\Tài liệu\\Năm 3 - 1\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\obj\\",
+        "projectPath": "D:\\Projects\\DBMS\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\Dentist_Clinic_Management.csproj",
+        "packagesPath": "C:\\Users\\MSI USER\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\DBMS\\Dentist_Clinic_Management\\Dentist_Clinic_Management\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Thu Ha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -39,13 +39,20 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
