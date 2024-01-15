@@ -1,4 +1,4 @@
-﻿using Dentist_Clinic_Management.DAO;
+﻿using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,10 +20,9 @@ namespace Dentist_Clinic_Management.Dentist
 
         }
 
-
         void Load()
         {
-            dataGridView1.DataSource = DentistDAO.Instance.LoadSchedule();
+
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
