@@ -16,5 +16,10 @@ namespace Dentist_Clinic_Management.HomePage
         {
             InitializeComponent();
         }
+
+        private void C_bt_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
