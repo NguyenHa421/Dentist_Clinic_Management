@@ -84,3 +84,9 @@ D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\n
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.UpdateCustomer.resources
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.UpdateDentist.resources
 D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Users.UpdateStaff.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Warming_Admin.Book_Success.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Warming_Admin.Canceled_Success.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Warming_Admin.Failed.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Warming_Admin.Lock_Account.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Warming_Admin.Login_Failed.resources
+D:\Projects\DBMS\Dentist_Clinic_Management\Dentist_Clinic_Management\obj\Debug\net6.0-windows\Dentist_Clinic_Management.Warming_Admin.Update_Success.resources
