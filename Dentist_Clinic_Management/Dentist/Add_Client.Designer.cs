@@ -50,8 +50,11 @@
             tb_Phone = new TextBox();
             pc_Hp_Login_Un = new PictureBox();
             button1 = new Button();
-            pc_Lg_Deco1 = new PictureBox();
-            picLogo = new PictureBox();
+            button2 = new Button();
+            dataGridView1 = new DataGridView();
+            panel2 = new Panel();
+            textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -61,8 +64,9 @@
             ((System.ComponentModel.ISupportInitialize)pc_rg_name).BeginInit();
             pn_rg_Phone.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pc_Hp_Login_Un).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pc_Lg_Deco1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button3
@@ -70,10 +74,9 @@
             button3.BackColor = Color.FromArgb(8, 48, 107);
             button3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(604, 479);
-            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Location = new Point(554, 538);
             button3.Name = "button3";
-            button3.Size = new Size(156, 45);
+            button3.Size = new Size(178, 60);
             button3.TabIndex = 3;
             button3.Text = "Quay lại";
             button3.UseVisualStyleBackColor = false;
@@ -82,8 +85,9 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(pc_Lg_Deco1);
-            panel1.Controls.Add(picLogo);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(panel2);
             panel1.Controls.Add(lb_Success);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(lb_rg_phone);
@@ -96,19 +100,18 @@
             panel1.Controls.Add(pn_rg_Phone);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(button3);
-            panel1.Location = new Point(10, 9);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1113, 632);
+            panel1.Size = new Size(1111, 628);
             panel1.TabIndex = 4;
             // 
             // lb_Success
             // 
             lb_Success.AutoSize = true;
             lb_Success.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Success.Location = new Point(729, 534);
+            lb_Success.Location = new Point(833, 712);
             lb_Success.Name = "lb_Success";
-            lb_Success.Size = new Size(165, 25);
+            lb_Success.Size = new Size(200, 31);
             lb_Success.TabIndex = 47;
             lb_Success.Text = "Thêm thành công!";
             lb_Success.Visible = false;
@@ -119,9 +122,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(8, 48, 107);
-            label1.Location = new Point(686, 52);
+            label1.Location = new Point(612, 50);
             label1.Name = "label1";
-            label1.Size = new Size(290, 30);
+            label1.Size = new Size(373, 38);
             label1.TabIndex = 46;
             label1.Text = "Thông tin hồ sơ bệnh nhân";
             label1.Click += label1_Click;
@@ -130,9 +133,9 @@
             // 
             lb_rg_phone.AutoSize = true;
             lb_rg_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_phone.Location = new Point(584, 403);
+            lb_rg_phone.Location = new Point(518, 443);
             lb_rg_phone.Name = "lb_rg_phone";
-            lb_rg_phone.Size = new Size(123, 25);
+            lb_rg_phone.Size = new Size(148, 31);
             lb_rg_phone.TabIndex = 44;
             lb_rg_phone.Text = "Số điện thoại";
             lb_rg_phone.Click += lb_rg_phone_Click;
@@ -141,9 +144,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(584, 328);
+            label2.Location = new Point(518, 346);
             label2.Name = "label2";
-            label2.Size = new Size(70, 25);
+            label2.Size = new Size(84, 31);
             label2.TabIndex = 42;
             label2.Text = "Địa chỉ";
             label2.Click += label2_Click;
@@ -152,9 +155,9 @@
             // 
             lb_rg_datebirth.AutoSize = true;
             lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_datebirth.Location = new Point(584, 252);
+            lb_rg_datebirth.Location = new Point(518, 255);
             lb_rg_datebirth.Name = "lb_rg_datebirth";
-            lb_rg_datebirth.Size = new Size(96, 25);
+            lb_rg_datebirth.Size = new Size(116, 31);
             lb_rg_datebirth.TabIndex = 40;
             lb_rg_datebirth.Text = "Ngày sinh";
             lb_rg_datebirth.Click += lb_rg_datebirth_Click;
@@ -163,9 +166,9 @@
             // 
             lb_rg_Name.AutoSize = true;
             lb_rg_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_Name.Location = new Point(584, 168);
+            lb_rg_Name.Location = new Point(518, 164);
             lb_rg_Name.Name = "lb_rg_Name";
-            lb_rg_Name.Size = new Size(68, 25);
+            lb_rg_Name.Size = new Size(82, 31);
             lb_rg_Name.TabIndex = 38;
             lb_rg_Name.Text = "Họ tên";
             lb_rg_Name.Click += lb_rg_Name_Click;
@@ -175,10 +178,9 @@
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(tb_Date);
             panel3.Controls.Add(pictureBox2);
-            panel3.Location = new Point(715, 245);
-            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Location = new Point(668, 246);
             panel3.Name = "panel3";
-            panel3.Size = new Size(342, 34);
+            panel3.Size = new Size(391, 45);
             panel3.TabIndex = 41;
             panel3.Paint += panel3_Paint;
             // 
@@ -188,21 +190,19 @@
             tb_Date.CustomFormat = "dd/MM/yyyy";
             tb_Date.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Date.Format = DateTimePickerFormat.Custom;
-            tb_Date.Location = new Point(47, 2);
-            tb_Date.Margin = new Padding(3, 2, 3, 2);
+            tb_Date.Location = new Point(54, 3);
             tb_Date.MaxDate = new DateTime(2024, 1, 1, 0, 0, 0, 0);
             tb_Date.Name = "tb_Date";
-            tb_Date.Size = new Size(290, 32);
+            tb_Date.Size = new Size(331, 38);
             tb_Date.TabIndex = 10;
             tb_Date.Value = new DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.calendar__2_;
-            pictureBox2.Location = new Point(4, 2);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(5, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 27);
+            pictureBox2.Size = new Size(46, 36);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
@@ -212,30 +212,27 @@
             pn_rg_Addr.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Addr.Controls.Add(tb_Address);
             pn_rg_Addr.Controls.Add(pc_Lg_Un);
-            pn_rg_Addr.Location = new Point(715, 321);
-            pn_rg_Addr.Margin = new Padding(3, 2, 3, 2);
+            pn_rg_Addr.Location = new Point(668, 337);
             pn_rg_Addr.Name = "pn_rg_Addr";
-            pn_rg_Addr.Size = new Size(342, 34);
+            pn_rg_Addr.Size = new Size(391, 45);
             pn_rg_Addr.TabIndex = 43;
             pn_rg_Addr.Paint += pn_rg_Addr_Paint;
             // 
             // tb_Address
             // 
             tb_Address.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_Address.Location = new Point(47, 2);
-            tb_Address.Margin = new Padding(3, 2, 3, 2);
+            tb_Address.Location = new Point(54, 3);
             tb_Address.Name = "tb_Address";
-            tb_Address.Size = new Size(290, 32);
+            tb_Address.Size = new Size(331, 38);
             tb_Address.TabIndex = 12;
             tb_Address.TabStop = false;
             // 
             // pc_Lg_Un
             // 
             pc_Lg_Un.Image = Properties.Resources.placeholder;
-            pc_Lg_Un.Location = new Point(4, 2);
-            pc_Lg_Un.Margin = new Padding(3, 2, 3, 2);
+            pc_Lg_Un.Location = new Point(5, 3);
             pc_Lg_Un.Name = "pc_Lg_Un";
-            pc_Lg_Un.Size = new Size(40, 27);
+            pc_Lg_Un.Size = new Size(46, 36);
             pc_Lg_Un.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Lg_Un.TabIndex = 9;
             pc_Lg_Un.TabStop = false;
@@ -245,31 +242,28 @@
             pn_rg_Name.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Name.Controls.Add(tb_Name);
             pn_rg_Name.Controls.Add(pc_rg_name);
-            pn_rg_Name.Location = new Point(715, 160);
-            pn_rg_Name.Margin = new Padding(3, 2, 3, 2);
+            pn_rg_Name.Location = new Point(668, 153);
             pn_rg_Name.Name = "pn_rg_Name";
-            pn_rg_Name.Size = new Size(342, 34);
+            pn_rg_Name.Size = new Size(391, 45);
             pn_rg_Name.TabIndex = 39;
             pn_rg_Name.Paint += pn_rg_Name_Paint;
             // 
             // tb_Name
             // 
             tb_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_Name.Location = new Point(47, 2);
-            tb_Name.Margin = new Padding(3, 2, 3, 2);
+            tb_Name.Location = new Point(54, 3);
             tb_Name.Name = "tb_Name";
             tb_Name.RightToLeft = RightToLeft.No;
-            tb_Name.Size = new Size(290, 32);
+            tb_Name.Size = new Size(331, 38);
             tb_Name.TabIndex = 14;
             tb_Name.TabStop = false;
             // 
             // pc_rg_name
             // 
             pc_rg_name.Image = Properties.Resources.user;
-            pc_rg_name.Location = new Point(4, 2);
-            pc_rg_name.Margin = new Padding(3, 2, 3, 2);
+            pc_rg_name.Location = new Point(5, 3);
             pc_rg_name.Name = "pc_rg_name";
-            pc_rg_name.Size = new Size(40, 27);
+            pc_rg_name.Size = new Size(46, 36);
             pc_rg_name.SizeMode = PictureBoxSizeMode.Zoom;
             pc_rg_name.TabIndex = 9;
             pc_rg_name.TabStop = false;
@@ -279,30 +273,27 @@
             pn_rg_Phone.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Phone.Controls.Add(tb_Phone);
             pn_rg_Phone.Controls.Add(pc_Hp_Login_Un);
-            pn_rg_Phone.Location = new Point(715, 396);
-            pn_rg_Phone.Margin = new Padding(3, 2, 3, 2);
+            pn_rg_Phone.Location = new Point(668, 434);
             pn_rg_Phone.Name = "pn_rg_Phone";
-            pn_rg_Phone.Size = new Size(342, 34);
+            pn_rg_Phone.Size = new Size(391, 45);
             pn_rg_Phone.TabIndex = 45;
             pn_rg_Phone.Paint += pn_rg_Phone_Paint;
             // 
             // tb_Phone
             // 
             tb_Phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_Phone.Location = new Point(47, 2);
-            tb_Phone.Margin = new Padding(3, 2, 3, 2);
+            tb_Phone.Location = new Point(54, 3);
             tb_Phone.Name = "tb_Phone";
-            tb_Phone.Size = new Size(290, 32);
+            tb_Phone.Size = new Size(331, 38);
             tb_Phone.TabIndex = 11;
             tb_Phone.TabStop = false;
             // 
             // pc_Hp_Login_Un
             // 
             pc_Hp_Login_Un.Image = (Image)resources.GetObject("pc_Hp_Login_Un.Image");
-            pc_Hp_Login_Un.Location = new Point(4, 2);
-            pc_Hp_Login_Un.Margin = new Padding(3, 2, 3, 2);
+            pc_Hp_Login_Un.Location = new Point(5, 3);
             pc_Hp_Login_Un.Name = "pc_Hp_Login_Un";
-            pc_Hp_Login_Un.Size = new Size(40, 27);
+            pc_Hp_Login_Un.Size = new Size(46, 36);
             pc_Hp_Login_Un.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Hp_Login_Un.TabIndex = 9;
             pc_Hp_Login_Un.TabStop = false;
@@ -312,47 +303,77 @@
             button1.BackColor = Color.FromArgb(8, 48, 107);
             button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(877, 479);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(876, 538);
             button1.Name = "button1";
-            button1.Size = new Size(156, 45);
+            button1.Size = new Size(178, 60);
             button1.TabIndex = 4;
             button1.Text = "Thêm hồ sơ";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // pc_Lg_Deco1
+            // button2
             // 
-            pc_Lg_Deco1.Image = Properties.Resources.Hp_Deco;
-            pc_Lg_Deco1.Location = new Point(1, 1);
-            pc_Lg_Deco1.Margin = new Padding(3, 2, 3, 2);
-            pc_Lg_Deco1.Name = "pc_Lg_Deco1";
-            pc_Lg_Deco1.Size = new Size(106, 94);
-            pc_Lg_Deco1.SizeMode = PictureBoxSizeMode.Zoom;
-            pc_Lg_Deco1.TabIndex = 49;
-            pc_Lg_Deco1.TabStop = false;
+            button2.BackColor = Color.FromArgb(8, 48, 107);
+            button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(362, 91);
+            button2.Name = "button2";
+            button2.Size = new Size(124, 45);
+            button2.TabIndex = 64;
+            button2.Text = "Tìm kiếm";
+            button2.UseVisualStyleBackColor = false;
             // 
-            // picLogo
+            // dataGridView1
             // 
-            picLogo.Image = Properties.Resources.Dental_Logo;
-            picLogo.Location = new Point(32, 89);
-            picLogo.Margin = new Padding(3, 2, 3, 2);
-            picLogo.Name = "picLogo";
-            picLogo.Size = new Size(481, 407);
-            picLogo.SizeMode = PictureBoxSizeMode.Zoom;
-            picLogo.TabIndex = 48;
-            picLogo.TabStop = false;
+            dataGridView1.BackgroundColor = SystemColors.Control;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(19, 157);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(467, 441);
+            dataGridView1.TabIndex = 63;
+            // 
+            // panel2
+            // 
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(19, 91);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(337, 45);
+            panel2.TabIndex = 62;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(54, 3);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Nhập họ tên bệnh nhân";
+            textBox1.RightToLeft = RightToLeft.No;
+            textBox1.Size = new Size(274, 38);
+            textBox1.TabIndex = 14;
+            textBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.user;
+            pictureBox1.Location = new Point(5, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(46, 36);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
             // 
             // Add_Client
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(8, 48, 107);
             ClientSize = new Size(1135, 652);
             ControlBox = false;
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Add_Client";
             StartPosition = FormStartPosition.CenterScreen;
             panel1.ResumeLayout(false);
@@ -368,8 +389,10 @@
             pn_rg_Phone.ResumeLayout(false);
             pn_rg_Phone.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pc_Hp_Login_Un).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pc_Lg_Deco1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -396,7 +419,10 @@
         private Panel pn_rg_Phone;
         private TextBox tb_Phone;
         private PictureBox pc_Hp_Login_Un;
-        private PictureBox pc_Lg_Deco1;
-        private PictureBox picLogo;
+        private Button button2;
+        private DataGridView dataGridView1;
+        private Panel panel2;
+        private TextBox textBox1;
+        private PictureBox pictureBox1;
     }
 }
