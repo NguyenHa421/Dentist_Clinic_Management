@@ -213,6 +213,16 @@ namespace Dentist_Clinic_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_add_user_2653368_2202940 {
+            get {
+                object obj = ResourceManager.GetObject("free-add-user-2653368-2202940", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hide {
             get {
                 object obj = ResourceManager.GetObject("hide", resourceCulture);
@@ -313,6 +323,39 @@ namespace Dentist_Clinic_Management.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_medicine_medical_record_text_rectangle_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-medicine-medical-record-text-rectangle-removebg-previe" +
+                        "w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_computer_icons_medicine_medical_record_text_rectangle_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-computer-icons-medicine-medical-record-text-rectangle-removebg-previe" +
+                        "w1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_clipart_hospital_medicine_health_therapy_patient_medical_record_angle_text_thumbnail_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("png-clipart-hospital-medicine-health-therapy-patient-medical-record-angle-text-th" +
+                        "umbnail-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap previous {
             get {
                 object obj = ResourceManager.GetObject("previous", resourceCulture);
@@ -336,6 +379,17 @@ namespace Dentist_Clinic_Management.Properties {
         internal static System.Drawing.Bitmap stethoscope {
             get {
                 object obj = ResourceManager.GetObject("stethoscope", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transparent_return_icon_back_arrow_icon_basic_ui_icon_5fd3cd93d71e77_5901981016077162438811_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("transparent-return-icon-back-arrow-icon-basic-ui-icon-5fd3cd93d71e77.590198101607" +
+                        "7162438811-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
