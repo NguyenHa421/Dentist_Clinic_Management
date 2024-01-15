@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
+using System.Xml.Linq;
 
 namespace Dentist_Clinic_Management.DAO_Dentist_Clinic_Management
 {
@@ -55,6 +56,18 @@ namespace Dentist_Clinic_Management.DAO_Dentist_Clinic_Management
         {
             string query = "USP_Clent_Name @SDT , @pass";
             object result = DataProvider.Instance.ExecuteScalar(query, new object[] { sdt, pass });
+            return result.ToString();
+        }
+        public string GetOtherName(string id)
+        {
+            string query = "USP_Other_Name @id";
+            object result = DataProvider.Instance.ExecuteScalar(query, new object[] { id });
+            return result.ToString();
+        }
+        public string GetCM(string id)
+        {
+            string query = "GetChuyenMon @id";
+            object result = DataProvider.Instance.ExecuteScalar(query, new object[] { id });
             return result.ToString();
         }
     }
