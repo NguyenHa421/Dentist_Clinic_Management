@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,11 @@ namespace Dentist_Clinic_Management.HomePage
             patient_Records.ShowDialog();
             this.Show();
 
+        }
+        private void but_account_Click(object sender, EventArgs e)
+        {
+            AccountAdmin accountAdmin = new AccountAdmin();
+            accountAdmin.ShowDialog();
         }
     }
 }

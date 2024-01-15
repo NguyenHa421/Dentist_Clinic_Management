@@ -228,7 +228,7 @@
             but_account.TabStop = false;
             but_account.Text = "Thông tin tài khoản";
             but_account.UseVisualStyleBackColor = false;
-            but_account.Click += but_medicine_Click;
+            but_account.Click += but_account_Click;
             // 
             // Homepage_Admin
             // 

@@ -80,6 +80,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                 else if (Login_Success(username, password, role))
                 {
                     AccountDAO.Instance.ID = username;
+                    AccountDAO.Instance.Pass = password;
                     HomePage.Homepage_Dentist homepage_Dentist = new HomePage.Homepage_Dentist();
                     this.Hide();
                     homepage_Dentist.ShowDialog();
@@ -98,6 +99,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                 else if (Login_Success(username, password, role))
                 {
                     AccountDAO.Instance.ID = username;
+                    AccountDAO.Instance.Pass = password;
                     HomePage.Homepage_Staff homepage_Staff = new HomePage.Homepage_Staff();
                     this.Hide();
                     homepage_Staff.ShowDialog();
@@ -118,6 +120,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                 else if (Login_Success(username, password, role))
                 {
                     AccountDAO.Instance.ID = ClientDAO.Instance.GetClientID(username, password);
+                    AccountDAO.Instance.Pass = password;
                     ClientDAO.Instance.Phone = username;
                     HomePage.Homepage_Client homepage_Client = new HomePage.Homepage_Client();
                     this.Hide();
@@ -139,6 +142,7 @@ namespace Dentist_Clinic_Management.Login_Logout
                 else if (Login_Success(username, password, role))
                 {
                     AccountDAO.Instance.ID = username;
+                    AccountDAO.Instance.Pass = password;
                     HomePage.Homepage_Admin homepage_Admin = new HomePage.Homepage_Admin();
                     this.Hide();
                     homepage_Admin.ShowDialog();
