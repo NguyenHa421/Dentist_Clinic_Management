@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button4 = new Button();
+            dataGridView2 = new DataGridView();
             textBox5 = new TextBox();
             numericUpDown1 = new NumericUpDown();
             tb_Use = new ComboBox();
@@ -47,14 +49,12 @@
             pc_rg_name = new PictureBox();
             button1 = new Button();
             button3 = new Button();
-            dataGridView2 = new DataGridView();
-            button4 = new Button();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             pn_rg_Name.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pc_rg_name).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,29 @@
             panel1.TabIndex = 4;
             panel1.Paint += panel1_Paint;
             // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(8, 48, 107);
+            button4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(1096, 374);
+            button4.Name = "button4";
+            button4.Size = new Size(134, 45);
+            button4.TabIndex = 73;
+            button4.Text = "Thêm";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.BackgroundColor = SystemColors.Control;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(895, 432);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.RowTemplate.Height = 29;
+            dataGridView2.Size = new Size(335, 169);
+            dataGridView2.TabIndex = 72;
+            // 
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
@@ -107,7 +130,7 @@
             // 
             tb_Use.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Use.FormattingEnabled = true;
-            tb_Use.Items.AddRange(new object[] { "Chụp X-Quang", "Trám răng", "Cạo vôi" });
+            tb_Use.Items.AddRange(new object[] { "Trám răng", "Cạo vôi", "Chụp X-Quang", "Tiểu phẫu", "Tẩy trắng răng", "Bọc răng sứ", "Niềng răng", "Nhổ răng", "Cấy ghép" });
             tb_Use.Location = new Point(895, 240);
             tb_Use.Name = "tb_Use";
             tb_Use.Size = new Size(335, 39);
@@ -170,6 +193,7 @@
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(634, 512);
             dataGridView1.TabIndex = 60;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lb_Success
             // 
@@ -281,29 +305,6 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click_1;
             // 
-            // dataGridView2
-            // 
-            dataGridView2.BackgroundColor = SystemColors.Control;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(895, 432);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.RowTemplate.Height = 29;
-            dataGridView2.Size = new Size(335, 169);
-            dataGridView2.TabIndex = 72;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(8, 48, 107);
-            button4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(1096, 374);
-            button4.Name = "button4";
-            button4.Size = new Size(134, 45);
-            button4.TabIndex = 73;
-            button4.Text = "Thêm";
-            button4.UseVisualStyleBackColor = false;
-            // 
             // Update_Client
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -317,12 +318,12 @@
             StartPosition = FormStartPosition.CenterScreen;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             pn_rg_Name.ResumeLayout(false);
             pn_rg_Name.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pc_rg_name).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
         }
 
