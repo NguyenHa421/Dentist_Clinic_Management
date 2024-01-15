@@ -59,6 +59,21 @@
     <Compile Update="Medicine\UpdateMedicine.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Staff\AppointmentInfo_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Staff\Appointment_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Staff\Info_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Staff\Med_List_Seen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Staff\PatientRecord_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Users\AccountAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
