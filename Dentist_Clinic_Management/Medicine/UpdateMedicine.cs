@@ -61,5 +61,10 @@ namespace Dentist_Clinic_Management.Medicine
         {
             LoadListMedicine();
         }
+
+        private void pic_Back_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
