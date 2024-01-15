@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
+namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management
 {
     public class PatientDAO
     {

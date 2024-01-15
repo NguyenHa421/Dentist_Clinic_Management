@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
+namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management
 {
     public class DataProvider
     {
         private static DataProvider instance;
 
-        private string connectionStr = "Data Source=LAPTOP-HEF1BJHQ;Initial Catalog=QL_PhongKhamNhaKhoa;Integrated Security=True;Encrypt=False";
+        private string connectionStr = "Data Source=MSI;Initial Catalog=QL_PhongKhamNhaKhoa;Integrated Security=True";
         public static DataProvider Instance
         {
             get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }

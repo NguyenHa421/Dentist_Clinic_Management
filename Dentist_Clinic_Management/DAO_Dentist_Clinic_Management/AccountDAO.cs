@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
 
 namespace Dentist_Clinic_Management.DAO_Dentist_Clinic_Management
 {

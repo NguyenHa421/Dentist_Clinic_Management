@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage_Admin));
             panel1 = new Panel();
             main_panel = new Panel();
@@ -43,6 +42,7 @@
             pic_logo = new PictureBox();
             but_exit = new Button();
             pic_exit = new PictureBox();
+            but_account = new Button();
             panel1.SuspendLayout();
             main_panel.SuspendLayout();
             pan_menu.SuspendLayout();
@@ -56,7 +56,6 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(main_panel);
-
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(1111, 628);
@@ -75,13 +74,14 @@
             // pan_menu
             // 
             pan_menu.BackColor = Color.FromArgb(8, 48, 107);
+            pan_menu.Controls.Add(but_account);
             pan_menu.Controls.Add(but_medicine);
             pan_menu.Controls.Add(tex_role);
             pan_menu.Controls.Add(bt_accountmanager);
             pan_menu.Controls.Add(pic_account);
             pan_menu.Location = new Point(0, 108);
             pan_menu.Name = "pan_menu";
-            pan_menu.Size = new Size(260, 535);
+            pan_menu.Size = new Size(271, 535);
             pan_menu.TabIndex = 10;
             // 
             // but_medicine
@@ -92,7 +92,7 @@
             but_medicine.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             but_medicine.Location = new Point(22, 320);
             but_medicine.Name = "but_medicine";
-            but_medicine.Size = new Size(217, 47);
+            but_medicine.Size = new Size(235, 47);
             but_medicine.TabIndex = 8;
             but_medicine.TabStop = false;
             but_medicine.Text = "Quản lý thuốc";
@@ -122,7 +122,7 @@
             bt_accountmanager.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             bt_accountmanager.Location = new Point(22, 267);
             bt_accountmanager.Name = "bt_accountmanager";
-            bt_accountmanager.Size = new Size(217, 47);
+            bt_accountmanager.Size = new Size(235, 47);
             bt_accountmanager.TabIndex = 0;
             bt_accountmanager.TabStop = false;
             bt_accountmanager.Text = "Quản lý tài khoản";
@@ -214,7 +214,21 @@
             pic_exit.SizeMode = PictureBoxSizeMode.Zoom;
             pic_exit.TabIndex = 5;
             pic_exit.TabStop = false;
-
+            // 
+            // but_account
+            // 
+            but_account.BackColor = Color.FromArgb(191, 215, 251);
+            but_account.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
+            but_account.FlatStyle = FlatStyle.Flat;
+            but_account.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            but_account.Location = new Point(22, 373);
+            but_account.Name = "but_account";
+            but_account.Size = new Size(235, 47);
+            but_account.TabIndex = 8;
+            but_account.TabStop = false;
+            but_account.Text = "Thông tin tài khoản";
+            but_account.UseVisualStyleBackColor = false;
+            but_account.Click += but_medicine_Click;
             // 
             // Homepage_Admin
             // 
@@ -236,7 +250,6 @@
             pan_header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_logo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_exit).EndInit();
-
             ResumeLayout(false);
         }
 
@@ -255,6 +268,6 @@
         private PictureBox pic_logo;
         private Button but_exit;
         private PictureBox pic_exit;
-
+        private Button but_account;
     }
 }

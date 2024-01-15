@@ -1,5 +1,5 @@
 ﻿using Dentist_Clinic_Management.Medicine;
-using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement;
+using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
 using Dentist_Clinic_Management_UI.DTO_Dentist_Clinic_Management;
 using System;
 using System.Collections.Generic;
