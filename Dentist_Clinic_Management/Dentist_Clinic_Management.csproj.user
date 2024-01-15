@@ -49,38 +49,3 @@
     <Compile Update="Login-Logout\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Medicine\AddMedicine.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Medicine\MedList_Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Medicine\UpdateMedicine.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Users\AddCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Users\AddDentist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Users\AddStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Users\UpdateCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Users\UpdateDentist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Users\UpdateStaff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Users\UserList_Admin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Warming_Client\No_Appointment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-  </ItemGroup>
-</Project>

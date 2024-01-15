@@ -240,6 +240,9 @@
             tb_Hp_Login_Username.Size = new Size(333, 31);
             tb_Hp_Login_Username.TabIndex = 0;
             tb_Hp_Login_Username.TabStop = false;
+
+            tb_Hp_Login_Username.TextChanged += tb_Hp_Login_Username_TextChanged;
+
             // 
             // bt_Lg_Login
             // 

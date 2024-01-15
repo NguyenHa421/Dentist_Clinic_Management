@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,9 +17,14 @@ namespace Dentist_Clinic_Management.HomePage
         public Homepage_Client()
         {
             InitializeComponent();
-            
+            textBox1.Text = AccountDAO.Instance.GetClientName(ClientDAO.Instance.Phone, AccountDAO.Instance.Pass);
         }
-
+        DateTime date_chosse;
+        void LoadListDentist(DateTime date)
+        {
+            cb_dentist.DataSource = AppointDAO.Instance.GetListDentist(date);
+            cb_dentist.DisplayMember = "Hoten";
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -37,7 +43,9 @@ namespace Dentist_Clinic_Management.HomePage
         private void C_bt_View_Click(object sender, EventArgs e)
         {
             Client.Info_Client info_Client = new Client.Info_Client();
+            this.Hide();
             info_Client.ShowDialog();
+            this.Show();
         }
 
         private void pictureBox19_Click(object sender, EventArgs e)
@@ -59,7 +67,7 @@ namespace Dentist_Clinic_Management.HomePage
         {
             bool Error_Send = false;
 
-            if(Error_Send == false)
+            if (Error_Send == false)
             {
                 C_lb_Thanks3.Visible = true;
                 C_bt_add.Visible = true;
@@ -75,17 +83,17 @@ namespace Dentist_Clinic_Management.HomePage
 
         private void tabPage3_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void tabPage4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void C_bt_add_Click(object sender, EventArgs e)
@@ -658,7 +666,12 @@ namespace Dentist_Clinic_Management.HomePage
 
         private void dateTime_rg_ValueChanged(object sender, EventArgs e)
         {
-            
+            AppointDAO.Instance.Day = C_dateTime_rg.Value.ToString("dd/MM/yyyy");
+            DateTime tmp1 = C_dateTime_rg.Value;
+            DateTime tmp2 = C_Hour.Value;
+            date_chosse = new DateTime(tmp1.Year, tmp1.Month, tmp1.Day, tmp2.Hour, tmp2.Minute, 0);
+
+            LoadListDentist(date_chosse);
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
@@ -710,22 +723,30 @@ namespace Dentist_Clinic_Management.HomePage
         {
 
         }
-
+        
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-
+            AppointDAO.Instance.Hour = C_Hour.Value.ToString("HH:mm");
+            DateTime tmp1 = C_dateTime_rg.Value;
+            DateTime tmp2 = C_Hour.Value;
+            date_chosse = new DateTime(tmp1.Year, tmp1.Month, tmp1.Day, tmp2.Hour, tmp2.Minute, 0);
+            LoadListDentist(date_chosse);
         }
 
         private void bt_rg_Exit_Click(object sender, EventArgs e)
         {
-            bool error = false;
             if (string.IsNullOrEmpty(cb_dentist.Text))
             {
-                error = true;
-                MessageBox.Show("Vui lòng chọn nha sĩ!", "Thông tin lịch hẹn không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               Warming_Admin.Failed failed = new Warming_Admin.Failed();
+                failed.Show();
             }
-            if(error == false)
+            else
             {
+                DateTime date1 = C_dateTime_rg.Value;
+                DateTime date2 = C_Hour.Value;
+                AppointDAO.Instance.Date = new DateTime(date1.Year, date1.Month, date1.Day, date2.Hour, date2.Minute, 0);
+                AppointDAO.Instance.Dentist = cb_dentist.Text;
+                AppointDAO.Instance.ID_D = AppointDAO.Instance.GetIDDentist(cb_dentist.Text);
                 Client.Confirm_Appointment confirm_Appointment = new Client.Confirm_Appointment();
                 this.Hide();
                 confirm_Appointment.ShowDialog();
@@ -735,8 +756,12 @@ namespace Dentist_Clinic_Management.HomePage
 
         private void Homepage_Client_Load(object sender, EventArgs e)
         {
-            
+
         }
-        
+
+        private void cb_dentist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

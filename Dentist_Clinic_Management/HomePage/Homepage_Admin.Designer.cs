@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Homepage_Admin));
             panel1 = new Panel();
             main_panel = new Panel();
@@ -55,6 +56,7 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(main_panel);
+
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(1111, 628);
@@ -212,6 +214,7 @@
             pic_exit.SizeMode = PictureBoxSizeMode.Zoom;
             pic_exit.TabIndex = 5;
             pic_exit.TabStop = false;
+
             // 
             // Homepage_Admin
             // 
@@ -233,6 +236,7 @@
             pan_header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_logo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pic_exit).EndInit();
+
             ResumeLayout(false);
         }
 
@@ -251,5 +255,6 @@
         private PictureBox pic_logo;
         private Button but_exit;
         private PictureBox pic_exit;
+
     }
 }

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,10 @@ namespace Dentist_Clinic_Management.Client
         public Info_Client_Update()
         {
             InitializeComponent();
+            tb_Name.Text = AccountDAO.Instance.GetClientName(ClientDAO.Instance.Phone, AccountDAO.Instance.Pass);
+            tb_Birth.Value = DateTime.ParseExact(ClientDAO.Instance.GetClientBirth(ClientDAO.Instance.Phone, AccountDAO.Instance.Pass) + " 00:00:00", "dd/MM/yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+            tb_Phone.Text = ClientDAO.Instance.GetClientPhone(ClientDAO.Instance.Phone, AccountDAO.Instance.Pass);
+            tb_Address.Text = ClientDAO.Instance.GetClientAddr(ClientDAO.Instance.Phone, AccountDAO.Instance.Pass);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -82,23 +88,21 @@ namespace Dentist_Clinic_Management.Client
 
         private void bt_Ok_Click(object sender, EventArgs e)
         {
-            bool Error = false;
-            if(tb_oldPass.Text.Length == 0)
+            string id = ClientDAO.Instance.GetClientID(ClientDAO.Instance.Phone, AccountDAO.Instance.Pass);
+            string name = tb_Name.Text;
+            DateTime birth = tb_Birth.Value;
+            string addr = tb_Address.Text;
+            string phone = tb_Phone.Text;
+            string pass = tb_newPass.Text;
+            if (tb_oldPass.Text != AccountDAO.Instance.Pass || tb_newPass.Text != tb_anewPass.Text)
             {
-                Error = true;
-                MessageBox.Show("Mật khẩu cũ không chính xác", "Thông tin cập nhật không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Warming_Admin.Failed failed = new Warming_Admin.Failed();
+                failed.Show();
+                
             }
-            if (Error == false)
+            else if (ClientDAO.Instance.Update_Client(id, name, birth, addr, phone, pass))
             {
-                if (tb_anewPass.Text != tb_newPass.Text)
-                {
-                    Error = true;
-                    MessageBox.Show("Mật khẩu nhập lại sai", "Thông tin cập nhật không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if(Error == false)
-            {
-                lb_Success.Visible = true;
+                ln_Success.Visible = true;
             }
            
         }

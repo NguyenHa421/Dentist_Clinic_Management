@@ -17,6 +17,7 @@ namespace Dentist_Clinic_Management.HomePage
             InitializeComponent();
         }
 
+
         private void bt_accountmanager_Click(object sender, EventArgs e)
         {
             Users.UserList_Admin user_Records = new Users.UserList_Admin();
@@ -31,6 +32,7 @@ namespace Dentist_Clinic_Management.HomePage
             this.Hide();
             patient_Records.ShowDialog();
             this.Show();
+
         }
     }
 }
