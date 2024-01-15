@@ -236,7 +236,7 @@
             tb_Hp_Login_Username.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Hp_Login_Username.Location = new Point(55, 3);
             tb_Hp_Login_Username.Name = "tb_Hp_Login_Username";
-            tb_Hp_Login_Username.PlaceholderText = "Số điện thoại";
+            tb_Hp_Login_Username.PlaceholderText = "Tài khoản/Số điện thoại";
             tb_Hp_Login_Username.Size = new Size(333, 31);
             tb_Hp_Login_Username.TabIndex = 0;
             tb_Hp_Login_Username.TabStop = false;
