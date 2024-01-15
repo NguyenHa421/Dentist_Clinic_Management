@@ -45,7 +45,7 @@ namespace Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Mangement
         }
         public bool InsertDentist(string id, string name, string pass, string specialize)
         {
-            string query = string.Format("INSERT dbo.NguoiDung (MaNguoiDung, HoTen, VaiTro, MatKhau) VALUES ('{0}', N'{1}',1 , '{2}')", id, name, pass);
+            string query = string.Format("INSERT dbo.NguoiDung (MaNguoiDung, HoTen, VaiTro, MatKhau) VALUES ('{0}', N'{1}',2 , '{2}')", id, name, pass);
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             query = string.Format("INSERT dbo.NhaSi (MaNS,ChuyenMon) VALUES ('{0}', N'{1}')", id, specialize);
             result += DataProvider.Instance.ExecuteNonQuery(query);
