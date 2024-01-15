@@ -1,4 +1,5 @@
-﻿using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using Dentist_Clinic_Management_UI.DAO_Dentist_Clinic_Management;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,8 @@ namespace Dentist_Clinic_Management.Dentist
         public Update_Schedule()
         {
             InitializeComponent();
-
+            comboBox1.DataSource = ClientDAO.Instance.GetListPat();
+            comboBox1.DisplayMember = "BenhNhan";
         }
 
         void Load()
@@ -46,7 +48,15 @@ namespace Dentist_Clinic_Management.Dentist
 
         private void button2_Click(object sender, EventArgs e)
         {
-            lb_Success2.Visible = true;
+            string id_D = AppointDAO.Instance.GetIDDentist(comboBox1.Text);
+            DateTime tmp1 = tb_Choose.Value;
+            DateTime tmp2 = dateTimePicker1.Value;
+            DateTime date_chosse = new DateTime(tmp1.Year, tmp1.Month, tmp1.Day, tmp2.Hour, tmp2.Minute, 0);
+            DateTime date2 = DateTime.Now;
+            if (AppointDAO.Instance.Insert_D_A(id_D, date_chosse, AccountDAO.Instance.ID, date2))
+            {
+                lb_Success2.Visible = true;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
