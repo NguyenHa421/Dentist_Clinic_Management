@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,18 @@ namespace Dentist_Clinic_Management.Dentist
 {
     public partial class Update_Schedule : Form
     {
+        BindingSource schedule = new BindingSource();
         public Update_Schedule()
         {
             InitializeComponent();
+
         }
 
+
+        void Load()
+        {
+            dataGridView1.DataSource = DentistDAO.Instance.LoadSchedule();
+        }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -24,7 +32,7 @@ namespace Dentist_Clinic_Management.Dentist
 
         private void tb_Date_ValueChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void lb_rg_phone_Click(object sender, EventArgs e)

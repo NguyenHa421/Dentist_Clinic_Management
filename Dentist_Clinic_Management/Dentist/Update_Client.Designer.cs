@@ -28,444 +28,416 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.tb_Use = new System.Windows.Forms.ComboBox();
-            this.tb_Dentist = new System.Windows.Forms.ComboBox();
-            this.tb_Date = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lb_Success = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lb_rg_phone = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb_rg_datebirth = new System.Windows.Forms.Label();
-            this.pn_rg_Name = new System.Windows.Forms.Panel();
-            this.tb_Name = new System.Windows.Forms.TextBox();
-            this.pc_rg_name = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.pn_rg_Name.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_rg_name)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            numericUpDown5 = new NumericUpDown();
+            textBox3 = new TextBox();
+            numericUpDown6 = new NumericUpDown();
+            textBox6 = new TextBox();
+            textBox1 = new TextBox();
+            numericUpDown2 = new NumericUpDown();
+            textBox2 = new TextBox();
+            numericUpDown3 = new NumericUpDown();
+            textBox5 = new TextBox();
+            numericUpDown4 = new NumericUpDown();
+            textBox4 = new TextBox();
+            numericUpDown1 = new NumericUpDown();
+            tb_Use = new ComboBox();
+            tb_Dentist = new ComboBox();
+            tb_Date = new DateTimePicker();
+            label3 = new Label();
+            button2 = new Button();
+            dataGridView1 = new DataGridView();
+            lb_Success = new Label();
+            label1 = new Label();
+            lb_rg_phone = new Label();
+            label2 = new Label();
+            lb_rg_datebirth = new Label();
+            pn_rg_Name = new Panel();
+            tb_Name = new TextBox();
+            pc_rg_name = new PictureBox();
+            button1 = new Button();
+            button3 = new Button();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            pn_rg_Name.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_rg_name).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.numericUpDown5);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.numericUpDown6);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.numericUpDown2);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.numericUpDown3);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.numericUpDown4);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.tb_Use);
-            this.panel1.Controls.Add(this.tb_Dentist);
-            this.panel1.Controls.Add(this.tb_Date);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.lb_Success);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lb_rg_phone);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.lb_rg_datebirth);
-            this.panel1.Controls.Add(this.pn_rg_Name);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1111, 628);
-            this.panel1.TabIndex = 4;
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(numericUpDown5);
+            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(numericUpDown6);
+            panel1.Controls.Add(textBox6);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(numericUpDown2);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(numericUpDown3);
+            panel1.Controls.Add(textBox5);
+            panel1.Controls.Add(numericUpDown4);
+            panel1.Controls.Add(textBox4);
+            panel1.Controls.Add(numericUpDown1);
+            panel1.Controls.Add(tb_Use);
+            panel1.Controls.Add(tb_Dentist);
+            panel1.Controls.Add(tb_Date);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(dataGridView1);
+            panel1.Controls.Add(lb_Success);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(lb_rg_phone);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(lb_rg_datebirth);
+            panel1.Controls.Add(pn_rg_Name);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(button3);
+            panel1.Location = new Point(10, 9);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1113, 632);
+            panel1.TabIndex = 4;
+            panel1.Paint += panel1_Paint;
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown5.Location = new System.Drawing.Point(1031, 459);
-            this.numericUpDown5.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(63, 38);
-            this.numericUpDown5.TabIndex = 79;
-            this.numericUpDown5.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            numericUpDown5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown5.Location = new Point(1020, 422);
+            numericUpDown5.Margin = new Padding(3, 2, 3, 2);
+            numericUpDown5.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown5.Name = "numericUpDown5";
+            numericUpDown5.Size = new Size(55, 32);
+            numericUpDown5.TabIndex = 79;
+            numericUpDown5.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(852, 458);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 38);
-            this.textBox3.TabIndex = 78;
+            textBox3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox3.Location = new Point(864, 422);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(147, 32);
+            textBox3.TabIndex = 78;
             // 
             // numericUpDown6
             // 
-            this.numericUpDown6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown6.Location = new System.Drawing.Point(770, 459);
-            this.numericUpDown6.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(63, 38);
-            this.numericUpDown6.TabIndex = 77;
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            numericUpDown6.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown6.Location = new Point(792, 422);
+            numericUpDown6.Margin = new Padding(3, 2, 3, 2);
+            numericUpDown6.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown6.Name = "numericUpDown6";
+            numericUpDown6.Size = new Size(55, 32);
+            numericUpDown6.TabIndex = 77;
+            numericUpDown6.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // textBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(591, 458);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 38);
-            this.textBox6.TabIndex = 76;
+            textBox6.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox6.Location = new Point(635, 422);
+            textBox6.Margin = new Padding(3, 2, 3, 2);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(147, 32);
+            textBox6.TabIndex = 76;
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(853, 341);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 38);
-            this.textBox1.TabIndex = 75;
+            textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(864, 334);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(146, 32);
+            textBox1.TabIndex = 75;
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown2.Location = new System.Drawing.Point(1032, 401);
-            this.numericUpDown2.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(63, 38);
-            this.numericUpDown2.TabIndex = 74;
-            this.numericUpDown2.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            numericUpDown2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown2.Location = new Point(1021, 379);
+            numericUpDown2.Margin = new Padding(3, 2, 3, 2);
+            numericUpDown2.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown2.Name = "numericUpDown2";
+            numericUpDown2.Size = new Size(55, 32);
+            numericUpDown2.TabIndex = 74;
+            numericUpDown2.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(853, 400);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 38);
-            this.textBox2.TabIndex = 73;
+            textBox2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(864, 378);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(147, 32);
+            textBox2.TabIndex = 73;
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown3.Location = new System.Drawing.Point(1031, 341);
-            this.numericUpDown3.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(63, 38);
-            this.numericUpDown3.TabIndex = 72;
-            this.numericUpDown3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            numericUpDown3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown3.Location = new Point(1020, 334);
+            numericUpDown3.Margin = new Padding(3, 2, 3, 2);
+            numericUpDown3.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown3.Name = "numericUpDown3";
+            numericUpDown3.Size = new Size(55, 32);
+            numericUpDown3.TabIndex = 72;
+            numericUpDown3.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // textBox5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(592, 341);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(166, 38);
-            this.textBox5.TabIndex = 71;
+            textBox5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox5.Location = new Point(636, 334);
+            textBox5.Margin = new Padding(3, 2, 3, 2);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(146, 32);
+            textBox5.TabIndex = 71;
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown4.Location = new System.Drawing.Point(771, 401);
-            this.numericUpDown4.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(63, 38);
-            this.numericUpDown4.TabIndex = 68;
-            this.numericUpDown4.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            numericUpDown4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown4.Location = new Point(793, 379);
+            numericUpDown4.Margin = new Padding(3, 2, 3, 2);
+            numericUpDown4.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown4.Name = "numericUpDown4";
+            numericUpDown4.Size = new Size(55, 32);
+            numericUpDown4.TabIndex = 68;
+            numericUpDown4.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(592, 400);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 38);
-            this.textBox4.TabIndex = 67;
+            textBox4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox4.Location = new Point(636, 378);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(147, 32);
+            textBox4.TabIndex = 67;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDown1.Location = new System.Drawing.Point(770, 341);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(63, 38);
-            this.numericUpDown1.TabIndex = 64;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            numericUpDown1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDown1.Location = new Point(792, 334);
+            numericUpDown1.Margin = new Padding(3, 2, 3, 2);
+            numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(55, 32);
+            numericUpDown1.TabIndex = 64;
+            numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // tb_Use
             // 
-            this.tb_Use.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Use.FormattingEnabled = true;
-            this.tb_Use.Items.AddRange(new object[] {
-            "Chụp X-Quang",
-            "Trám răng",
-            "Cạo vôi"});
-            this.tb_Use.Location = new System.Drawing.Point(760, 240);
-            this.tb_Use.Name = "tb_Use";
-            this.tb_Use.Size = new System.Drawing.Size(335, 39);
-            this.tb_Use.TabIndex = 11;
+            tb_Use.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Use.FormattingEnabled = true;
+            tb_Use.Items.AddRange(new object[] { "Chụp X-Quang", "Trám răng", "Cạo vôi" });
+            tb_Use.Location = new Point(783, 180);
+            tb_Use.Margin = new Padding(3, 2, 3, 2);
+            tb_Use.Name = "tb_Use";
+            tb_Use.Size = new Size(294, 33);
+            tb_Use.TabIndex = 11;
             // 
             // tb_Dentist
             // 
-            this.tb_Dentist.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Dentist.FormattingEnabled = true;
-            this.tb_Dentist.Items.AddRange(new object[] {
-            "Nguyễn Quang"});
-            this.tb_Dentist.Location = new System.Drawing.Point(760, 179);
-            this.tb_Dentist.Name = "tb_Dentist";
-            this.tb_Dentist.Size = new System.Drawing.Size(335, 39);
-            this.tb_Dentist.TabIndex = 10;
-            this.tb_Dentist.SelectedIndexChanged += new System.EventHandler(this.tb_Dentist_SelectedIndexChanged);
+            tb_Dentist.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Dentist.FormattingEnabled = true;
+            tb_Dentist.Items.AddRange(new object[] { "Nguyễn Quang" });
+            tb_Dentist.Location = new Point(783, 134);
+            tb_Dentist.Margin = new Padding(3, 2, 3, 2);
+            tb_Dentist.Name = "tb_Dentist";
+            tb_Dentist.Size = new Size(294, 33);
+            tb_Dentist.TabIndex = 10;
+            tb_Dentist.SelectedIndexChanged += tb_Dentist_SelectedIndexChanged;
             // 
             // tb_Date
             // 
-            this.tb_Date.CalendarFont = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Date.CustomFormat = "dd/MM/yyyy";
-            this.tb_Date.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.tb_Date.Location = new System.Drawing.Point(760, 120);
-            this.tb_Date.MaxDate = new System.DateTime(2999, 12, 31, 0, 0, 0, 0);
-            this.tb_Date.MinDate = new System.DateTime(2024, 1, 3, 0, 0, 0, 0);
-            this.tb_Date.Name = "tb_Date";
-            this.tb_Date.Size = new System.Drawing.Size(335, 38);
-            this.tb_Date.TabIndex = 10;
-            this.tb_Date.Value = new System.DateTime(2024, 1, 3, 12, 19, 52, 0);
+            tb_Date.CalendarFont = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Date.CustomFormat = "dd/MM/yyyy";
+            tb_Date.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Date.Format = DateTimePickerFormat.Custom;
+            tb_Date.Location = new Point(783, 90);
+            tb_Date.Margin = new Padding(3, 2, 3, 2);
+            tb_Date.MaxDate = new DateTime(2999, 12, 31, 0, 0, 0, 0);
+            tb_Date.MinDate = new DateTime(2024, 1, 3, 0, 0, 0, 0);
+            tb_Date.Name = "tb_Date";
+            tb_Date.Size = new Size(294, 32);
+            tb_Date.TabIndex = 10;
+            tb_Date.Value = new DateTime(2024, 1, 3, 12, 19, 52, 0);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(586, 301);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 31);
-            this.label3.TabIndex = 62;
-            this.label3.Text = "Thuốc";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(631, 304);
+            label3.Name = "label3";
+            label3.Size = new Size(64, 25);
+            label3.TabIndex = 62;
+            label3.Text = "Thuốc";
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(424, 61);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 45);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Tìm kiếm";
-            this.button2.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.FromArgb(8, 48, 107);
+            button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(461, 99);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(117, 34);
+            button2.TabIndex = 61;
+            button2.Text = "Tìm kiếm";
+            button2.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 127);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(543, 460);
-            this.dataGridView1.TabIndex = 60;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(24, 148);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(572, 423);
+            dataGridView1.TabIndex = 60;
             // 
             // lb_Success
             // 
-            this.lb_Success.AutoSize = true;
-            this.lb_Success.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_Success.Location = new System.Drawing.Point(725, 590);
-            this.lb_Success.Name = "lb_Success";
-            this.lb_Success.Size = new System.Drawing.Size(235, 31);
-            this.lb_Success.TabIndex = 59;
-            this.lb_Success.Text = "Cập nhật thành công!";
-            this.lb_Success.Visible = false;
-            this.lb_Success.Click += new System.EventHandler(this.lb_Success_Click);
+            lb_Success.AutoSize = true;
+            lb_Success.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_Success.Location = new Point(764, 546);
+            lb_Success.Name = "lb_Success";
+            lb_Success.Size = new Size(194, 25);
+            lb_Success.TabIndex = 59;
+            lb_Success.Text = "Cập nhật thành công!";
+            lb_Success.Visible = false;
+            lb_Success.Click += lb_Success_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.label1.Location = new System.Drawing.Point(374, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 38);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Cập nhật hồ sơ bệnh nhân";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(8, 48, 107);
+            label1.Location = new Point(347, 26);
+            label1.Name = "label1";
+            label1.Size = new Size(283, 30);
+            label1.TabIndex = 58;
+            label1.Text = "Cập nhật hồ sơ bệnh nhân";
             // 
             // lb_rg_phone
             // 
-            this.lb_rg_phone.AutoSize = true;
-            this.lb_rg_phone.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_phone.Location = new System.Drawing.Point(586, 248);
-            this.lb_rg_phone.Name = "lb_rg_phone";
-            this.lb_rg_phone.Size = new System.Drawing.Size(150, 31);
-            this.lb_rg_phone.TabIndex = 56;
-            this.lb_rg_phone.Text = "Dịch vụ dùng";
+            lb_rg_phone.AutoSize = true;
+            lb_rg_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_phone.Location = new Point(631, 186);
+            lb_rg_phone.Name = "lb_rg_phone";
+            lb_rg_phone.Size = new Size(124, 25);
+            lb_rg_phone.TabIndex = 56;
+            lb_rg_phone.Text = "Dịch vụ dùng";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(586, 187);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 31);
-            this.label2.TabIndex = 54;
-            this.label2.Text = "Nha sĩ";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(631, 140);
+            label2.Name = "label2";
+            label2.Size = new Size(65, 25);
+            label2.TabIndex = 54;
+            label2.Text = "Nha sĩ";
             // 
             // lb_rg_datebirth
             // 
-            this.lb_rg_datebirth.AutoSize = true;
-            this.lb_rg_datebirth.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_rg_datebirth.Location = new System.Drawing.Point(586, 127);
-            this.lb_rg_datebirth.Name = "lb_rg_datebirth";
-            this.lb_rg_datebirth.Size = new System.Drawing.Size(130, 31);
-            this.lb_rg_datebirth.TabIndex = 52;
-            this.lb_rg_datebirth.Text = "Ngày khám";
+            lb_rg_datebirth.AutoSize = true;
+            lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lb_rg_datebirth.Location = new Point(631, 95);
+            lb_rg_datebirth.Name = "lb_rg_datebirth";
+            lb_rg_datebirth.Size = new Size(107, 25);
+            lb_rg_datebirth.TabIndex = 52;
+            lb_rg_datebirth.Text = "Ngày khám";
             // 
             // pn_rg_Name
             // 
-            this.pn_rg_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pn_rg_Name.Controls.Add(this.tb_Name);
-            this.pn_rg_Name.Controls.Add(this.pc_rg_name);
-            this.pn_rg_Name.Location = new System.Drawing.Point(15, 61);
-            this.pn_rg_Name.Name = "pn_rg_Name";
-            this.pn_rg_Name.Size = new System.Drawing.Size(391, 45);
-            this.pn_rg_Name.TabIndex = 51;
+            pn_rg_Name.BorderStyle = BorderStyle.FixedSingle;
+            pn_rg_Name.Controls.Add(tb_Name);
+            pn_rg_Name.Controls.Add(pc_rg_name);
+            pn_rg_Name.Location = new Point(24, 99);
+            pn_rg_Name.Margin = new Padding(3, 2, 3, 2);
+            pn_rg_Name.Name = "pn_rg_Name";
+            pn_rg_Name.Size = new Size(391, 34);
+            pn_rg_Name.TabIndex = 51;
             // 
             // tb_Name
             // 
-            this.tb_Name.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Name.Location = new System.Drawing.Point(54, 2);
-            this.tb_Name.Name = "tb_Name";
-            this.tb_Name.PlaceholderText = "Nhập họ tên bệnh nhân";
-            this.tb_Name.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tb_Name.Size = new System.Drawing.Size(331, 38);
-            this.tb_Name.TabIndex = 14;
-            this.tb_Name.TabStop = false;
+            tb_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_Name.Location = new Point(47, 2);
+            tb_Name.Margin = new Padding(3, 2, 3, 2);
+            tb_Name.Name = "tb_Name";
+            tb_Name.PlaceholderText = "Nhập họ tên bệnh nhân";
+            tb_Name.RightToLeft = RightToLeft.No;
+            tb_Name.Size = new Size(290, 32);
+            tb_Name.TabIndex = 14;
+            tb_Name.TabStop = false;
             // 
             // pc_rg_name
             // 
-            this.pc_rg_name.Image = global::Dentist_Clinic_Management.Properties.Resources.user;
-            this.pc_rg_name.Location = new System.Drawing.Point(4, 3);
-            this.pc_rg_name.Name = "pc_rg_name";
-            this.pc_rg_name.Size = new System.Drawing.Size(46, 36);
-            this.pc_rg_name.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pc_rg_name.TabIndex = 9;
-            this.pc_rg_name.TabStop = false;
+            pc_rg_name.Image = Properties.Resources.user;
+            pc_rg_name.Location = new Point(4, 2);
+            pc_rg_name.Margin = new Padding(3, 2, 3, 2);
+            pc_rg_name.Name = "pc_rg_name";
+            pc_rg_name.Size = new Size(40, 27);
+            pc_rg_name.SizeMode = PictureBoxSizeMode.Zoom;
+            pc_rg_name.TabIndex = 9;
+            pc_rg_name.TabStop = false;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(917, 527);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 60);
-            this.button1.TabIndex = 49;
-            this.button1.Text = "Cập nhật";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.BackColor = Color.FromArgb(8, 48, 107);
+            button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(920, 473);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(156, 45);
+            button1.TabIndex = 49;
+            button1.Text = "Cập nhật";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(601, 527);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 60);
-            this.button3.TabIndex = 48;
-            this.button3.Text = "Quay lại";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            button3.BackColor = Color.FromArgb(8, 48, 107);
+            button3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(644, 473);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(156, 45);
+            button3.TabIndex = 48;
+            button3.Text = "Quay lại";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click_1;
             // 
             // Update_Client
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(48)))), ((int)(((byte)(107)))));
-            this.ClientSize = new System.Drawing.Size(1135, 652);
-            this.ControlBox = false;
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Update_Client";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.pn_rg_Name.ResumeLayout(false);
-            this.pn_rg_Name.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pc_rg_name)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(8, 48, 107);
+            ClientSize = new Size(1135, 652);
+            ControlBox = false;
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Update_Client";
+            StartPosition = FormStartPosition.CenterScreen;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            pn_rg_Name.ResumeLayout(false);
+            pn_rg_Name.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pc_rg_name).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

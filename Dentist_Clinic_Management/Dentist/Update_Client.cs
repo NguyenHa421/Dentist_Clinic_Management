@@ -59,6 +59,10 @@ namespace Dentist_Clinic_Management.Dentist
                 lb_Success.Visible = true;
             }
         }
-    
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
