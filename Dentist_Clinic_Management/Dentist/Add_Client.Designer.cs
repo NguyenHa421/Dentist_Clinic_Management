@@ -31,11 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Client));
             button3 = new Button();
             panel1 = new Panel();
-            button2 = new Button();
             dataGridView1 = new DataGridView();
-            panel2 = new Panel();
-            textBox1 = new TextBox();
-            pictureBox1 = new PictureBox();
             lb_Success = new Label();
             label1 = new Label();
             lb_rg_phone = new Label();
@@ -57,8 +53,6 @@
             button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             pn_rg_Addr.SuspendLayout();
@@ -85,9 +79,7 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(button2);
             panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(panel2);
             panel1.Controls.Add(lb_Success);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(lb_rg_phone);
@@ -105,59 +97,16 @@
             panel1.Size = new Size(1111, 597);
             panel1.TabIndex = 4;
             // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(8, 48, 107);
-            button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(362, 86);
-            button2.Name = "button2";
-            button2.Size = new Size(124, 43);
-            button2.TabIndex = 64;
-            button2.Text = "Tìm kiếm";
-            button2.UseVisualStyleBackColor = false;
-            // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(19, 149);
+            dataGridView1.Location = new Point(24, 122);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(467, 419);
             dataGridView1.TabIndex = 63;
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(textBox1);
-            panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(19, 86);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(337, 43);
-            panel2.TabIndex = 62;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(54, 3);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Nhập họ tên bệnh nhân";
-            textBox1.RightToLeft = RightToLeft.No;
-            textBox1.Size = new Size(274, 36);
-            textBox1.TabIndex = 14;
-            textBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.user;
-            pictureBox1.Location = new Point(5, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(46, 34);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
             // 
             // lb_Success
             // 
@@ -380,9 +329,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             pn_rg_Addr.ResumeLayout(false);
@@ -420,10 +366,6 @@
         private Panel pn_rg_Phone;
         private TextBox tb_Phone;
         private PictureBox pc_Hp_Login_Un;
-        private Button button2;
         private DataGridView dataGridView1;
-        private Panel panel2;
-        private TextBox textBox1;
-        private PictureBox pictureBox1;
     }
 }

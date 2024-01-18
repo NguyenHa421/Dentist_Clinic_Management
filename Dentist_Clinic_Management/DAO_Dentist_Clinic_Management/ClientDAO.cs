@@ -66,6 +66,17 @@ namespace Dentist_Clinic_Management.DAO_Dentist_Clinic_Management
         {
             return DataProvider.Instance.ExecuteQuery("exec USP_RecordList");
         }
-        
+        public bool Insert_Account_D(string name, DateTime birth, string addr, string phone)
+        {
+            string query = "USP_AddClient_D @name , @birth , @addr , @phone";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { name, birth, addr, phone });
+            return result > 0;
+        }
+        public bool Update_Rec(string id, string name, string use, double phi)
+        {
+            string query = "USP_UpdateRecord @id , @name , @use , @phi ";
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { id , name , use , phi });
+            return result > 0;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dentist_Clinic_Management.DAO_Dentist_Clinic_Management;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,16 +8,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Dentist_Clinic_Management.Dentist
 {
     public partial class Add_Client : Form
     {
+        BindingSource RecList = new BindingSource();
         public Add_Client()
         {
             InitializeComponent();
+            Load();
         }
-
+        void Load()
+        {
+            dataGridView1.DataSource = RecList;
+            LoadListRec();
+        }
+        void LoadListRec()
+        {
+            RecList.DataSource = AppointDAO.Instance.GetListRec();
+        }
+       
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -24,32 +37,13 @@ namespace Dentist_Clinic_Management.Dentist
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool Error_Add = false;
-
-            if (tb_Name.Text.Length == 0)
+            string name = tb_Name.Text;
+            DateTime birth = tb_Date.Value;
+            string addr = tb_Address.Text;
+            string phone = tb_Phone.Text;
+            if (ClientDAO.Instance.Insert_Account_D(name, birth, addr, phone))
             {
-                Error_Add = true;
-                MessageBox.Show("Vui lòng nhập họ và tên của bệnh nhân!", "Thông tin hồ sơ không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            if (Error_Add == false)
-            {
-                if (tb_Address.Text.Length == 0)
-                {
-                    Error_Add = true;
-                    MessageBox.Show("Vui lòng nhập địa chỉ của bệnh nhân!", "Thông tin hồ sơ không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if (Error_Add == false)
-            {
-                if (tb_Phone.Text.Length == 0)
-                {
-                    Error_Add = true;
-                    MessageBox.Show("Vui lòng nhập số điện thoại của bệnh nhân!", "Thông tin hồ sơ không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if(Error_Add == false)
-            {
-                lb_Success.Visible = true;
+                LoadListRec();
             }
         }
 

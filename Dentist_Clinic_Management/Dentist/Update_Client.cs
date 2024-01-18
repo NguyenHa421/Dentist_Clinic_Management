@@ -8,20 +8,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Dentist_Clinic_Management.Dentist
 {
     public partial class Update_Client : Form
     {
+        BindingSource RecList = new BindingSource();
         public Update_Client()
         {
             InitializeComponent();
+            Load();
         }
-
-        void LoadList()
+        void Load()
         {
-            dataGridView1.DataSource = ClientDAO.Instance.GetListRecL();
+            dataGridView1.DataSource = RecList;
+            LoadListRec();
+            AddRecBiding();
         }
+        void LoadListRec()
+        {
+            RecList.DataSource = AppointDAO.Instance.GetListRec();
+        }
+        void AddRecBiding()
+        {
+            textBox3.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "MaKH"));
+            textBox2.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "BenhNhan"));
+            tb_Date.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "NgayGioKham"));
+            tb_Use.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "DichVuKham"));
+            textBox1.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "PhiKham"));
+        }
+       
         private void button3_Click_1(object sender, EventArgs e)
         {
             this.Close();
@@ -44,25 +61,15 @@ namespace Dentist_Clinic_Management.Dentist
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool Error_Add = false;
-
-            if (tb_Dentist.Text.Length == 0)
+            string id = textBox3.Text;
+            string name = textBox2.Text;
+            string use = tb_Use.Text;
+            double phi = double.Parse(textBox1.Text);
+            if(ClientDAO.Instance.Update_Rec(id, name, use, phi))
             {
-                Error_Add = true;
-                MessageBox.Show("Vui lòng nhập tên nha sĩ!", "Thông tin cập nhật không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LoadListRec();
             }
-            if (Error_Add == false)
-            {
-                if (tb_Use.Text.Length == 0)
-                {
-                    Error_Add = true;
-                    MessageBox.Show("Vui lòng nhập dịch vụ đã sữ dụng!", "Thông tin cập nhật không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            if (Error_Add == false)
-            {
-                lb_Success.Visible = true;
-            }
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

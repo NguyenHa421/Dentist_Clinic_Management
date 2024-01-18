@@ -134,6 +134,7 @@
             but_Update.TabStop = false;
             but_Update.Text = "Cập nhật";
             but_Update.UseVisualStyleBackColor = false;
+            but_Update.Click += but_Update_Click;
             // 
             // tb_unit
             // 
