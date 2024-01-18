@@ -78,9 +78,9 @@
             panel1.Controls.Add(pn_rg_Name);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(button3);
-            panel1.Location = new Point(11, 12);
+            panel1.Location = new Point(11, 11);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1272, 843);
+            panel1.Size = new Size(1272, 801);
             panel1.TabIndex = 4;
             panel1.Paint += panel1_Paint;
             // 
@@ -89,9 +89,9 @@
             button4.BackColor = Color.FromArgb(8, 48, 107);
             button4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(1096, 374);
+            button4.Location = new Point(1096, 355);
             button4.Name = "button4";
-            button4.Size = new Size(134, 45);
+            button4.Size = new Size(134, 43);
             button4.TabIndex = 73;
             button4.Text = "Thêm";
             button4.UseVisualStyleBackColor = false;
@@ -100,28 +100,28 @@
             // 
             dataGridView2.BackgroundColor = SystemColors.Control;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(895, 432);
+            dataGridView2.Location = new Point(895, 410);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 51;
             dataGridView2.RowTemplate.Height = 29;
-            dataGridView2.Size = new Size(335, 169);
+            dataGridView2.Size = new Size(335, 161);
             dataGridView2.TabIndex = 72;
             // 
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox5.Location = new Point(895, 316);
+            textBox5.Location = new Point(895, 300);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(258, 38);
+            textBox5.Size = new Size(258, 36);
             textBox5.TabIndex = 71;
             // 
             // numericUpDown1
             // 
             numericUpDown1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            numericUpDown1.Location = new Point(1167, 317);
+            numericUpDown1.Location = new Point(1167, 301);
             numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(63, 38);
+            numericUpDown1.Size = new Size(63, 36);
             numericUpDown1.TabIndex = 64;
             numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
@@ -131,9 +131,9 @@
             tb_Use.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Use.FormattingEnabled = true;
             tb_Use.Items.AddRange(new object[] { "Trám răng", "Cạo vôi", "Chụp X-Quang", "Tiểu phẫu", "Tẩy trắng răng", "Bọc răng sứ", "Niềng răng", "Nhổ răng", "Cấy ghép" });
-            tb_Use.Location = new Point(895, 240);
+            tb_Use.Location = new Point(895, 228);
             tb_Use.Name = "tb_Use";
-            tb_Use.Size = new Size(335, 39);
+            tb_Use.Size = new Size(335, 38);
             tb_Use.TabIndex = 11;
             // 
             // tb_Dentist
@@ -141,9 +141,9 @@
             tb_Dentist.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Dentist.FormattingEnabled = true;
             tb_Dentist.Items.AddRange(new object[] { "Nguyễn Quang" });
-            tb_Dentist.Location = new Point(895, 179);
+            tb_Dentist.Location = new Point(895, 170);
             tb_Dentist.Name = "tb_Dentist";
-            tb_Dentist.Size = new Size(335, 39);
+            tb_Dentist.Size = new Size(335, 38);
             tb_Dentist.TabIndex = 10;
             tb_Dentist.SelectedIndexChanged += tb_Dentist_SelectedIndexChanged;
             // 
@@ -153,11 +153,11 @@
             tb_Date.CustomFormat = "dd/MM/yyyy";
             tb_Date.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Date.Format = DateTimePickerFormat.Custom;
-            tb_Date.Location = new Point(895, 120);
+            tb_Date.Location = new Point(895, 114);
             tb_Date.MaxDate = new DateTime(2999, 12, 31, 0, 0, 0, 0);
             tb_Date.MinDate = new DateTime(2024, 1, 3, 0, 0, 0, 0);
             tb_Date.Name = "tb_Date";
-            tb_Date.Size = new Size(335, 38);
+            tb_Date.Size = new Size(335, 36);
             tb_Date.TabIndex = 10;
             tb_Date.Value = new DateTime(2024, 1, 3, 12, 19, 52, 0);
             // 
@@ -165,9 +165,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(726, 319);
+            label3.Location = new Point(726, 303);
             label3.Name = "label3";
-            label3.Size = new Size(76, 31);
+            label3.Size = new Size(72, 30);
             label3.TabIndex = 62;
             label3.Text = "Thuốc";
             // 
@@ -176,9 +176,9 @@
             button2.BackColor = Color.FromArgb(8, 48, 107);
             button2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(527, 113);
+            button2.Location = new Point(527, 107);
             button2.Name = "button2";
-            button2.Size = new Size(134, 45);
+            button2.Size = new Size(134, 43);
             button2.TabIndex = 61;
             button2.Text = "Tìm kiếm";
             button2.UseVisualStyleBackColor = false;
@@ -187,11 +187,11 @@
             // 
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(27, 179);
+            dataGridView1.Location = new Point(27, 170);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(634, 512);
+            dataGridView1.Size = new Size(634, 486);
             dataGridView1.TabIndex = 60;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -199,9 +199,9 @@
             // 
             lb_Success.AutoSize = true;
             lb_Success.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Success.Location = new Point(873, 728);
+            lb_Success.Location = new Point(873, 692);
             lb_Success.Name = "lb_Success";
-            lb_Success.Size = new Size(235, 31);
+            lb_Success.Size = new Size(219, 30);
             lb_Success.TabIndex = 59;
             lb_Success.Text = "Cập nhật thành công!";
             lb_Success.Visible = false;
@@ -212,9 +212,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(8, 48, 107);
-            label1.Location = new Point(397, 35);
+            label1.Location = new Point(397, 33);
             label1.Name = "label1";
-            label1.Size = new Size(362, 38);
+            label1.Size = new Size(323, 35);
             label1.TabIndex = 58;
             label1.Text = "Cập nhật hồ sơ bệnh nhân";
             // 
@@ -222,9 +222,9 @@
             // 
             lb_rg_phone.AutoSize = true;
             lb_rg_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_phone.Location = new Point(721, 248);
+            lb_rg_phone.Location = new Point(721, 236);
             lb_rg_phone.Name = "lb_rg_phone";
-            lb_rg_phone.Size = new Size(150, 31);
+            lb_rg_phone.Size = new Size(140, 30);
             lb_rg_phone.TabIndex = 56;
             lb_rg_phone.Text = "Dịch vụ dùng";
             // 
@@ -232,9 +232,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(721, 187);
+            label2.Location = new Point(721, 178);
             label2.Name = "label2";
-            label2.Size = new Size(78, 31);
+            label2.Size = new Size(72, 30);
             label2.TabIndex = 54;
             label2.Text = "Nha sĩ";
             // 
@@ -242,9 +242,9 @@
             // 
             lb_rg_datebirth.AutoSize = true;
             lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_datebirth.Location = new Point(721, 127);
+            lb_rg_datebirth.Location = new Point(721, 121);
             lb_rg_datebirth.Name = "lb_rg_datebirth";
-            lb_rg_datebirth.Size = new Size(130, 31);
+            lb_rg_datebirth.Size = new Size(123, 30);
             lb_rg_datebirth.TabIndex = 52;
             lb_rg_datebirth.Text = "Ngày khám";
             // 
@@ -253,9 +253,9 @@
             pn_rg_Name.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Name.Controls.Add(tb_Name);
             pn_rg_Name.Controls.Add(pc_rg_name);
-            pn_rg_Name.Location = new Point(27, 113);
+            pn_rg_Name.Location = new Point(27, 107);
             pn_rg_Name.Name = "pn_rg_Name";
-            pn_rg_Name.Size = new Size(399, 45);
+            pn_rg_Name.Size = new Size(399, 43);
             pn_rg_Name.TabIndex = 51;
             // 
             // tb_Name
@@ -265,7 +265,7 @@
             tb_Name.Name = "tb_Name";
             tb_Name.PlaceholderText = "Nhập họ tên bệnh nhân";
             tb_Name.RightToLeft = RightToLeft.No;
-            tb_Name.Size = new Size(331, 38);
+            tb_Name.Size = new Size(331, 36);
             tb_Name.TabIndex = 14;
             tb_Name.TabStop = false;
             // 
@@ -274,7 +274,7 @@
             pc_rg_name.Image = Properties.Resources.user;
             pc_rg_name.Location = new Point(5, 3);
             pc_rg_name.Name = "pc_rg_name";
-            pc_rg_name.Size = new Size(46, 36);
+            pc_rg_name.Size = new Size(46, 34);
             pc_rg_name.SizeMode = PictureBoxSizeMode.Zoom;
             pc_rg_name.TabIndex = 9;
             pc_rg_name.TabStop = false;
@@ -284,9 +284,9 @@
             button1.BackColor = Color.FromArgb(8, 48, 107);
             button1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(1051, 631);
+            button1.Location = new Point(1051, 599);
             button1.Name = "button1";
-            button1.Size = new Size(178, 60);
+            button1.Size = new Size(178, 57);
             button1.TabIndex = 49;
             button1.Text = "Cập nhật";
             button1.UseVisualStyleBackColor = false;
@@ -297,9 +297,9 @@
             button3.BackColor = Color.FromArgb(8, 48, 107);
             button3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(736, 631);
+            button3.Location = new Point(736, 599);
             button3.Name = "button3";
-            button3.Size = new Size(178, 60);
+            button3.Size = new Size(178, 57);
             button3.TabIndex = 48;
             button3.Text = "Quay lại";
             button3.UseVisualStyleBackColor = false;
@@ -307,15 +307,16 @@
             // 
             // Update_Client
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(8, 48, 107);
-            ClientSize = new Size(1297, 869);
+            ClientSize = new Size(1297, 826);
             ControlBox = false;
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Update_Client";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = " ";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();

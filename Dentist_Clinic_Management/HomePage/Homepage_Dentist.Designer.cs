@@ -112,7 +112,7 @@
             tb_Clock.Location = new Point(512, 445);
             tb_Clock.Name = "tb_Clock";
             tb_Clock.ReadOnly = true;
-            tb_Clock.Size = new Size(331, 38);
+            tb_Clock.Size = new Size(331, 36);
             tb_Clock.TabIndex = 11;
             tb_Clock.TabStop = false;
             tb_Clock.TextChanged += tb_Clock_TextChanged;
@@ -123,7 +123,7 @@
             tb_Date.Location = new Point(512, 393);
             tb_Date.Name = "tb_Date";
             tb_Date.ReadOnly = true;
-            tb_Date.Size = new Size(331, 38);
+            tb_Date.Size = new Size(331, 36);
             tb_Date.TabIndex = 10;
             tb_Date.TabStop = false;
             // 
@@ -133,7 +133,7 @@
             tb_Phone.Location = new Point(512, 340);
             tb_Phone.Name = "tb_Phone";
             tb_Phone.ReadOnly = true;
-            tb_Phone.Size = new Size(331, 38);
+            tb_Phone.Size = new Size(331, 36);
             tb_Phone.TabIndex = 11;
             tb_Phone.TabStop = false;
             tb_Phone.TextChanged += tb_Phone_TextChanged;
@@ -144,7 +144,7 @@
             tb_Address.Location = new Point(512, 287);
             tb_Address.Name = "tb_Address";
             tb_Address.ReadOnly = true;
-            tb_Address.Size = new Size(331, 38);
+            tb_Address.Size = new Size(331, 36);
             tb_Address.TabIndex = 12;
             tb_Address.TabStop = false;
             // 
@@ -154,7 +154,7 @@
             tb_Birth.Location = new Point(512, 232);
             tb_Birth.Name = "tb_Birth";
             tb_Birth.ReadOnly = true;
-            tb_Birth.Size = new Size(331, 38);
+            tb_Birth.Size = new Size(331, 36);
             tb_Birth.TabIndex = 13;
             tb_Birth.TabStop = false;
             tb_Birth.TextChanged += tb_Birth_TextChanged;
@@ -166,7 +166,7 @@
             tb_Name.Name = "tb_Name";
             tb_Name.ReadOnly = true;
             tb_Name.RightToLeft = RightToLeft.No;
-            tb_Name.Size = new Size(331, 38);
+            tb_Name.Size = new Size(331, 36);
             tb_Name.TabIndex = 14;
             tb_Name.TabStop = false;
             // 
@@ -176,7 +176,7 @@
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(363, 396);
             label3.Name = "label3";
-            label3.Size = new Size(130, 31);
+            label3.Size = new Size(123, 30);
             label3.TabIndex = 36;
             label3.Text = "Ngày khám";
             // 
@@ -186,7 +186,7 @@
             label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(363, 448);
             label4.Name = "label4";
-            label4.Size = new Size(112, 31);
+            label4.Size = new Size(105, 30);
             label4.TabIndex = 35;
             label4.Text = "Giờ khám";
             // 
@@ -196,7 +196,7 @@
             lb_rg_phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_rg_phone.Location = new Point(363, 347);
             lb_rg_phone.Name = "lb_rg_phone";
-            lb_rg_phone.Size = new Size(150, 31);
+            lb_rg_phone.Size = new Size(139, 30);
             lb_rg_phone.TabIndex = 30;
             lb_rg_phone.Text = "Ngày đặt lịch";
             // 
@@ -206,7 +206,7 @@
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(363, 290);
             label2.Name = "label2";
-            label2.Size = new Size(117, 31);
+            label2.Size = new Size(110, 30);
             label2.TabIndex = 28;
             label2.Text = "Nhân viên";
             // 
@@ -216,7 +216,7 @@
             lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_rg_datebirth.Location = new Point(361, 235);
             lb_rg_datebirth.Name = "lb_rg_datebirth";
-            lb_rg_datebirth.Size = new Size(78, 31);
+            lb_rg_datebirth.Size = new Size(72, 30);
             lb_rg_datebirth.TabIndex = 26;
             lb_rg_datebirth.Text = "Nha sĩ";
             // 
@@ -226,7 +226,7 @@
             lb_rg_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_rg_Name.Location = new Point(363, 177);
             lb_rg_Name.Name = "lb_rg_Name";
-            lb_rg_Name.Size = new Size(122, 31);
+            lb_rg_Name.Size = new Size(115, 30);
             lb_rg_Name.TabIndex = 24;
             lb_rg_Name.Text = "Bệnh nhân";
             // 
@@ -261,7 +261,7 @@
             lb_DateTime.AutoSize = true;
             lb_DateTime.Location = new Point(363, 103);
             lb_DateTime.Name = "lb_DateTime";
-            lb_DateTime.Size = new Size(123, 31);
+            lb_DateTime.Size = new Size(117, 30);
             lb_DateTime.TabIndex = 3;
             lb_DateTime.Text = "Chọn ngày";
             // 
@@ -271,7 +271,7 @@
             tb_DateTime.Format = DateTimePickerFormat.Custom;
             tb_DateTime.Location = new Point(492, 97);
             tb_DateTime.Name = "tb_DateTime";
-            tb_DateTime.Size = new Size(203, 38);
+            tb_DateTime.Size = new Size(203, 36);
             tb_DateTime.TabIndex = 2;
             tb_DateTime.TabStop = false;
             tb_DateTime.Value = new DateTime(2023, 12, 22, 14, 20, 13, 0);
@@ -283,7 +283,7 @@
             lb_ViewAppoint.ForeColor = Color.FromArgb(8, 48, 107);
             lb_ViewAppoint.Location = new Point(315, 22);
             lb_ViewAppoint.Name = "lb_ViewAppoint";
-            lb_ViewAppoint.Size = new Size(153, 31);
+            lb_ViewAppoint.Size = new Size(145, 30);
             lb_ViewAppoint.TabIndex = 1;
             lb_ViewAppoint.Text = "Xem lịch hẹn";
             // 
@@ -350,7 +350,7 @@
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Username";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(247, 27);
+            textBox1.Size = new Size(247, 25);
             textBox1.TabIndex = 0;
             textBox1.TabStop = false;
             textBox1.TextAlign = HorizontalAlignment.Center;
@@ -402,7 +402,7 @@
             lb_Lg_Info2.ForeColor = Color.White;
             lb_Lg_Info2.Location = new Point(110, 49);
             lb_Lg_Info2.Name = "lb_Lg_Info2";
-            lb_Lg_Info2.Size = new Size(272, 31);
+            lb_Lg_Info2.Size = new Size(260, 30);
             lb_Lg_Info2.TabIndex = 9;
             lb_Lg_Info2.Text = "DASHBOARD - DENTIST";
             // 
@@ -414,7 +414,7 @@
             lb_Lg_Info.ForeColor = Color.White;
             lb_Lg_Info.Location = new Point(110, 12);
             lb_Lg_Info.Name = "lb_Lg_Info";
-            lb_Lg_Info.Size = new Size(458, 31);
+            lb_Lg_Info.Size = new Size(437, 30);
             lb_Lg_Info.TabIndex = 8;
             lb_Lg_Info.Text = "Phòng khám nha khoa Khoa học tự nhiên";
             // 
@@ -458,7 +458,7 @@
             // 
             // Homepage_Dentist
             // 
-            AutoScaleDimensions = new SizeF(13F, 31F);
+            AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 128);
             ClientSize = new Size(1135, 652);
@@ -469,6 +469,7 @@
             Margin = new Padding(5);
             Name = "Homepage_Dentist";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "Dashboard";
             main_panel.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -56,9 +56,9 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(main_panel);
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(12, 11);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1111, 628);
+            panel1.Size = new Size(1111, 597);
             panel1.TabIndex = 0;
             // 
             // main_panel
@@ -68,7 +68,7 @@
             main_panel.Controls.Add(pan_header);
             main_panel.Location = new Point(-7, -7);
             main_panel.Name = "main_panel";
-            main_panel.Size = new Size(1124, 643);
+            main_panel.Size = new Size(1124, 611);
             main_panel.TabIndex = 2;
             // 
             // pan_menu
@@ -79,9 +79,9 @@
             pan_menu.Controls.Add(tex_role);
             pan_menu.Controls.Add(bt_accountmanager);
             pan_menu.Controls.Add(pic_account);
-            pan_menu.Location = new Point(0, 108);
+            pan_menu.Location = new Point(0, 103);
             pan_menu.Name = "pan_menu";
-            pan_menu.Size = new Size(271, 535);
+            pan_menu.Size = new Size(271, 508);
             pan_menu.TabIndex = 10;
             // 
             // but_account
@@ -90,9 +90,9 @@
             but_account.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             but_account.FlatStyle = FlatStyle.Flat;
             but_account.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_account.Location = new Point(22, 440);
+            but_account.Location = new Point(22, 418);
             but_account.Name = "but_account";
-            but_account.Size = new Size(235, 47);
+            but_account.Size = new Size(235, 45);
             but_account.TabIndex = 8;
             but_account.TabStop = false;
             but_account.Text = "Thông tin tài khoản";
@@ -105,9 +105,9 @@
             but_medicine.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             but_medicine.FlatStyle = FlatStyle.Flat;
             but_medicine.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            but_medicine.Location = new Point(22, 352);
+            but_medicine.Location = new Point(22, 334);
             but_medicine.Name = "but_medicine";
-            but_medicine.Size = new Size(235, 47);
+            but_medicine.Size = new Size(235, 45);
             but_medicine.TabIndex = 8;
             but_medicine.TabStop = false;
             but_medicine.Text = "Quản lý thuốc";
@@ -120,10 +120,10 @@
             tex_role.BorderStyle = BorderStyle.None;
             tex_role.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tex_role.ForeColor = Color.White;
-            tex_role.Location = new Point(22, 194);
+            tex_role.Location = new Point(22, 184);
             tex_role.Name = "tex_role";
             tex_role.ReadOnly = true;
-            tex_role.Size = new Size(235, 31);
+            tex_role.Size = new Size(235, 29);
             tex_role.TabIndex = 0;
             tex_role.TabStop = false;
             tex_role.TextAlign = HorizontalAlignment.Center;
@@ -135,9 +135,9 @@
             bt_accountmanager.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             bt_accountmanager.FlatStyle = FlatStyle.Flat;
             bt_accountmanager.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            bt_accountmanager.Location = new Point(22, 267);
+            bt_accountmanager.Location = new Point(22, 254);
             bt_accountmanager.Name = "bt_accountmanager";
-            bt_accountmanager.Size = new Size(235, 47);
+            bt_accountmanager.Size = new Size(235, 45);
             bt_accountmanager.TabIndex = 0;
             bt_accountmanager.TabStop = false;
             bt_accountmanager.Text = "Quản lý tài khoản";
@@ -152,7 +152,7 @@
             pic_account.InitialImage = (Image)resources.GetObject("pic_account.InitialImage");
             pic_account.Location = new Point(32, 8);
             pic_account.Name = "pic_account";
-            pic_account.Size = new Size(193, 178);
+            pic_account.Size = new Size(193, 169);
             pic_account.SizeMode = PictureBoxSizeMode.Zoom;
             pic_account.TabIndex = 4;
             pic_account.TabStop = false;
@@ -167,7 +167,7 @@
             pan_header.Controls.Add(pic_exit);
             pan_header.Location = new Point(0, 0);
             pan_header.Name = "pan_header";
-            pan_header.Size = new Size(1124, 109);
+            pan_header.Size = new Size(1124, 104);
             pan_header.TabIndex = 9;
             // 
             // lab_info2
@@ -176,9 +176,9 @@
             lab_info2.BackColor = Color.FromArgb(8, 48, 107);
             lab_info2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_info2.ForeColor = Color.White;
-            lab_info2.Location = new Point(110, 52);
+            lab_info2.Location = new Point(110, 49);
             lab_info2.Name = "lab_info2";
-            lab_info2.Size = new Size(346, 31);
+            lab_info2.Size = new Size(332, 30);
             lab_info2.TabIndex = 9;
             lab_info2.Text = "DASHBOARD - QUẢN TRỊ VIÊN";
             // 
@@ -188,9 +188,9 @@
             lab_info1.BackColor = Color.FromArgb(8, 48, 107);
             lab_info1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lab_info1.ForeColor = Color.White;
-            lab_info1.Location = new Point(110, 15);
+            lab_info1.Location = new Point(110, 14);
             lab_info1.Name = "lab_info1";
-            lab_info1.Size = new Size(447, 31);
+            lab_info1.Size = new Size(428, 30);
             lab_info1.TabIndex = 8;
             lab_info1.Text = "Hệ thống quản lý phòng khám nha khoa";
             // 
@@ -200,7 +200,7 @@
             pic_logo.Image = Properties.Resources.Dental_Logo_2;
             pic_logo.Location = new Point(8, 9);
             pic_logo.Name = "pic_logo";
-            pic_logo.Size = new Size(101, 80);
+            pic_logo.Size = new Size(101, 76);
             pic_logo.SizeMode = PictureBoxSizeMode.Zoom;
             pic_logo.TabIndex = 7;
             pic_logo.TabStop = false;
@@ -212,9 +212,9 @@
             but_exit.FlatStyle = FlatStyle.Flat;
             but_exit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             but_exit.ForeColor = Color.White;
-            but_exit.Location = new Point(898, 19);
+            but_exit.Location = new Point(898, 18);
             but_exit.Name = "but_exit";
-            but_exit.Size = new Size(133, 48);
+            but_exit.Size = new Size(133, 46);
             but_exit.TabIndex = 6;
             but_exit.TabStop = false;
             but_exit.Text = "Đăng xuất";
@@ -224,9 +224,9 @@
             // pic_exit
             // 
             pic_exit.Image = Properties.Resources.logout_2;
-            pic_exit.Location = new Point(1037, 19);
+            pic_exit.Location = new Point(1037, 18);
             pic_exit.Name = "pic_exit";
-            pic_exit.Size = new Size(51, 49);
+            pic_exit.Size = new Size(51, 47);
             pic_exit.SizeMode = PictureBoxSizeMode.Zoom;
             pic_exit.TabIndex = 5;
             pic_exit.TabStop = false;
@@ -234,15 +234,16 @@
             // 
             // Homepage_Admin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 128);
-            ClientSize = new Size(1135, 652);
+            ClientSize = new Size(1135, 619);
             ControlBox = false;
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Homepage_Admin";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "Dashboard";
             panel1.ResumeLayout(false);
             main_panel.ResumeLayout(false);
             pan_menu.ResumeLayout(false);

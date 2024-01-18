@@ -139,9 +139,9 @@
             panel1.Controls.Add(lb_Lg_Info);
             panel1.Controls.Add(C_pt_logo);
             panel1.Controls.Add(C_pn_header);
-            panel1.Location = new Point(12, 12);
+            panel1.Location = new Point(12, 11);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1111, 628);
+            panel1.Size = new Size(1111, 597);
             panel1.TabIndex = 0;
             panel1.Paint += panel1_Paint;
             // 
@@ -151,11 +151,11 @@
             C_Menu.Controls.Add(tabPage3);
             C_Menu.Controls.Add(tabPage4);
             C_Menu.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_Menu.Location = new Point(255, 108);
+            C_Menu.Location = new Point(255, 103);
             C_Menu.Multiline = true;
             C_Menu.Name = "C_Menu";
             C_Menu.SelectedIndex = 0;
-            C_Menu.Size = new Size(853, 517);
+            C_Menu.Size = new Size(853, 491);
             C_Menu.SizeMode = TabSizeMode.Fixed;
             C_Menu.TabIndex = 9;
             C_Menu.SelectedIndexChanged += C_Menu_SelectedIndexChanged;
@@ -171,10 +171,10 @@
             tabPage1.Controls.Add(panel4);
             tabPage1.Controls.Add(pn_rg_Addr);
             tabPage1.Controls.Add(pn_rg_Name);
-            tabPage1.Location = new Point(4, 40);
+            tabPage1.Location = new Point(4, 39);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(845, 473);
+            tabPage1.Size = new Size(845, 448);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Đặt lịch";
             tabPage1.Click += tabPage1_Click;
@@ -184,9 +184,9 @@
             C_lb_Appoint.AutoSize = true;
             C_lb_Appoint.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             C_lb_Appoint.ForeColor = Color.FromArgb(8, 48, 107);
-            C_lb_Appoint.Location = new Point(323, 37);
+            C_lb_Appoint.Location = new Point(323, 35);
             C_lb_Appoint.Name = "C_lb_Appoint";
-            C_lb_Appoint.Size = new Size(175, 38);
+            C_lb_Appoint.Size = new Size(155, 35);
             C_lb_Appoint.TabIndex = 16;
             C_lb_Appoint.Text = "Đặt lịch hẹn";
             // 
@@ -195,9 +195,9 @@
             bt_rg_Exit.BackColor = Color.FromArgb(8, 48, 107);
             bt_rg_Exit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             bt_rg_Exit.ForeColor = Color.White;
-            bt_rg_Exit.Location = new Point(563, 353);
+            bt_rg_Exit.Location = new Point(563, 335);
             bt_rg_Exit.Name = "bt_rg_Exit";
-            bt_rg_Exit.Size = new Size(151, 60);
+            bt_rg_Exit.Size = new Size(151, 57);
             bt_rg_Exit.TabIndex = 15;
             bt_rg_Exit.TabStop = false;
             bt_rg_Exit.Text = "Tiếp tục";
@@ -208,9 +208,9 @@
             // 
             label50.AutoSize = true;
             label50.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label50.Location = new Point(107, 260);
+            label50.Location = new Point(107, 247);
             label50.Name = "label50";
-            label50.Size = new Size(78, 31);
+            label50.Size = new Size(72, 30);
             label50.TabIndex = 14;
             label50.Text = "Nha sĩ";
             label50.Click += label50_Click;
@@ -219,9 +219,9 @@
             // 
             lb_rg_datebirth.AutoSize = true;
             lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_datebirth.Location = new Point(107, 119);
+            lb_rg_datebirth.Location = new Point(107, 113);
             lb_rg_datebirth.Name = "lb_rg_datebirth";
-            lb_rg_datebirth.Size = new Size(130, 31);
+            lb_rg_datebirth.Size = new Size(123, 30);
             lb_rg_datebirth.TabIndex = 12;
             lb_rg_datebirth.Text = "Ngày khám";
             lb_rg_datebirth.Click += lb_rg_datebirth_Click;
@@ -230,9 +230,9 @@
             // 
             lb_rg_Name.AutoSize = true;
             lb_rg_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_Name.Location = new Point(107, 190);
+            lb_rg_Name.Location = new Point(107, 180);
             lb_rg_Name.Name = "lb_rg_Name";
-            lb_rg_Name.Size = new Size(112, 31);
+            lb_rg_Name.Size = new Size(105, 30);
             lb_rg_Name.TabIndex = 10;
             lb_rg_Name.Text = "Giờ khám";
             lb_rg_Name.Click += lb_rg_Name_Click;
@@ -242,9 +242,9 @@
             panel4.BorderStyle = BorderStyle.FixedSingle;
             panel4.Controls.Add(C_dateTime_rg);
             panel4.Controls.Add(pictureBox2);
-            panel4.Location = new Point(323, 110);
+            panel4.Location = new Point(323, 104);
             panel4.Name = "panel4";
-            panel4.Size = new Size(391, 45);
+            panel4.Size = new Size(391, 43);
             panel4.TabIndex = 0;
             panel4.Paint += panel4_Paint;
             // 
@@ -261,7 +261,7 @@
             C_dateTime_rg.Location = new Point(56, 2);
             C_dateTime_rg.MinDate = new DateTime(2023, 12, 21, 0, 0, 0, 0);
             C_dateTime_rg.Name = "C_dateTime_rg";
-            C_dateTime_rg.Size = new Size(330, 38);
+            C_dateTime_rg.Size = new Size(330, 36);
             C_dateTime_rg.TabIndex = 0;
             C_dateTime_rg.TabStop = false;
             C_dateTime_rg.Tag = "";
@@ -273,7 +273,7 @@
             pictureBox2.Image = Properties.Resources.calendar__2_;
             pictureBox2.Location = new Point(4, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(46, 36);
+            pictureBox2.Size = new Size(46, 34);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
@@ -284,9 +284,9 @@
             pn_rg_Addr.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Addr.Controls.Add(cb_dentist);
             pn_rg_Addr.Controls.Add(pc_Lg_Un);
-            pn_rg_Addr.Location = new Point(323, 251);
+            pn_rg_Addr.Location = new Point(323, 238);
             pn_rg_Addr.Name = "pn_rg_Addr";
-            pn_rg_Addr.Size = new Size(391, 45);
+            pn_rg_Addr.Size = new Size(391, 43);
             pn_rg_Addr.TabIndex = 2;
             pn_rg_Addr.Paint += pn_rg_Addr_Paint;
             // 
@@ -297,7 +297,7 @@
             cb_dentist.IntegralHeight = false;
             cb_dentist.Location = new Point(54, 2);
             cb_dentist.Name = "cb_dentist";
-            cb_dentist.Size = new Size(331, 39);
+            cb_dentist.Size = new Size(331, 38);
             cb_dentist.TabIndex = 15;
             cb_dentist.TabStop = false;
             cb_dentist.SelectedIndexChanged += cb_dentist_SelectedIndexChanged;
@@ -307,7 +307,7 @@
             pc_Lg_Un.Image = Properties.Resources.doctor;
             pc_Lg_Un.Location = new Point(4, 3);
             pc_Lg_Un.Name = "pc_Lg_Un";
-            pc_Lg_Un.Size = new Size(46, 36);
+            pc_Lg_Un.Size = new Size(46, 34);
             pc_Lg_Un.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Lg_Un.TabIndex = 9;
             pc_Lg_Un.TabStop = false;
@@ -318,9 +318,9 @@
             pn_rg_Name.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Name.Controls.Add(C_Hour);
             pn_rg_Name.Controls.Add(pc_rg_name);
-            pn_rg_Name.Location = new Point(323, 181);
+            pn_rg_Name.Location = new Point(323, 172);
             pn_rg_Name.Name = "pn_rg_Name";
-            pn_rg_Name.Size = new Size(391, 45);
+            pn_rg_Name.Size = new Size(391, 43);
             pn_rg_Name.TabIndex = 1;
             pn_rg_Name.Paint += pn_rg_Name_Paint;
             // 
@@ -336,7 +336,7 @@
             C_Hour.Location = new Point(55, 2);
             C_Hour.Name = "C_Hour";
             C_Hour.ShowUpDown = true;
-            C_Hour.Size = new Size(331, 38);
+            C_Hour.Size = new Size(331, 36);
             C_Hour.TabIndex = 17;
             C_Hour.TabStop = false;
             C_Hour.Value = new DateTime(2023, 12, 21, 7, 0, 0, 0);
@@ -347,7 +347,7 @@
             pc_rg_name.Image = Properties.Resources.clock__1_;
             pc_rg_name.Location = new Point(4, 3);
             pc_rg_name.Name = "pc_rg_name";
-            pc_rg_name.Size = new Size(46, 36);
+            pc_rg_name.Size = new Size(46, 34);
             pc_rg_name.SizeMode = PictureBoxSizeMode.Zoom;
             pc_rg_name.TabIndex = 9;
             pc_rg_name.TabStop = false;
@@ -372,10 +372,10 @@
             tabPage3.Controls.Add(pictureBox20);
             tabPage3.Controls.Add(label101);
             tabPage3.Controls.Add(label107);
-            tabPage3.Location = new Point(4, 40);
+            tabPage3.Location = new Point(4, 39);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(845, 473);
+            tabPage3.Size = new Size(845, 448);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Liên hệ";
             tabPage3.UseVisualStyleBackColor = true;
@@ -384,9 +384,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Dentist1;
-            pictureBox1.Location = new Point(520, 99);
+            pictureBox1.Location = new Point(520, 94);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(276, 368);
+            pictureBox1.Size = new Size(276, 350);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 48;
             pictureBox1.TabStop = false;
@@ -395,9 +395,9 @@
             // label48
             // 
             label48.AutoSize = true;
-            label48.Location = new Point(73, 396);
+            label48.Location = new Point(73, 376);
             label48.Name = "label48";
-            label48.Size = new Size(406, 31);
+            label48.Size = new Size(382, 30);
             label48.TabIndex = 47;
             label48.Text = "Tất cả các ngày trong tuần, trừ ngày lễ";
             label48.Click += label48_Click;
@@ -405,9 +405,9 @@
             // label49
             // 
             label49.AutoSize = true;
-            label49.Location = new Point(73, 348);
+            label49.Location = new Point(73, 331);
             label49.Name = "label49";
-            label49.Size = new Size(191, 31);
+            label49.Size = new Size(187, 30);
             label49.TabIndex = 46;
             label49.Text = "Từ 7:00 đến 20:00";
             label49.Click += label49_Click;
@@ -415,9 +415,9 @@
             // pictureBox14
             // 
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(35, 400);
+            pictureBox14.Location = new Point(35, 380);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(32, 27);
+            pictureBox14.Size = new Size(32, 26);
             pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox14.TabIndex = 45;
             pictureBox14.TabStop = false;
@@ -426,9 +426,9 @@
             // pictureBox16
             // 
             pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
-            pictureBox16.Location = new Point(35, 352);
+            pictureBox16.Location = new Point(35, 334);
             pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(32, 27);
+            pictureBox16.Size = new Size(32, 26);
             pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox16.TabIndex = 44;
             pictureBox16.TabStop = false;
@@ -437,9 +437,9 @@
             // label93
             // 
             label93.AutoSize = true;
-            label93.Location = new Point(26, 311);
+            label93.Location = new Point(26, 295);
             label93.Name = "label93";
-            label93.Size = new Size(200, 31);
+            label93.Size = new Size(187, 30);
             label93.TabIndex = 43;
             label93.Text = "Thời gian làm việc";
             label93.Click += label93_Click;
@@ -447,9 +447,9 @@
             // pictureBox17
             // 
             pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
-            pictureBox17.Location = new Point(35, 254);
+            pictureBox17.Location = new Point(35, 241);
             pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(32, 27);
+            pictureBox17.Size = new Size(32, 26);
             pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox17.TabIndex = 42;
             pictureBox17.TabStop = false;
@@ -458,9 +458,9 @@
             // pictureBox18
             // 
             pictureBox18.Image = (Image)resources.GetObject("pictureBox18.Image");
-            pictureBox18.Location = new Point(35, 208);
+            pictureBox18.Location = new Point(35, 198);
             pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(32, 27);
+            pictureBox18.Size = new Size(32, 26);
             pictureBox18.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox18.TabIndex = 41;
             pictureBox18.TabStop = false;
@@ -469,18 +469,18 @@
             // label94
             // 
             label94.AutoSize = true;
-            label94.Location = new Point(195, 280);
+            label94.Location = new Point(195, 266);
             label94.Name = "label94";
-            label94.Size = new Size(0, 31);
+            label94.Size = new Size(0, 30);
             label94.TabIndex = 40;
             label94.Click += label94_Click;
             // 
             // label95
             // 
             label95.AutoSize = true;
-            label95.Location = new Point(73, 204);
+            label95.Location = new Point(73, 194);
             label95.Name = "label95";
-            label95.Size = new Size(201, 31);
+            label95.Size = new Size(196, 30);
             label95.TabIndex = 39;
             label95.Text = "Hotline: 1900 8080";
             label95.Click += label95_Click;
@@ -488,9 +488,9 @@
             // label98
             // 
             label98.AutoSize = true;
-            label98.Location = new Point(73, 250);
+            label98.Location = new Point(73, 238);
             label98.Name = "label98";
-            label98.Size = new Size(331, 31);
+            label98.Size = new Size(312, 30);
             label98.TabIndex = 38;
             label98.Text = "Gmail: NhaKhoa20@gmail.com";
             label98.Click += label98_Click;
@@ -498,9 +498,9 @@
             // label99
             // 
             label99.AutoSize = true;
-            label99.Location = new Point(26, 167);
+            label99.Location = new Point(26, 159);
             label99.Name = "label99";
-            label99.Size = new Size(186, 31);
+            label99.Size = new Size(175, 30);
             label99.TabIndex = 37;
             label99.Text = "Thông tin liên hệ";
             label99.Click += label99_Click;
@@ -508,9 +508,9 @@
             // label100
             // 
             label100.AutoSize = true;
-            label100.Location = new Point(73, 110);
+            label100.Location = new Point(73, 104);
             label100.Name = "label100";
-            label100.Size = new Size(397, 31);
+            label100.Size = new Size(379, 30);
             label100.TabIndex = 36;
             label100.Text = "Cơ sờ 2: Linh Trung, Thủ Đức, TPHCM ";
             label100.Click += label100_Click;
@@ -518,9 +518,9 @@
             // pictureBox19
             // 
             pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(35, 114);
+            pictureBox19.Location = new Point(35, 108);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(32, 27);
+            pictureBox19.Size = new Size(32, 26);
             pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 35;
             pictureBox19.TabStop = false;
@@ -529,9 +529,9 @@
             // pictureBox20
             // 
             pictureBox20.Image = (Image)resources.GetObject("pictureBox20.Image");
-            pictureBox20.Location = new Point(35, 69);
+            pictureBox20.Location = new Point(35, 66);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(32, 27);
+            pictureBox20.Size = new Size(32, 26);
             pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 34;
             pictureBox20.TabStop = false;
@@ -540,9 +540,9 @@
             // label101
             // 
             label101.AutoSize = true;
-            label101.Location = new Point(73, 65);
+            label101.Location = new Point(73, 62);
             label101.Name = "label101";
-            label101.Size = new Size(473, 31);
+            label101.Size = new Size(459, 30);
             label101.TabIndex = 33;
             label101.Text = "Cơ sở 1: 227 Nguyễn Văn Cừ, P.4, Q.5, TPHCM";
             label101.Click += label101_Click;
@@ -550,9 +550,9 @@
             // label107
             // 
             label107.AutoSize = true;
-            label107.Location = new Point(26, 30);
+            label107.Location = new Point(26, 28);
             label107.Name = "label107";
-            label107.Size = new Size(407, 31);
+            label107.Size = new Size(389, 30);
             label107.TabIndex = 32;
             label107.Text = "Hệ thống phòng khám nha khoa KHTN";
             label107.Click += label107_Click;
@@ -563,10 +563,10 @@
             tabPage4.Controls.Add(lbRate2);
             tabPage4.Controls.Add(lbRate1);
             tabPage4.Controls.Add(panel2);
-            tabPage4.Location = new Point(4, 40);
+            tabPage4.Location = new Point(4, 39);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(845, 473);
+            tabPage4.Size = new Size(845, 448);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Góp ý";
             tabPage4.UseVisualStyleBackColor = true;
@@ -576,18 +576,18 @@
             // 
             panel3.Controls.Add(pc_Thank2);
             panel3.ImeMode = ImeMode.Disable;
-            panel3.Location = new Point(3, 86);
+            panel3.Location = new Point(3, 82);
             panel3.Name = "panel3";
-            panel3.Size = new Size(298, 384);
+            panel3.Size = new Size(298, 365);
             panel3.TabIndex = 57;
             panel3.Paint += panel3_Paint;
             // 
             // pc_Thank2
             // 
             pc_Thank2.Image = Properties.Resources.Logo_review1;
-            pc_Thank2.Location = new Point(9, 22);
+            pc_Thank2.Location = new Point(9, 21);
             pc_Thank2.Name = "pc_Thank2";
-            pc_Thank2.Size = new Size(282, 355);
+            pc_Thank2.Size = new Size(282, 337);
             pc_Thank2.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Thank2.TabIndex = 55;
             pc_Thank2.TabStop = false;
@@ -596,9 +596,9 @@
             // lbRate2
             // 
             lbRate2.AutoSize = true;
-            lbRate2.Location = new Point(20, 52);
+            lbRate2.Location = new Point(20, 49);
             lbRate2.Name = "lbRate2";
-            lbRate2.Size = new Size(533, 31);
+            lbRate2.Size = new Size(500, 30);
             lbRate2.TabIndex = 39;
             lbRate2.Text = "là nơi chăm sóc sức khỏe cho bản thân và gia đình.";
             lbRate2.Click += lbRate2_Click;
@@ -606,9 +606,9 @@
             // lbRate1
             // 
             lbRate1.AutoSize = true;
-            lbRate1.Location = new Point(20, 21);
+            lbRate1.Location = new Point(20, 20);
             lbRate1.Name = "lbRate1";
-            lbRate1.Size = new Size(770, 31);
+            lbRate1.Size = new Size(726, 30);
             lbRate1.TabIndex = 38;
             lbRate1.Text = "Chân thành cảm ơn bạn đã chọn Phòng khám nha khoa Khoa học tự nhiên";
             lbRate1.Click += lbRate1_Click;
@@ -629,9 +629,9 @@
             panel2.Controls.Add(ptRate3);
             panel2.Controls.Add(ptRate2);
             panel2.ImeMode = ImeMode.NoControl;
-            panel2.Location = new Point(276, 96);
+            panel2.Location = new Point(276, 91);
             panel2.Name = "panel2";
-            panel2.Size = new Size(523, 381);
+            panel2.Size = new Size(523, 362);
             panel2.TabIndex = 56;
             panel2.Paint += panel2_Paint;
             // 
@@ -641,9 +641,9 @@
             C_bt_add.FlatAppearance.BorderColor = Color.FromArgb(8, 48, 107);
             C_bt_add.FlatStyle = FlatStyle.Flat;
             C_bt_add.ForeColor = Color.White;
-            C_bt_add.Location = new Point(387, 329);
+            C_bt_add.Location = new Point(387, 313);
             C_bt_add.Name = "C_bt_add";
-            C_bt_add.Size = new Size(122, 38);
+            C_bt_add.Size = new Size(122, 36);
             C_bt_add.TabIndex = 56;
             C_bt_add.Text = "Thêm";
             C_bt_add.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -655,9 +655,9 @@
             // 
             C_lb_Thanks3.AutoSize = true;
             C_lb_Thanks3.Font = new Font("Segoe UI Semibold", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            C_lb_Thanks3.Location = new Point(55, 332);
+            C_lb_Thanks3.Location = new Point(55, 315);
             C_lb_Thanks3.Name = "C_lb_Thanks3";
-            C_lb_Thanks3.Size = new Size(316, 31);
+            C_lb_Thanks3.Size = new Size(299, 30);
             C_lb_Thanks3.TabIndex = 55;
             C_lb_Thanks3.Text = "Cảm ơn bạn đã gửi đánh giá!";
             C_lb_Thanks3.Visible = false;
@@ -669,9 +669,9 @@
             C_bt_Send.FlatAppearance.BorderColor = Color.FromArgb(8, 48, 107);
             C_bt_Send.FlatStyle = FlatStyle.Flat;
             C_bt_Send.ForeColor = Color.White;
-            C_bt_Send.Location = new Point(387, 329);
+            C_bt_Send.Location = new Point(387, 313);
             C_bt_Send.Name = "C_bt_Send";
-            C_bt_Send.Size = new Size(122, 38);
+            C_bt_Send.Size = new Size(122, 36);
             C_bt_Send.TabIndex = 54;
             C_bt_Send.Text = "Gửi";
             C_bt_Send.UseVisualStyleBackColor = false;
@@ -684,26 +684,26 @@
             lbRate3.ForeColor = Color.FromArgb(8, 48, 107);
             lbRate3.Location = new Point(176, 2);
             lbRate3.Name = "lbRate3";
-            lbRate3.Size = new Size(194, 31);
+            lbRate3.Size = new Size(186, 30);
             lbRate3.TabIndex = 46;
             lbRate3.Text = "Đánh giá dịch vụ";
             lbRate3.Click += lbRate3_Click;
             // 
             // tbRate1
             // 
-            tbRate1.Location = new Point(138, 218);
+            tbRate1.Location = new Point(138, 207);
             tbRate1.Multiline = true;
             tbRate1.Name = "tbRate1";
-            tbRate1.Size = new Size(376, 92);
+            tbRate1.Size = new Size(376, 88);
             tbRate1.TabIndex = 50;
             tbRate1.TextChanged += tbRate1_TextChanged;
             // 
             // lbRate4
             // 
             lbRate4.AutoSize = true;
-            lbRate4.Location = new Point(47, 218);
+            lbRate4.Location = new Point(47, 207);
             lbRate4.Name = "lbRate4";
-            lbRate4.Size = new Size(74, 31);
+            lbRate4.Size = new Size(71, 30);
             lbRate4.TabIndex = 44;
             lbRate4.Text = "Góp ý";
             lbRate4.Click += lbRate4_Click;
@@ -711,9 +711,9 @@
             // cbRate3
             // 
             cbRate3.AutoSize = true;
-            cbRate3.Location = new Point(380, 165);
+            cbRate3.Location = new Point(380, 157);
             cbRate3.Name = "cbRate3";
-            cbRate3.Size = new Size(137, 35);
+            cbRate3.Size = new Size(128, 34);
             cbRate3.TabIndex = 49;
             cbRate3.Text = "Không tốt";
             cbRate3.UseVisualStyleBackColor = true;
@@ -722,9 +722,9 @@
             // lbRate6
             // 
             lbRate6.AutoSize = true;
-            lbRate6.Location = new Point(47, 50);
+            lbRate6.Location = new Point(47, 48);
             lbRate6.Name = "lbRate6";
-            lbRate6.Size = new Size(441, 31);
+            lbRate6.Size = new Size(418, 30);
             lbRate6.TabIndex = 40;
             lbRate6.Text = "Buổi khám hôm nay của bạn như thế nào?";
             lbRate6.Click += lbRate6_Click;
@@ -732,9 +732,9 @@
             // cbRate2
             // 
             cbRate2.AutoSize = true;
-            cbRate2.Location = new Point(194, 165);
+            cbRate2.Location = new Point(194, 157);
             cbRate2.Name = "cbRate2";
-            cbRate2.Size = new Size(163, 35);
+            cbRate2.Size = new Size(150, 34);
             cbRate2.TabIndex = 48;
             cbRate2.Text = "Bình thường";
             cbRate2.UseVisualStyleBackColor = true;
@@ -743,9 +743,9 @@
             // ptRate1
             // 
             ptRate1.Image = (Image)resources.GetObject("ptRate1.Image");
-            ptRate1.Location = new Point(64, 97);
+            ptRate1.Location = new Point(64, 92);
             ptRate1.Name = "ptRate1";
-            ptRate1.Size = new Size(70, 62);
+            ptRate1.Size = new Size(70, 59);
             ptRate1.SizeMode = PictureBoxSizeMode.Zoom;
             ptRate1.TabIndex = 41;
             ptRate1.TabStop = false;
@@ -754,9 +754,9 @@
             // cbRate1
             // 
             cbRate1.AutoSize = true;
-            cbRate1.Location = new Point(39, 165);
+            cbRate1.Location = new Point(39, 157);
             cbRate1.Name = "cbRate1";
-            cbRate1.Size = new Size(122, 35);
+            cbRate1.Size = new Size(113, 34);
             cbRate1.TabIndex = 47;
             cbRate1.Text = "Hài lòng";
             cbRate1.UseVisualStyleBackColor = true;
@@ -765,9 +765,9 @@
             // ptRate3
             // 
             ptRate3.Image = (Image)resources.GetObject("ptRate3.Image");
-            ptRate3.Location = new Point(412, 97);
+            ptRate3.Location = new Point(412, 92);
             ptRate3.Name = "ptRate3";
-            ptRate3.Size = new Size(70, 62);
+            ptRate3.Size = new Size(70, 59);
             ptRate3.SizeMode = PictureBoxSizeMode.Zoom;
             ptRate3.TabIndex = 42;
             ptRate3.TabStop = false;
@@ -776,9 +776,9 @@
             // ptRate2
             // 
             ptRate2.Image = (Image)resources.GetObject("ptRate2.Image");
-            ptRate2.Location = new Point(236, 97);
+            ptRate2.Location = new Point(236, 92);
             ptRate2.Name = "ptRate2";
-            ptRate2.Size = new Size(70, 62);
+            ptRate2.Size = new Size(70, 59);
             ptRate2.SizeMode = PictureBoxSizeMode.Zoom;
             ptRate2.TabIndex = 43;
             ptRate2.TabStop = false;
@@ -792,9 +792,9 @@
             C_pn_Menu.Controls.Add(textBox1);
             C_pn_Menu.Controls.Add(C_bt_View);
             C_pn_Menu.Controls.Add(C_pt_account);
-            C_pn_Menu.Location = new Point(0, 100);
+            C_pn_Menu.Location = new Point(0, 95);
             C_pn_Menu.Name = "C_pn_Menu";
-            C_pn_Menu.Size = new Size(253, 528);
+            C_pn_Menu.Size = new Size(253, 502);
             C_pn_Menu.TabIndex = 8;
             C_pn_Menu.Paint += C_pn_Menu_Paint;
             // 
@@ -804,9 +804,9 @@
             C_bt_View_Cld.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             C_bt_View_Cld.FlatStyle = FlatStyle.Flat;
             C_bt_View_Cld.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_bt_View_Cld.Location = new Point(19, 407);
+            C_bt_View_Cld.Location = new Point(19, 387);
             C_bt_View_Cld.Name = "C_bt_View_Cld";
-            C_bt_View_Cld.Size = new Size(217, 47);
+            C_bt_View_Cld.Size = new Size(217, 45);
             C_bt_View_Cld.TabIndex = 7;
             C_bt_View_Cld.Text = "Thông tin lịch hẹn";
             C_bt_View_Cld.UseVisualStyleBackColor = false;
@@ -818,9 +818,9 @@
             C_bt_Update.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             C_bt_Update.FlatStyle = FlatStyle.Flat;
             C_bt_Update.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_bt_Update.Location = new Point(19, 323);
+            C_bt_Update.Location = new Point(19, 307);
             C_bt_Update.Name = "C_bt_Update";
-            C_bt_Update.Size = new Size(217, 47);
+            C_bt_Update.Size = new Size(217, 45);
             C_bt_Update.TabIndex = 6;
             C_bt_Update.Text = "Cập nhật thông tin";
             C_bt_Update.UseVisualStyleBackColor = false;
@@ -832,11 +832,11 @@
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(3, 184);
+            textBox1.Location = new Point(3, 175);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Username";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(246, 27);
+            textBox1.Size = new Size(246, 25);
             textBox1.TabIndex = 0;
             textBox1.TabStop = false;
             textBox1.Text = "Username";
@@ -849,9 +849,9 @@
             C_bt_View.FlatAppearance.BorderColor = Color.FromArgb(191, 215, 251);
             C_bt_View.FlatStyle = FlatStyle.Flat;
             C_bt_View.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            C_bt_View.Location = new Point(19, 241);
+            C_bt_View.Location = new Point(19, 229);
             C_bt_View.Name = "C_bt_View";
-            C_bt_View.Size = new Size(217, 47);
+            C_bt_View.Size = new Size(217, 45);
             C_bt_View.TabIndex = 0;
             C_bt_View.Text = "Thông tin cá nhân";
             C_bt_View.UseVisualStyleBackColor = false;
@@ -863,7 +863,7 @@
             C_pt_account.Image = Properties.Resources.account2;
             C_pt_account.Location = new Point(30, 0);
             C_pt_account.Name = "C_pt_account";
-            C_pt_account.Size = new Size(193, 178);
+            C_pt_account.Size = new Size(193, 169);
             C_pt_account.SizeMode = PictureBoxSizeMode.Zoom;
             C_pt_account.TabIndex = 4;
             C_pt_account.TabStop = false;
@@ -875,9 +875,9 @@
             lb_Lg_Info2.BackColor = Color.FromArgb(8, 48, 107);
             lb_Lg_Info2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_Lg_Info2.ForeColor = Color.White;
-            lb_Lg_Info2.Location = new Point(110, 49);
+            lb_Lg_Info2.Location = new Point(110, 47);
             lb_Lg_Info2.Name = "lb_Lg_Info2";
-            lb_Lg_Info2.Size = new Size(255, 31);
+            lb_Lg_Info2.Size = new Size(244, 30);
             lb_Lg_Info2.TabIndex = 3;
             lb_Lg_Info2.Text = "DASHBOARD - CLIENT";
             lb_Lg_Info2.Click += lb_Lg_Info2_Click;
@@ -888,9 +888,9 @@
             lb_Lg_Info.BackColor = Color.FromArgb(8, 48, 107);
             lb_Lg_Info.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_Lg_Info.ForeColor = Color.White;
-            lb_Lg_Info.Location = new Point(110, 12);
+            lb_Lg_Info.Location = new Point(110, 11);
             lb_Lg_Info.Name = "lb_Lg_Info";
-            lb_Lg_Info.Size = new Size(458, 31);
+            lb_Lg_Info.Size = new Size(437, 30);
             lb_Lg_Info.TabIndex = 2;
             lb_Lg_Info.Text = "Phòng khám nha khoa Khoa học tự nhiên";
             lb_Lg_Info.Click += lb_Lg_Info_Click;
@@ -901,7 +901,7 @@
             C_pt_logo.Image = Properties.Resources.Dental_Logo_2;
             C_pt_logo.Location = new Point(3, 3);
             C_pt_logo.Name = "C_pt_logo";
-            C_pt_logo.Size = new Size(101, 80);
+            C_pt_logo.Size = new Size(101, 76);
             C_pt_logo.SizeMode = PictureBoxSizeMode.Zoom;
             C_pt_logo.TabIndex = 0;
             C_pt_logo.TabStop = false;
@@ -914,7 +914,7 @@
             C_pn_header.Controls.Add(C_pc_Exit);
             C_pn_header.Location = new Point(0, 0);
             C_pn_header.Name = "C_pn_header";
-            C_pn_header.Size = new Size(1111, 102);
+            C_pn_header.Size = new Size(1111, 97);
             C_pn_header.TabIndex = 7;
             C_pn_header.Paint += C_pn_header_Paint;
             // 
@@ -925,9 +925,9 @@
             C_bt_Exit.FlatStyle = FlatStyle.Flat;
             C_bt_Exit.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             C_bt_Exit.ForeColor = Color.White;
-            C_bt_Exit.Location = new Point(898, 19);
+            C_bt_Exit.Location = new Point(898, 18);
             C_bt_Exit.Name = "C_bt_Exit";
-            C_bt_Exit.Size = new Size(133, 48);
+            C_bt_Exit.Size = new Size(133, 46);
             C_bt_Exit.TabIndex = 6;
             C_bt_Exit.TabStop = false;
             C_bt_Exit.Text = "Đăng xuất";
@@ -937,9 +937,9 @@
             // C_pc_Exit
             // 
             C_pc_Exit.Image = Properties.Resources.logout_2;
-            C_pc_Exit.Location = new Point(1037, 19);
+            C_pc_Exit.Location = new Point(1037, 18);
             C_pc_Exit.Name = "C_pc_Exit";
-            C_pc_Exit.Size = new Size(51, 49);
+            C_pc_Exit.Size = new Size(51, 47);
             C_pc_Exit.SizeMode = PictureBoxSizeMode.Zoom;
             C_pc_Exit.TabIndex = 5;
             C_pc_Exit.TabStop = false;
@@ -950,7 +950,7 @@
             label45.AutoSize = true;
             label45.Location = new Point(4, 295);
             label45.Name = "label45";
-            label45.Size = new Size(1, 20);
+            label45.Size = new Size(1, 19);
             label45.TabIndex = 72;
             label45.Text = "Cấy ghép Implant";
             label45.Click += label45_Click;
@@ -999,16 +999,17 @@
             // 
             // Homepage_Client
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 128);
-            ClientSize = new Size(1135, 652);
+            ClientSize = new Size(1135, 619);
             ControlBox = false;
             Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Homepage_Client";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "Dashboard";
             Load += Homepage_Client_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

@@ -74,9 +74,9 @@
             pHomepage.Controls.Add(pc_Lg_Deco1);
             pHomepage.Controls.Add(lg_Close);
             pHomepage.Controls.Add(picLogo);
-            pHomepage.Location = new Point(12, 12);
+            pHomepage.Location = new Point(12, 11);
             pHomepage.Name = "pHomepage";
-            pHomepage.Size = new Size(1111, 628);
+            pHomepage.Size = new Size(1111, 597);
             pHomepage.TabIndex = 0;
             // 
             // pn_Hp_Login
@@ -89,9 +89,9 @@
             pn_Hp_Login.Controls.Add(pn_Hp_Logo_Username);
             pn_Hp_Login.Controls.Add(bt_Lg_Login);
             pn_Hp_Login.Controls.Add(lb_Lg_Login);
-            pn_Hp_Login.Location = new Point(563, 118);
+            pn_Hp_Login.Location = new Point(563, 112);
             pn_Hp_Login.Name = "pn_Hp_Login";
-            pn_Hp_Login.Size = new Size(501, 378);
+            pn_Hp_Login.Size = new Size(501, 359);
             pn_Hp_Login.TabIndex = 2;
             pn_Hp_Login.Paint += pn_Hp_Login_Paint;
             // 
@@ -105,10 +105,10 @@
             bt_Login_am.Font = new Font("Segoe UI", 13.8F, FontStyle.Underline, GraphicsUnit.Point);
             bt_Login_am.ForeColor = Color.Black;
             bt_Login_am.ImageAlign = ContentAlignment.TopCenter;
-            bt_Login_am.Location = new Point(387, 334);
+            bt_Login_am.Location = new Point(387, 317);
             bt_Login_am.Margin = new Padding(0);
             bt_Login_am.Name = "bt_Login_am";
-            bt_Login_am.Size = new Size(98, 42);
+            bt_Login_am.Size = new Size(98, 40);
             bt_Login_am.TabIndex = 7;
             bt_Login_am.Text = "tại đây";
             bt_Login_am.UseVisualStyleBackColor = false;
@@ -118,9 +118,9 @@
             // 
             Login_Appoint.AutoSize = true;
             Login_Appoint.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            Login_Appoint.Location = new Point(9, 339);
+            Login_Appoint.Location = new Point(9, 322);
             Login_Appoint.Name = "Login_Appoint";
-            Login_Appoint.Size = new Size(386, 31);
+            Login_Appoint.Size = new Size(362, 30);
             Login_Appoint.TabIndex = 6;
             Login_Appoint.Text = "Đặt lịch hẹn mà không cần tài khoản";
             Login_Appoint.Click += Login_Appoint_Click;
@@ -133,9 +133,9 @@
             bt_Register.FlatStyle = FlatStyle.Flat;
             bt_Register.Font = new Font("Segoe UI", 13.8F, FontStyle.Underline, GraphicsUnit.Point);
             bt_Register.ForeColor = Color.Black;
-            bt_Register.Location = new Point(244, 289);
+            bt_Register.Location = new Point(244, 275);
             bt_Register.Name = "bt_Register";
-            bt_Register.Size = new Size(166, 45);
+            bt_Register.Size = new Size(166, 43);
             bt_Register.TabIndex = 5;
             bt_Register.Text = "Đăng ký ngay";
             bt_Register.UseVisualStyleBackColor = false;
@@ -145,9 +145,9 @@
             // 
             lb_Register.AutoSize = true;
             lb_Register.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Register.Location = new Point(42, 296);
+            lb_Register.Location = new Point(42, 281);
             lb_Register.Name = "lb_Register";
-            lb_Register.Size = new Size(207, 31);
+            lb_Register.Size = new Size(196, 30);
             lb_Register.TabIndex = 4;
             lb_Register.Text = "Chưa có tài khoản?";
             // 
@@ -158,9 +158,9 @@
             pn_Hp_Login_Pw.Controls.Add(pc_lg_Hide);
             pn_Hp_Login_Pw.Controls.Add(pc_Hp_Login_Pw);
             pn_Hp_Login_Pw.Controls.Add(tb_Hp_Login_Password);
-            pn_Hp_Login_Pw.Location = new Point(62, 143);
+            pn_Hp_Login_Pw.Location = new Point(62, 136);
             pn_Hp_Login_Pw.Name = "pn_Hp_Login_Pw";
-            pn_Hp_Login_Pw.Size = new Size(391, 45);
+            pn_Hp_Login_Pw.Size = new Size(391, 43);
             pn_Hp_Login_Pw.TabIndex = 2;
             // 
             // pt_lg_Unhide
@@ -168,7 +168,7 @@
             pt_lg_Unhide.Image = Properties.Resources.hide;
             pt_lg_Unhide.Location = new Point(350, 6);
             pt_lg_Unhide.Name = "pt_lg_Unhide";
-            pt_lg_Unhide.Size = new Size(36, 30);
+            pt_lg_Unhide.Size = new Size(36, 28);
             pt_lg_Unhide.SizeMode = PictureBoxSizeMode.Zoom;
             pt_lg_Unhide.TabIndex = 11;
             pt_lg_Unhide.TabStop = false;
@@ -180,7 +180,7 @@
             pc_lg_Hide.Image = Properties.Resources.visible;
             pc_lg_Hide.Location = new Point(350, 6);
             pc_lg_Hide.Name = "pc_lg_Hide";
-            pc_lg_Hide.Size = new Size(36, 30);
+            pc_lg_Hide.Size = new Size(36, 28);
             pc_lg_Hide.SizeMode = PictureBoxSizeMode.Zoom;
             pc_lg_Hide.TabIndex = 10;
             pc_lg_Hide.TabStop = false;
@@ -191,7 +191,7 @@
             pc_Hp_Login_Pw.Image = Properties.Resources._lock;
             pc_Hp_Login_Pw.Location = new Point(4, 3);
             pc_Hp_Login_Pw.Name = "pc_Hp_Login_Pw";
-            pc_Hp_Login_Pw.Size = new Size(46, 36);
+            pc_Hp_Login_Pw.Size = new Size(46, 34);
             pc_Hp_Login_Pw.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Hp_Login_Pw.TabIndex = 9;
             pc_Hp_Login_Pw.TabStop = false;
@@ -204,7 +204,7 @@
             tb_Hp_Login_Password.Location = new Point(55, 3);
             tb_Hp_Login_Password.Name = "tb_Hp_Login_Password";
             tb_Hp_Login_Password.PlaceholderText = "Nhập mật khẩu";
-            tb_Hp_Login_Password.Size = new Size(333, 31);
+            tb_Hp_Login_Password.Size = new Size(333, 29);
             tb_Hp_Login_Password.TabIndex = 0;
             tb_Hp_Login_Password.TabStop = false;
             tb_Hp_Login_Password.UseSystemPasswordChar = true;
@@ -214,9 +214,9 @@
             pn_Hp_Logo_Username.BorderStyle = BorderStyle.FixedSingle;
             pn_Hp_Logo_Username.Controls.Add(pc_Hp_Login_Un);
             pn_Hp_Logo_Username.Controls.Add(tb_Hp_Login_Username);
-            pn_Hp_Logo_Username.Location = new Point(62, 87);
+            pn_Hp_Logo_Username.Location = new Point(62, 83);
             pn_Hp_Logo_Username.Name = "pn_Hp_Logo_Username";
-            pn_Hp_Logo_Username.Size = new Size(391, 45);
+            pn_Hp_Logo_Username.Size = new Size(391, 43);
             pn_Hp_Logo_Username.TabIndex = 1;
             // 
             // pc_Hp_Login_Un
@@ -224,7 +224,7 @@
             pc_Hp_Login_Un.Image = Properties.Resources.user;
             pc_Hp_Login_Un.Location = new Point(4, 3);
             pc_Hp_Login_Un.Name = "pc_Hp_Login_Un";
-            pc_Hp_Login_Un.Size = new Size(46, 36);
+            pc_Hp_Login_Un.Size = new Size(46, 34);
             pc_Hp_Login_Un.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Hp_Login_Un.TabIndex = 9;
             pc_Hp_Login_Un.TabStop = false;
@@ -237,21 +237,19 @@
             tb_Hp_Login_Username.Location = new Point(55, 3);
             tb_Hp_Login_Username.Name = "tb_Hp_Login_Username";
             tb_Hp_Login_Username.PlaceholderText = "Tài khoản/Số điện thoại";
-            tb_Hp_Login_Username.Size = new Size(333, 31);
+            tb_Hp_Login_Username.Size = new Size(333, 29);
             tb_Hp_Login_Username.TabIndex = 0;
             tb_Hp_Login_Username.TabStop = false;
-
             tb_Hp_Login_Username.TextChanged += tb_Hp_Login_Username_TextChanged;
-
             // 
             // bt_Lg_Login
             // 
             bt_Lg_Login.BackColor = Color.Navy;
             bt_Lg_Login.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             bt_Lg_Login.ForeColor = Color.White;
-            bt_Lg_Login.Location = new Point(177, 218);
+            bt_Lg_Login.Location = new Point(177, 207);
             bt_Lg_Login.Name = "bt_Lg_Login";
-            bt_Lg_Login.Size = new Size(151, 60);
+            bt_Lg_Login.Size = new Size(151, 57);
             bt_Lg_Login.TabIndex = 3;
             bt_Lg_Login.Text = "Đăng nhập";
             bt_Lg_Login.UseVisualStyleBackColor = false;
@@ -261,9 +259,9 @@
             // 
             lb_Lg_Login.AutoSize = true;
             lb_Lg_Login.Font = new Font("Segoe UI Semibold", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lb_Lg_Login.Location = new Point(155, 12);
+            lb_Lg_Login.Location = new Point(155, 11);
             lb_Lg_Login.Name = "lb_Lg_Login";
-            lb_Lg_Login.Size = new Size(184, 45);
+            lb_Lg_Login.Size = new Size(173, 42);
             lb_Lg_Login.TabIndex = 0;
             lb_Lg_Login.Text = "Đăng nhập";
             // 
@@ -272,9 +270,9 @@
             lb_Lg_Info2.AutoSize = true;
             lb_Lg_Info2.Font = new Font("Segoe UI", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_Lg_Info2.ForeColor = Color.FromArgb(46, 56, 107);
-            lb_Lg_Info2.Location = new Point(136, 49);
+            lb_Lg_Info2.Location = new Point(136, 47);
             lb_Lg_Info2.Name = "lb_Lg_Info2";
-            lb_Lg_Info2.Size = new Size(163, 45);
+            lb_Lg_Info2.Size = new Size(153, 42);
             lb_Lg_Info2.TabIndex = 1;
             lb_Lg_Info2.Text = "Nhóm 20";
             lb_Lg_Info2.Click += lb_Lg_Info2_Click;
@@ -286,7 +284,7 @@
             lb_Lg_Info.ForeColor = Color.FromArgb(46, 56, 107);
             lb_Lg_Info.Location = new Point(136, 3);
             lb_Lg_Info.Name = "lb_Lg_Info";
-            lb_Lg_Info.Size = new Size(660, 45);
+            lb_Lg_Info.Size = new Size(628, 42);
             lb_Lg_Info.TabIndex = 0;
             lb_Lg_Info.Text = "Phòng khám nha khoa Khoa học tự nhiên";
             lb_Lg_Info.Click += lb_Lg_Info_Click;
@@ -294,9 +292,9 @@
             // pc_Lg_Deco2
             // 
             pc_Lg_Deco2.Image = Properties.Resources.Hp_Deco2;
-            pc_Lg_Deco2.Location = new Point(989, 502);
+            pc_Lg_Deco2.Location = new Point(989, 477);
             pc_Lg_Deco2.Name = "pc_Lg_Deco2";
-            pc_Lg_Deco2.Size = new Size(122, 126);
+            pc_Lg_Deco2.Size = new Size(122, 120);
             pc_Lg_Deco2.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Lg_Deco2.TabIndex = 5;
             pc_Lg_Deco2.TabStop = false;
@@ -307,7 +305,7 @@
             pc_Lg_Deco1.Image = Properties.Resources.Hp_Deco;
             pc_Lg_Deco1.Location = new Point(0, 0);
             pc_Lg_Deco1.Name = "pc_Lg_Deco1";
-            pc_Lg_Deco1.Size = new Size(121, 126);
+            pc_Lg_Deco1.Size = new Size(121, 120);
             pc_Lg_Deco1.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Lg_Deco1.TabIndex = 3;
             pc_Lg_Deco1.TabStop = false;
@@ -318,7 +316,7 @@
             lg_Close.Image = Properties.Resources.close;
             lg_Close.Location = new Point(1068, 3);
             lg_Close.Name = "lg_Close";
-            lg_Close.Size = new Size(40, 33);
+            lg_Close.Size = new Size(40, 31);
             lg_Close.SizeMode = PictureBoxSizeMode.Zoom;
             lg_Close.TabIndex = 1;
             lg_Close.TabStop = false;
@@ -327,9 +325,9 @@
             // picLogo
             // 
             picLogo.Image = Properties.Resources.Dental_Logo;
-            picLogo.Location = new Point(35, 118);
+            picLogo.Location = new Point(35, 112);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(474, 452);
+            picLogo.Size = new Size(474, 429);
             picLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
@@ -337,16 +335,17 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 128);
-            ClientSize = new Size(1135, 652);
+            ClientSize = new Size(1135, 619);
             ControlBox = false;
             Controls.Add(pHomepage);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "Đăng nhập";
             pHomepage.ResumeLayout(false);
             pHomepage.PerformLayout();
             pn_Hp_Login.ResumeLayout(false);

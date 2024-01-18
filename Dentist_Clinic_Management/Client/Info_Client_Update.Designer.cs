@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info_Client_Update));
             main_panel = new Panel();
+            ln_Success = new Label();
             pictureBox5 = new PictureBox();
             bt_Back = new Button();
             bt_Ok = new Button();
@@ -68,7 +69,6 @@
             pn_Phone = new Panel();
             tb_Phone = new TextBox();
             pt_Phone = new PictureBox();
-            ln_Success = new Label();
             main_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             pn_newPass.SuspendLayout();
@@ -115,17 +115,28 @@
             main_panel.Controls.Add(pn_Addr);
             main_panel.Controls.Add(pn_Name);
             main_panel.Controls.Add(pn_Phone);
-            main_panel.Location = new Point(12, 12);
+            main_panel.Location = new Point(12, 11);
             main_panel.Name = "main_panel";
-            main_panel.Size = new Size(1111, 629);
+            main_panel.Size = new Size(1111, 598);
             main_panel.TabIndex = 0;
+            // 
+            // ln_Success
+            // 
+            ln_Success.AutoSize = true;
+            ln_Success.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            ln_Success.Location = new Point(652, 560);
+            ln_Success.Name = "ln_Success";
+            ln_Success.Size = new Size(218, 30);
+            ln_Success.TabIndex = 46;
+            ln_Success.Text = "Cập nhật thành công.";
+            ln_Success.Visible = false;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Untitled_removebg_preview;
-            pictureBox5.Location = new Point(17, 79);
+            pictureBox5.Location = new Point(17, 75);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(442, 406);
+            pictureBox5.Size = new Size(442, 386);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 28;
             pictureBox5.TabStop = false;
@@ -135,9 +146,9 @@
             bt_Back.BackColor = Color.FromArgb(8, 48, 107);
             bt_Back.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             bt_Back.ForeColor = Color.White;
-            bt_Back.Location = new Point(554, 526);
+            bt_Back.Location = new Point(554, 500);
             bt_Back.Name = "bt_Back";
-            bt_Back.Size = new Size(151, 60);
+            bt_Back.Size = new Size(151, 57);
             bt_Back.TabIndex = 40;
             bt_Back.TabStop = false;
             bt_Back.Text = "Quay lại";
@@ -149,9 +160,9 @@
             bt_Ok.BackColor = Color.FromArgb(8, 48, 107);
             bt_Ok.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             bt_Ok.ForeColor = Color.White;
-            bt_Ok.Location = new Point(841, 526);
+            bt_Ok.Location = new Point(841, 500);
             bt_Ok.Name = "bt_Ok";
-            bt_Ok.Size = new Size(151, 60);
+            bt_Ok.Size = new Size(151, 57);
             bt_Ok.TabIndex = 39;
             bt_Ok.TabStop = false;
             bt_Ok.Text = "Xác nhận";
@@ -163,9 +174,9 @@
             lb_mainUpdate.AutoSize = true;
             lb_mainUpdate.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_mainUpdate.ForeColor = Color.FromArgb(8, 48, 107);
-            lb_mainUpdate.Location = new Point(617, 24);
+            lb_mainUpdate.Location = new Point(617, 23);
             lb_mainUpdate.Name = "lb_mainUpdate";
-            lb_mainUpdate.Size = new Size(305, 31);
+            lb_mainUpdate.Size = new Size(294, 30);
             lb_mainUpdate.TabIndex = 38;
             lb_mainUpdate.Text = "Cập nhật thông tin cá nhân";
             lb_mainUpdate.Click += label1_Click;
@@ -174,9 +185,9 @@
             // 
             lb_anewPass.AutoSize = true;
             lb_anewPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_anewPass.Location = new Point(474, 457);
+            lb_anewPass.Location = new Point(474, 434);
             lb_anewPass.Name = "lb_anewPass";
-            lb_anewPass.Size = new Size(201, 31);
+            lb_anewPass.Size = new Size(187, 30);
             lb_anewPass.TabIndex = 37;
             lb_anewPass.Text = "Nhập lại mật khẩu";
             // 
@@ -184,9 +195,9 @@
             // 
             lb_oldPass.AutoSize = true;
             lb_oldPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_oldPass.Location = new Point(474, 330);
+            lb_oldPass.Location = new Point(474, 314);
             lb_oldPass.Name = "lb_oldPass";
-            lb_oldPass.Size = new Size(140, 31);
+            lb_oldPass.Size = new Size(131, 30);
             lb_oldPass.TabIndex = 36;
             lb_oldPass.Text = "Mật khẩu cũ";
             // 
@@ -194,9 +205,9 @@
             // 
             ln_newPass.AutoSize = true;
             ln_newPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            ln_newPass.Location = new Point(474, 393);
+            ln_newPass.Location = new Point(474, 373);
             ln_newPass.Name = "ln_newPass";
-            ln_newPass.Size = new Size(156, 31);
+            ln_newPass.Size = new Size(146, 30);
             ln_newPass.TabIndex = 35;
             ln_newPass.Text = "Mật khẩu mới";
             // 
@@ -207,9 +218,9 @@
             pn_newPass.Controls.Add(Hide_1);
             pn_newPass.Controls.Add(tb_oldPass);
             pn_newPass.Controls.Add(pt_oldPass);
-            pn_newPass.Location = new Point(677, 320);
+            pn_newPass.Location = new Point(677, 304);
             pn_newPass.Name = "pn_newPass";
-            pn_newPass.Size = new Size(391, 45);
+            pn_newPass.Size = new Size(391, 43);
             pn_newPass.TabIndex = 32;
             // 
             // Unhide_1
@@ -217,7 +228,7 @@
             Unhide_1.Image = Properties.Resources.hide;
             Unhide_1.Location = new Point(348, 5);
             Unhide_1.Name = "Unhide_1";
-            Unhide_1.Size = new Size(36, 30);
+            Unhide_1.Size = new Size(36, 28);
             Unhide_1.SizeMode = PictureBoxSizeMode.Zoom;
             Unhide_1.TabIndex = 11;
             Unhide_1.TabStop = false;
@@ -229,7 +240,7 @@
             Hide_1.Image = Properties.Resources.visible;
             Hide_1.Location = new Point(348, 5);
             Hide_1.Name = "Hide_1";
-            Hide_1.Size = new Size(36, 30);
+            Hide_1.Size = new Size(36, 28);
             Hide_1.SizeMode = PictureBoxSizeMode.Zoom;
             Hide_1.TabIndex = 10;
             Hide_1.TabStop = false;
@@ -240,7 +251,7 @@
             tb_oldPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_oldPass.Location = new Point(54, 2);
             tb_oldPass.Name = "tb_oldPass";
-            tb_oldPass.Size = new Size(331, 38);
+            tb_oldPass.Size = new Size(331, 36);
             tb_oldPass.TabIndex = 10;
             tb_oldPass.TabStop = false;
             tb_oldPass.UseSystemPasswordChar = true;
@@ -250,7 +261,7 @@
             pt_oldPass.Image = Properties.Resources.calendar__2_;
             pt_oldPass.Location = new Point(4, 3);
             pt_oldPass.Name = "pt_oldPass";
-            pt_oldPass.Size = new Size(46, 36);
+            pt_oldPass.Size = new Size(46, 34);
             pt_oldPass.SizeMode = PictureBoxSizeMode.Zoom;
             pt_oldPass.TabIndex = 9;
             pt_oldPass.TabStop = false;
@@ -262,9 +273,9 @@
             pn_anewPass.Controls.Add(Hide_3);
             pn_anewPass.Controls.Add(tb_anewPass);
             pn_anewPass.Controls.Add(pt_anewPass);
-            pn_anewPass.Location = new Point(677, 447);
+            pn_anewPass.Location = new Point(677, 425);
             pn_anewPass.Name = "pn_anewPass";
-            pn_anewPass.Size = new Size(391, 45);
+            pn_anewPass.Size = new Size(391, 43);
             pn_anewPass.TabIndex = 34;
             // 
             // Unhide_3
@@ -272,7 +283,7 @@
             Unhide_3.Image = Properties.Resources.hide;
             Unhide_3.Location = new Point(348, 9);
             Unhide_3.Name = "Unhide_3";
-            Unhide_3.Size = new Size(36, 30);
+            Unhide_3.Size = new Size(36, 28);
             Unhide_3.SizeMode = PictureBoxSizeMode.Zoom;
             Unhide_3.TabIndex = 44;
             Unhide_3.TabStop = false;
@@ -284,7 +295,7 @@
             Hide_3.Image = Properties.Resources.visible;
             Hide_3.Location = new Point(348, 7);
             Hide_3.Name = "Hide_3";
-            Hide_3.Size = new Size(36, 30);
+            Hide_3.Size = new Size(36, 28);
             Hide_3.SizeMode = PictureBoxSizeMode.Zoom;
             Hide_3.TabIndex = 45;
             Hide_3.TabStop = false;
@@ -295,7 +306,7 @@
             tb_anewPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_anewPass.Location = new Point(54, 2);
             tb_anewPass.Name = "tb_anewPass";
-            tb_anewPass.Size = new Size(331, 38);
+            tb_anewPass.Size = new Size(331, 36);
             tb_anewPass.TabIndex = 12;
             tb_anewPass.TabStop = false;
             tb_anewPass.UseSystemPasswordChar = true;
@@ -305,7 +316,7 @@
             pt_anewPass.Image = Properties.Resources.doctor;
             pt_anewPass.Location = new Point(4, 3);
             pt_anewPass.Name = "pt_anewPass";
-            pt_anewPass.Size = new Size(46, 36);
+            pt_anewPass.Size = new Size(46, 34);
             pt_anewPass.SizeMode = PictureBoxSizeMode.Zoom;
             pt_anewPass.TabIndex = 9;
             pt_anewPass.TabStop = false;
@@ -317,9 +328,9 @@
             pn_oldPass.Controls.Add(Hide_2);
             pn_oldPass.Controls.Add(tb_newPass);
             pn_oldPass.Controls.Add(pt_olePass);
-            pn_oldPass.Location = new Point(677, 383);
+            pn_oldPass.Location = new Point(677, 364);
             pn_oldPass.Name = "pn_oldPass";
-            pn_oldPass.Size = new Size(391, 45);
+            pn_oldPass.Size = new Size(391, 43);
             pn_oldPass.TabIndex = 33;
             // 
             // Unhide_2
@@ -327,7 +338,7 @@
             Unhide_2.Image = Properties.Resources.hide;
             Unhide_2.Location = new Point(348, 6);
             Unhide_2.Name = "Unhide_2";
-            Unhide_2.Size = new Size(36, 30);
+            Unhide_2.Size = new Size(36, 28);
             Unhide_2.SizeMode = PictureBoxSizeMode.Zoom;
             Unhide_2.TabIndex = 42;
             Unhide_2.TabStop = false;
@@ -339,7 +350,7 @@
             Hide_2.Image = Properties.Resources.visible;
             Hide_2.Location = new Point(348, 6);
             Hide_2.Name = "Hide_2";
-            Hide_2.Size = new Size(36, 30);
+            Hide_2.Size = new Size(36, 28);
             Hide_2.SizeMode = PictureBoxSizeMode.Zoom;
             Hide_2.TabIndex = 43;
             Hide_2.TabStop = false;
@@ -350,7 +361,7 @@
             tb_newPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_newPass.Location = new Point(54, 2);
             tb_newPass.Name = "tb_newPass";
-            tb_newPass.Size = new Size(331, 38);
+            tb_newPass.Size = new Size(331, 36);
             tb_newPass.TabIndex = 11;
             tb_newPass.TabStop = false;
             tb_newPass.UseSystemPasswordChar = true;
@@ -360,7 +371,7 @@
             pt_olePass.Image = Properties.Resources.clock__1_;
             pt_olePass.Location = new Point(4, 3);
             pt_olePass.Name = "pt_olePass";
-            pt_olePass.Size = new Size(46, 36);
+            pt_olePass.Size = new Size(46, 34);
             pt_olePass.SizeMode = PictureBoxSizeMode.Zoom;
             pt_olePass.TabIndex = 9;
             pt_olePass.TabStop = false;
@@ -369,9 +380,9 @@
             // 
             lb_Phone.AutoSize = true;
             lb_Phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Phone.Location = new Point(474, 267);
+            lb_Phone.Location = new Point(474, 254);
             lb_Phone.Name = "lb_Phone";
-            lb_Phone.Size = new Size(148, 31);
+            lb_Phone.Size = new Size(140, 30);
             lb_Phone.TabIndex = 30;
             lb_Phone.Text = "Số điện thoại";
             // 
@@ -379,9 +390,9 @@
             // 
             lb_Addr.AutoSize = true;
             lb_Addr.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Addr.Location = new Point(474, 206);
+            lb_Addr.Location = new Point(474, 196);
             lb_Addr.Name = "lb_Addr";
-            lb_Addr.Size = new Size(84, 31);
+            lb_Addr.Size = new Size(77, 30);
             lb_Addr.TabIndex = 28;
             lb_Addr.Text = "Địa chỉ";
             // 
@@ -389,9 +400,9 @@
             // 
             lb_Birth.AutoSize = true;
             lb_Birth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Birth.Location = new Point(474, 146);
+            lb_Birth.Location = new Point(474, 139);
             lb_Birth.Name = "lb_Birth";
-            lb_Birth.Size = new Size(116, 31);
+            lb_Birth.Size = new Size(108, 30);
             lb_Birth.TabIndex = 26;
             lb_Birth.Text = "Ngày sinh";
             // 
@@ -399,9 +410,9 @@
             // 
             lb_Name.AutoSize = true;
             lb_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Name.Location = new Point(474, 89);
+            lb_Name.Location = new Point(474, 85);
             lb_Name.Name = "lb_Name";
-            lb_Name.Size = new Size(111, 31);
+            lb_Name.Size = new Size(107, 30);
             lb_Name.TabIndex = 24;
             lb_Name.Text = "Họ và tên";
             // 
@@ -410,9 +421,9 @@
             pn_Birth.BorderStyle = BorderStyle.FixedSingle;
             pn_Birth.Controls.Add(tb_Birth);
             pn_Birth.Controls.Add(pt_Birth);
-            pn_Birth.Location = new Point(677, 136);
+            pn_Birth.Location = new Point(677, 129);
             pn_Birth.Name = "pn_Birth";
-            pn_Birth.Size = new Size(391, 45);
+            pn_Birth.Size = new Size(391, 43);
             pn_Birth.TabIndex = 27;
             // 
             // tb_Birth
@@ -423,7 +434,7 @@
             tb_Birth.Location = new Point(54, 3);
             tb_Birth.MaxDate = new DateTime(2023, 12, 22, 0, 0, 0, 0);
             tb_Birth.Name = "tb_Birth";
-            tb_Birth.Size = new Size(332, 38);
+            tb_Birth.Size = new Size(332, 36);
             tb_Birth.TabIndex = 10;
             tb_Birth.TabStop = false;
             tb_Birth.Value = new DateTime(2000, 1, 1, 0, 0, 0, 0);
@@ -434,7 +445,7 @@
             pt_Birth.Image = (Image)resources.GetObject("pt_Birth.Image");
             pt_Birth.Location = new Point(4, 3);
             pt_Birth.Name = "pt_Birth";
-            pt_Birth.Size = new Size(46, 36);
+            pt_Birth.Size = new Size(46, 34);
             pt_Birth.SizeMode = PictureBoxSizeMode.Zoom;
             pt_Birth.TabIndex = 9;
             pt_Birth.TabStop = false;
@@ -444,9 +455,9 @@
             pn_Addr.BorderStyle = BorderStyle.FixedSingle;
             pn_Addr.Controls.Add(tb_Address);
             pn_Addr.Controls.Add(pt_Addr);
-            pn_Addr.Location = new Point(677, 196);
+            pn_Addr.Location = new Point(677, 186);
             pn_Addr.Name = "pn_Addr";
-            pn_Addr.Size = new Size(391, 45);
+            pn_Addr.Size = new Size(391, 43);
             pn_Addr.TabIndex = 29;
             // 
             // tb_Address
@@ -454,7 +465,7 @@
             tb_Address.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Address.Location = new Point(54, 2);
             tb_Address.Name = "tb_Address";
-            tb_Address.Size = new Size(331, 38);
+            tb_Address.Size = new Size(331, 36);
             tb_Address.TabIndex = 12;
             tb_Address.TabStop = false;
             // 
@@ -463,7 +474,7 @@
             pt_Addr.Image = (Image)resources.GetObject("pt_Addr.Image");
             pt_Addr.Location = new Point(4, 3);
             pt_Addr.Name = "pt_Addr";
-            pt_Addr.Size = new Size(46, 36);
+            pt_Addr.Size = new Size(46, 34);
             pt_Addr.SizeMode = PictureBoxSizeMode.Zoom;
             pt_Addr.TabIndex = 9;
             pt_Addr.TabStop = false;
@@ -473,9 +484,9 @@
             pn_Name.BorderStyle = BorderStyle.FixedSingle;
             pn_Name.Controls.Add(tb_Name);
             pn_Name.Controls.Add(pt_Name);
-            pn_Name.Location = new Point(677, 79);
+            pn_Name.Location = new Point(677, 75);
             pn_Name.Name = "pn_Name";
-            pn_Name.Size = new Size(391, 45);
+            pn_Name.Size = new Size(391, 43);
             pn_Name.TabIndex = 25;
             // 
             // tb_Name
@@ -484,7 +495,7 @@
             tb_Name.Location = new Point(54, 2);
             tb_Name.Name = "tb_Name";
             tb_Name.RightToLeft = RightToLeft.No;
-            tb_Name.Size = new Size(331, 38);
+            tb_Name.Size = new Size(331, 36);
             tb_Name.TabIndex = 14;
             tb_Name.TabStop = false;
             tb_Name.TextChanged += tb_Name_TextChanged;
@@ -494,7 +505,7 @@
             pt_Name.Image = Properties.Resources.user;
             pt_Name.Location = new Point(4, 3);
             pt_Name.Name = "pt_Name";
-            pt_Name.Size = new Size(46, 36);
+            pt_Name.Size = new Size(46, 34);
             pt_Name.SizeMode = PictureBoxSizeMode.Zoom;
             pt_Name.TabIndex = 9;
             pt_Name.TabStop = false;
@@ -504,9 +515,9 @@
             pn_Phone.BorderStyle = BorderStyle.FixedSingle;
             pn_Phone.Controls.Add(tb_Phone);
             pn_Phone.Controls.Add(pt_Phone);
-            pn_Phone.Location = new Point(677, 257);
+            pn_Phone.Location = new Point(677, 244);
             pn_Phone.Name = "pn_Phone";
-            pn_Phone.Size = new Size(391, 45);
+            pn_Phone.Size = new Size(391, 43);
             pn_Phone.TabIndex = 31;
             // 
             // tb_Phone
@@ -514,7 +525,7 @@
             tb_Phone.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Phone.Location = new Point(54, 2);
             tb_Phone.Name = "tb_Phone";
-            tb_Phone.Size = new Size(331, 38);
+            tb_Phone.Size = new Size(331, 36);
             tb_Phone.TabIndex = 11;
             tb_Phone.TabStop = false;
             // 
@@ -523,33 +534,23 @@
             pt_Phone.Image = (Image)resources.GetObject("pt_Phone.Image");
             pt_Phone.Location = new Point(4, 3);
             pt_Phone.Name = "pt_Phone";
-            pt_Phone.Size = new Size(46, 36);
+            pt_Phone.Size = new Size(46, 34);
             pt_Phone.SizeMode = PictureBoxSizeMode.Zoom;
             pt_Phone.TabIndex = 9;
             pt_Phone.TabStop = false;
             // 
-            // ln_Success
-            // 
-            ln_Success.AutoSize = true;
-            ln_Success.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            ln_Success.Location = new Point(652, 589);
-            ln_Success.Name = "ln_Success";
-            ln_Success.Size = new Size(233, 31);
-            ln_Success.TabIndex = 46;
-            ln_Success.Text = "Cập nhật thành công.";
-            ln_Success.Visible = false;
-            // 
             // Info_Client_Update
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(8, 48, 107);
-            ClientSize = new Size(1135, 652);
+            ClientSize = new Size(1135, 619);
             ControlBox = false;
             Controls.Add(main_panel);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Info_Client_Update";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = " ";
             main_panel.ResumeLayout(false);
             main_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();

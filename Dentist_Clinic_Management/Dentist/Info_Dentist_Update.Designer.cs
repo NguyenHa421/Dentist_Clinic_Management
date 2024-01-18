@@ -51,9 +51,9 @@
             lb_failed.AutoSize = true;
             lb_failed.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             lb_failed.ForeColor = Color.Red;
-            lb_failed.Location = new Point(661, 522);
+            lb_failed.Location = new Point(661, 496);
             lb_failed.Name = "lb_failed";
-            lb_failed.Size = new Size(198, 31);
+            lb_failed.Size = new Size(183, 30);
             lb_failed.TabIndex = 65;
             lb_failed.Text = "Cập nhật thất bại!";
             lb_failed.Visible = false;
@@ -61,9 +61,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Untitled_removebg_preview;
-            pictureBox5.Location = new Point(12, 12);
+            pictureBox5.Location = new Point(12, 11);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(442, 406);
+            pictureBox5.Size = new Size(442, 386);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 51;
             pictureBox5.TabStop = false;
@@ -73,9 +73,9 @@
             bt_Back.BackColor = Color.FromArgb(8, 48, 107);
             bt_Back.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             bt_Back.ForeColor = Color.White;
-            bt_Back.Location = new Point(549, 459);
+            bt_Back.Location = new Point(549, 436);
             bt_Back.Name = "bt_Back";
-            bt_Back.Size = new Size(151, 60);
+            bt_Back.Size = new Size(151, 57);
             bt_Back.TabIndex = 64;
             bt_Back.TabStop = false;
             bt_Back.Text = "Quay lại";
@@ -87,9 +87,9 @@
             bt_Ok.BackColor = Color.FromArgb(8, 48, 107);
             bt_Ok.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             bt_Ok.ForeColor = Color.White;
-            bt_Ok.Location = new Point(836, 459);
+            bt_Ok.Location = new Point(836, 436);
             bt_Ok.Name = "bt_Ok";
-            bt_Ok.Size = new Size(151, 60);
+            bt_Ok.Size = new Size(151, 57);
             bt_Ok.TabIndex = 63;
             bt_Ok.TabStop = false;
             bt_Ok.Text = "Xác nhận";
@@ -101,9 +101,9 @@
             lb_mainUpdate.AutoSize = true;
             lb_mainUpdate.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             lb_mainUpdate.ForeColor = Color.FromArgb(8, 48, 107);
-            lb_mainUpdate.Location = new Point(475, -73);
+            lb_mainUpdate.Location = new Point(475, -69);
             lb_mainUpdate.Name = "lb_mainUpdate";
-            lb_mainUpdate.Size = new Size(305, 31);
+            lb_mainUpdate.Size = new Size(294, 30);
             lb_mainUpdate.TabIndex = 62;
             lb_mainUpdate.Text = "Cập nhật thông tin cá nhân";
             // 
@@ -111,9 +111,9 @@
             // 
             lb_anewPass.AutoSize = true;
             lb_anewPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_anewPass.Location = new Point(469, 253);
+            lb_anewPass.Location = new Point(469, 240);
             lb_anewPass.Name = "lb_anewPass";
-            lb_anewPass.Size = new Size(201, 31);
+            lb_anewPass.Size = new Size(187, 30);
             lb_anewPass.TabIndex = 61;
             lb_anewPass.Text = "Nhập lại mật khẩu";
             // 
@@ -121,9 +121,9 @@
             // 
             lb_oldPass.AutoSize = true;
             lb_oldPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_oldPass.Location = new Point(469, 132);
+            lb_oldPass.Location = new Point(469, 125);
             lb_oldPass.Name = "lb_oldPass";
-            lb_oldPass.Size = new Size(140, 31);
+            lb_oldPass.Size = new Size(131, 30);
             lb_oldPass.TabIndex = 60;
             lb_oldPass.Text = "Mật khẩu cũ";
             // 
@@ -131,9 +131,9 @@
             // 
             lb_newPass.AutoSize = true;
             lb_newPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_newPass.Location = new Point(469, 189);
+            lb_newPass.Location = new Point(469, 180);
             lb_newPass.Name = "lb_newPass";
-            lb_newPass.Size = new Size(156, 31);
+            lb_newPass.Size = new Size(146, 30);
             lb_newPass.TabIndex = 59;
             lb_newPass.Text = "Mật khẩu mới";
             // 
@@ -141,29 +141,29 @@
             // 
             lb_Name.AutoSize = true;
             lb_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_Name.Location = new Point(469, 22);
+            lb_Name.Location = new Point(469, 21);
             lb_Name.Name = "lb_Name";
-            lb_Name.Size = new Size(111, 31);
+            lb_Name.Size = new Size(107, 30);
             lb_Name.TabIndex = 47;
             lb_Name.Text = "Họ và tên";
             // 
             // tb_Name
             // 
             tb_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_Name.Location = new Point(672, 15);
+            tb_Name.Location = new Point(672, 14);
             tb_Name.Name = "tb_Name";
             tb_Name.RightToLeft = RightToLeft.No;
-            tb_Name.Size = new Size(391, 38);
+            tb_Name.Size = new Size(391, 36);
             tb_Name.TabIndex = 14;
             tb_Name.TabStop = false;
             // 
             // tb_specialize
             // 
             tb_specialize.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_specialize.Location = new Point(672, 69);
+            tb_specialize.Location = new Point(672, 66);
             tb_specialize.Name = "tb_specialize";
             tb_specialize.RightToLeft = RightToLeft.No;
-            tb_specialize.Size = new Size(391, 38);
+            tb_specialize.Size = new Size(391, 36);
             tb_specialize.TabIndex = 14;
             tb_specialize.TabStop = false;
             // 
@@ -171,48 +171,48 @@
             // 
             lab_specialize.AutoSize = true;
             lab_specialize.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lab_specialize.Location = new Point(469, 76);
+            lab_specialize.Location = new Point(469, 72);
             lab_specialize.Name = "lab_specialize";
-            lab_specialize.Size = new Size(142, 31);
+            lab_specialize.Size = new Size(136, 30);
             lab_specialize.TabIndex = 47;
             lab_specialize.Text = "Chuyên môn";
             // 
             // tb_oldPass
             // 
             tb_oldPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_oldPass.Location = new Point(672, 125);
+            tb_oldPass.Location = new Point(672, 119);
             tb_oldPass.Name = "tb_oldPass";
             tb_oldPass.RightToLeft = RightToLeft.No;
-            tb_oldPass.Size = new Size(391, 38);
+            tb_oldPass.Size = new Size(391, 36);
             tb_oldPass.TabIndex = 14;
             tb_oldPass.TabStop = false;
             // 
             // tb_newPass
             // 
             tb_newPass.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_newPass.Location = new Point(672, 182);
+            tb_newPass.Location = new Point(672, 173);
             tb_newPass.Name = "tb_newPass";
             tb_newPass.RightToLeft = RightToLeft.No;
-            tb_newPass.Size = new Size(391, 38);
+            tb_newPass.Size = new Size(391, 36);
             tb_newPass.TabIndex = 14;
             tb_newPass.TabStop = false;
             // 
             // tb_reenter
             // 
             tb_reenter.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_reenter.Location = new Point(672, 246);
+            tb_reenter.Location = new Point(672, 234);
             tb_reenter.Name = "tb_reenter";
             tb_reenter.RightToLeft = RightToLeft.No;
-            tb_reenter.Size = new Size(391, 38);
+            tb_reenter.Size = new Size(391, 36);
             tb_reenter.TabIndex = 14;
             tb_reenter.TabStop = false;
             // 
             // Info_Dentist_Update
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(1076, 559);
+            ClientSize = new Size(1076, 531);
             ControlBox = false;
             Controls.Add(tb_reenter);
             Controls.Add(tb_newPass);
@@ -231,6 +231,7 @@
             Controls.Add(lb_Name);
             Name = "Info_Dentist_Update";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = " ";
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();

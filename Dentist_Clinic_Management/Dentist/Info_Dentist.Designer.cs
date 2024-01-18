@@ -66,17 +66,17 @@
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(pn_rg_Addr);
             panel1.Controls.Add(pn_rg_Name);
-            panel1.Location = new Point(11, 12);
+            panel1.Location = new Point(11, 11);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1112, 628);
+            panel1.Size = new Size(1112, 597);
             panel1.TabIndex = 0;
             // 
             // picLogo
             // 
             picLogo.Image = Properties.Resources.Untitled_removebg_preview;
-            picLogo.Location = new Point(32, 90);
+            picLogo.Location = new Point(32, 86);
             picLogo.Name = "picLogo";
-            picLogo.Size = new Size(482, 405);
+            picLogo.Size = new Size(482, 385);
             picLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picLogo.TabIndex = 40;
             picLogo.TabStop = false;
@@ -86,9 +86,9 @@
             bt_Beck.BackColor = Color.FromArgb(8, 48, 107);
             bt_Beck.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             bt_Beck.ForeColor = Color.White;
-            bt_Beck.Location = new Point(905, 508);
+            bt_Beck.Location = new Point(905, 483);
             bt_Beck.Name = "bt_Beck";
-            bt_Beck.Size = new Size(151, 60);
+            bt_Beck.Size = new Size(151, 57);
             bt_Beck.TabIndex = 39;
             bt_Beck.TabStop = false;
             bt_Beck.Text = "Quay lại";
@@ -100,9 +100,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(8, 48, 107);
-            label1.Location = new Point(656, 71);
+            label1.Location = new Point(656, 67);
             label1.Name = "label1";
-            label1.Size = new Size(255, 38);
+            label1.Size = new Size(226, 35);
             label1.TabIndex = 37;
             label1.Text = "Thông tin cá nhân";
             // 
@@ -110,9 +110,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(520, 404);
+            label2.Location = new Point(520, 384);
             label2.Name = "label2";
-            label2.Size = new Size(142, 31);
+            label2.Size = new Size(136, 30);
             label2.TabIndex = 33;
             label2.Text = "Chuyên môn";
             // 
@@ -120,9 +120,9 @@
             // 
             lb_rg_datebirth.AutoSize = true;
             lb_rg_datebirth.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_datebirth.Location = new Point(520, 296);
+            lb_rg_datebirth.Location = new Point(520, 281);
             lb_rg_datebirth.Name = "lb_rg_datebirth";
-            lb_rg_datebirth.Size = new Size(82, 31);
+            lb_rg_datebirth.Size = new Size(79, 30);
             lb_rg_datebirth.TabIndex = 31;
             lb_rg_datebirth.Text = "Họ tên";
             // 
@@ -130,9 +130,9 @@
             // 
             lb_rg_Name.AutoSize = true;
             lb_rg_Name.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            lb_rg_Name.Location = new Point(520, 192);
+            lb_rg_Name.Location = new Point(520, 182);
             lb_rg_Name.Name = "lb_rg_Name";
-            lb_rg_Name.Size = new Size(113, 31);
+            lb_rg_Name.Size = new Size(105, 30);
             lb_rg_Name.TabIndex = 29;
             lb_rg_Name.Text = "Mã nha sĩ";
             // 
@@ -141,9 +141,9 @@
             panel3.BorderStyle = BorderStyle.FixedSingle;
             panel3.Controls.Add(tb_Birth);
             panel3.Controls.Add(pictureBox2);
-            panel3.Location = new Point(670, 285);
+            panel3.Location = new Point(670, 271);
             panel3.Name = "panel3";
-            panel3.Size = new Size(391, 45);
+            panel3.Size = new Size(391, 43);
             panel3.TabIndex = 32;
             // 
             // tb_Birth
@@ -152,7 +152,7 @@
             tb_Birth.Location = new Point(54, 3);
             tb_Birth.Name = "tb_Birth";
             tb_Birth.ReadOnly = true;
-            tb_Birth.Size = new Size(331, 38);
+            tb_Birth.Size = new Size(331, 36);
             tb_Birth.TabIndex = 13;
             tb_Birth.TabStop = false;
             // 
@@ -161,7 +161,7 @@
             pictureBox2.Image = Properties.Resources.doctor;
             pictureBox2.Location = new Point(5, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(46, 36);
+            pictureBox2.Size = new Size(46, 34);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
@@ -171,9 +171,9 @@
             pn_rg_Addr.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Addr.Controls.Add(tb_Address);
             pn_rg_Addr.Controls.Add(pc_Lg_Un);
-            pn_rg_Addr.Location = new Point(670, 393);
+            pn_rg_Addr.Location = new Point(670, 373);
             pn_rg_Addr.Name = "pn_rg_Addr";
-            pn_rg_Addr.Size = new Size(391, 45);
+            pn_rg_Addr.Size = new Size(391, 43);
             pn_rg_Addr.TabIndex = 34;
             // 
             // tb_Address
@@ -182,7 +182,7 @@
             tb_Address.Location = new Point(54, 3);
             tb_Address.Name = "tb_Address";
             tb_Address.ReadOnly = true;
-            tb_Address.Size = new Size(331, 38);
+            tb_Address.Size = new Size(331, 36);
             tb_Address.TabIndex = 12;
             tb_Address.TabStop = false;
             // 
@@ -191,7 +191,7 @@
             pc_Lg_Un.Image = Properties.Resources.stethoscope;
             pc_Lg_Un.Location = new Point(5, 3);
             pc_Lg_Un.Name = "pc_Lg_Un";
-            pc_Lg_Un.Size = new Size(46, 36);
+            pc_Lg_Un.Size = new Size(46, 34);
             pc_Lg_Un.SizeMode = PictureBoxSizeMode.Zoom;
             pc_Lg_Un.TabIndex = 9;
             pc_Lg_Un.TabStop = false;
@@ -201,9 +201,9 @@
             pn_rg_Name.BorderStyle = BorderStyle.FixedSingle;
             pn_rg_Name.Controls.Add(tb_Name);
             pn_rg_Name.Controls.Add(pc_rg_name);
-            pn_rg_Name.Location = new Point(670, 181);
+            pn_rg_Name.Location = new Point(670, 172);
             pn_rg_Name.Name = "pn_rg_Name";
-            pn_rg_Name.Size = new Size(391, 45);
+            pn_rg_Name.Size = new Size(391, 43);
             pn_rg_Name.TabIndex = 30;
             // 
             // tb_Name
@@ -213,7 +213,7 @@
             tb_Name.Name = "tb_Name";
             tb_Name.ReadOnly = true;
             tb_Name.RightToLeft = RightToLeft.No;
-            tb_Name.Size = new Size(331, 38);
+            tb_Name.Size = new Size(331, 36);
             tb_Name.TabIndex = 14;
             tb_Name.TabStop = false;
             // 
@@ -222,23 +222,24 @@
             pc_rg_name.Image = Properties.Resources.user;
             pc_rg_name.Location = new Point(5, 3);
             pc_rg_name.Name = "pc_rg_name";
-            pc_rg_name.Size = new Size(46, 36);
+            pc_rg_name.Size = new Size(46, 34);
             pc_rg_name.SizeMode = PictureBoxSizeMode.Zoom;
             pc_rg_name.TabIndex = 9;
             pc_rg_name.TabStop = false;
             // 
             // Info_Dentist
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(8, 48, 107);
-            ClientSize = new Size(1135, 652);
+            ClientSize = new Size(1135, 619);
             ControlBox = false;
             Controls.Add(panel1);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Info_Dentist";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = " ";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
